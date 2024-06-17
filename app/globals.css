@@ -2,3 +2,19 @@
   @tailwind components;
   @tailwind utilities;
   
+
+  .back {
+    background: linear-gradient(
+      to bottom,
+      rgba(213, 247, 228, 0) 0%,
+      rgba(255, 255, 236, 0) 0.52%,
+      rgba(255, 248, 209, 0.8) 19.27%,
+      rgba(255, 248, 209, 0.8) 88.54%,
+      rgba(255, 255, 236, 0) 100%
+    );
+  }
+
+  
+  .back2{
+    background: linear-gradient(rgba(255, 240, 231, 0) 0%, rgba(255, 232, 219, 0.8) 19.27%, rgba(255, 232, 219, 0.8) 88.54%, rgba(255, 240, 231, 0) 100%);
+  }
