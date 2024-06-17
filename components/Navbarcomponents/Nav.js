@@ -17,7 +17,7 @@ export default function Nav() {
   // };
 
   return (
-    <Navbar maxWidth="full" className="w-full shadow-md ">
+    <Navbar maxWidth="full" className="w-full shadow-md bg-white">
       <NavbarBrand>
         <Image className="w-32 h-32 object-contain" src={Logo} alt='logo'/>
       </NavbarBrand>
