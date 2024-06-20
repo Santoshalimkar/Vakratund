@@ -4,7 +4,7 @@ import { useTypewriter,Cursor  } from "react-simple-typewriter";
 
 const Videocomponent = () => {
     const [text] = useTypewriter({
-        words: ["Connecting People.", "Creating Memories.", "ACreating Stories.","Fulfilling Adventure","Spreading Happiness"],
+        words: ["Connecting People.", "Creating Memories.", "Creating Stories.","Fulfilling Adventure","Spreading Happiness"],
         loop: false,
       });
   return (
