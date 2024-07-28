@@ -20,7 +20,9 @@ const Crouselslide = () => {
           className="object-cover w-full mx-auto rounded-xl "
          src="https://d1c8wbldjj3tey.cloudfront.net/category-section/international_(1)+(540p).mp4"
         />
-         
+         <div className="absolute top-4 left-10 ">
+          <p>title</p>
+         </div>
          <div className="absolute -bottom-36 w-11/12 mx-auto">
          <Carousel className="w-full">
       <CarouselContent className="-ml-1">
