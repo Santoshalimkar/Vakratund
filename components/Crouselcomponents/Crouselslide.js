@@ -10,12 +10,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import lehladakh from "../../public/Cardimages/lehladak.jpg";
-import Kashmir from "../../public/Cardimages/Kashmir.jpg";
-import Meghalaya from "../../public/Cardimages/Meghalaya.jpg";
-import Bali from "../../public/Cardimages/Bali.jpg";
-import Goa from "../../public/Cardimages/Goa.jpg";
-import Kedarnath from "../../public/Cardimages/Kedarnath.jpg";
+import lehladakh from '../../public/Footer/Conatctus.png'
+// import lehladakh from "../../public/Cardimages/lehladak.jpg";
+// import Kashmir from "../../public/Cardimages/Kashmir.jpg";
+// import Meghalaya from "../../public/Cardimages/Meghalaya.jpg";
+// import Bali from "../../public/Cardimages/Bali.jpg";
+// import Goa from "../../public/Cardimages/Goa.jpg";
+// import Kedarnath from "../../public/Cardimages/Kedarnath.jpg";
 
 const Crouselslide = () => {
   const cardData = [
@@ -25,42 +26,7 @@ const Crouselslide = () => {
       description: "Starting Price Rs.21,999 ",
       imageUrl: lehladakh,
     },
-    {
-      id: 2,
-      title: "Kashmir",
-      description: "Starting Price Rs.15,999 ",
-      imageUrl: Kashmir,
-    },
-    {
-      id: 3,
-      title: "Meghalaya",
-      description: "Starting Price Rs.5,999",
-      imageUrl: Meghalaya,
-    },
-    {
-      id: 4,
-      title: "Bali",
-      description: "Starting Price Rs.15,999",
-      imageUrl: Bali,
-    },
-    {
-      id: 5,
-      title: "Goa",
-      description: "Starting Price Rs.5,999.",
-      imageUrl: Goa,
-    },
-    {
-      id: 6,
-      title: "Kedarnath",
-      description: "Starting Price Rs.15,999",
-      imageUrl: Kedarnath,
-    },
-    {
-      id: 7,
-      title: "Card Title 1",
-      description: "This is the description for card 1.",
-      imageUrl: lehladakh,
-    },
+   
   ];
 
   return (
