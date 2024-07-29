@@ -12,10 +12,10 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import lehladakh from "../../public/Cardimages/lehladak.jpg";
 import Kashmir from "../../public/Cardimages/Kashmir.jpg";
-import Meghalaya from "../../public/Cardimages/Meghalaya.JPG";
-import Bali from "../../public/Cardimages/Bali.JPG";
-import Goa from "../../public/Cardimages/Goa.JPG";
-import Kedarnath from "../../public/Cardimages/Kedarnath.JPG";
+import Meghalaya from "../../public/Cardimages/Meghalaya.jpg";
+import Bali from "../../public/Cardimages/Bali.jpg";
+import Goa from "../../public/Cardimages/Goa.jpg";
+import Kedarnath from "../../public/Cardimages/Kedarnath.jpg";
 
 const Crouselslide = () => {
   const cardData = [
@@ -61,7 +61,6 @@ const Crouselslide = () => {
       description: "This is the description for card 1.",
       imageUrl: lehladakh,
     },
-    
   ];
 
   return (
