@@ -10,12 +10,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import lehladakh from "@/public/Cardimages/lehladak.jpg";
-import Kashmir from "@/public/Cardimages/Kashmir.jpg";
-import Meghalaya from "@/public/Cardimages/Meghalaya.JPG";
-import Bali from "@/public/Cardimages/Bali.JPG";
-import Goa from "@/public/Cardimages/Goa.JPG";
-import Kedarnath from "@/public/Cardimages/Kedarnath.JPG";
+import lehladakh from "../../public/Cardimages/lehladak.jpg";
+import Kashmir from "../../public/Cardimages/Kashmir.jpg";
+import Meghalaya from "../../public/Cardimages/Meghalaya.JPG";
+import Bali from "../../public/Cardimages/Bali.JPG";
+import Goa from "../../public/Cardimages/Goa.JPG";
+import Kedarnath from "../../public/Cardimages/Kedarnath.JPG";
 
 const Crouselslide = () => {
   const cardData = [
