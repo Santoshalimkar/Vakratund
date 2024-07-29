@@ -1,4 +1,7 @@
+'use client'
+
 import React from "react";
+
 import {
   Carousel,
   CarouselContent,
@@ -7,12 +10,12 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import lehladakh from "../../public/CardImages/lehladak.jpg";
-import Kashmir from "../../public/CardImages/Kashmir.jpg";
-import Meghalaya from "../../public/CardImages/Meghalaya.jpg";
-import Bali from "../../public/CardImages/Bali.jpg";
-import Goa from "../../public/CardImages/Goa.jpg";
-import Kedarnath from "../../public/CardImages/Kedarnath.jpg";
+import lehladakh from "@/public/Cardimages/lehladak.jpg";
+import Kashmir from "@/public/Cardimages/Kashmir.jpg";
+import Meghalaya from "@/public/Cardimages/Meghalaya.jpg";
+import Bali from "@/public/Cardimages/Bali.jpg";
+import Goa from "@/public/Cardimages/Goa.jpg";
+import Kedarnath from "@/public/Cardimages/Kedarnath.jpg";
 
 const Crouselslide = () => {
   const cardData = [
