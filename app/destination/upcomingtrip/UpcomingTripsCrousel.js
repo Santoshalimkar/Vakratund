@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 
@@ -9,16 +9,20 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Link from 'next/link'
-import { Card, CardContent } from "@/components/ui/card";
-import lehladakh from "../../public/Cardimages/lehladak.jpg";
-import Kashmir from "../../public/Cardimages/Kashmir.jpg";
-import Meghalaya from "../../public/Cardimages/Meghalaya.JPG";
-import Bali from "../../public/Cardimages/Bali.JPG";
-import Goa from "../../public/Cardimages/Goa.JPG";
-import Kedarnath from "../../public/Cardimages/Kedarnath.JPG";
 
-const Crouselslide = () => {
+import 'primeicons/primeicons.css';
+import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
+
+import lehladakh from "../../../public/Cardimages/lehladak.jpg";
+import Kashmir from "../../../public/Cardimages/Kashmir.jpg";
+
+import Meghalaya from "../../../public/Cardimages/Meghalaya.JPG";
+import Bali from "../../../public/Cardimages/Bali.JPG";
+import Goa from "../../../public/Cardimages/Goa.JPG";
+import Kedarnath from "../../../public/Cardimages/Kedarnath.JPG";
+
+const UpcomingTripsCrousel = () => {
   const cardData = [
     {
       id: 1,
@@ -62,35 +66,26 @@ const Crouselslide = () => {
       description: "This is the description for card 1.",
       imageUrl: lehladakh,
     },
-   
   ];
 
   return (
     <div className="back w-full h-screen flex justify-center items-center container mx-auto px-24">
       <div className="relative flex flex-col justify-center items-center w-full">
-        <video
-          muted
-          loop
-          height={200}
-          autoPlay
-          className="object-cover w-full mx-auto rounded-xl brightness-50"
-          src="https://d1c8wbldjj3tey.cloudfront.net/category-section/india_(1)+(540p).mp4"
-        />
-        <div className="absolute top-6 left-10">
-          <h1 className="text-[44px] boxShadow font-bold text-white">
-            Explore India
-          </h1>
-          <p className="boxShadow text-xl text-white">
-            A Journey Through Time, Colour And Culture
-          </p>
-        </div>
-        <div className="absolute -bottom-36 w-11/12 mx-auto">
+        
+        <div className="-bottom-36 w-full mx-auto">
+          <div className="flex items-center justify-between w-full mb-4">
+            <h3 className="text-xl md:text-2xl lg:text-2xl flex flex-row gap-1">
+              UpComing Community Trips
+              <span className='lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0'><i className="pi pi-sparkles" style={{ fontSize: '1rem' }}></i></span>
+            </h3>
+          </div>
+
           <Carousel className="w-full">
             <CarouselContent className="-ml-1">
               {cardData.map((card) => (
                 <CarouselItem
                   key={card.id}
-                  className="pl-1 md:basis-1/5 lg:basis-1/5"
+                  className="pl-1 md:basis-1/5 lg:basis-1/5 "
                 >
                   <div className="p-1">
                     <Card className="w-48 h-60 relative overflow-hidden group">
@@ -112,15 +107,11 @@ const Crouselslide = () => {
                           <p className="text-white whitespace-nowrap boxShadow shadow-2xl mb-4">
                             {card.description}
                           </p>
-                          
-                          <Link href="/destination">
-                        
-                          <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#0b8d7c] text-white text-sm font-semibold bg-[#36a39e] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
-                            View Trips
-                          </button>
-                       
-                          
-                          
+
+                          <Link href="/destination/upcomingtrip">
+                            <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#36a39e] text-white text-sm font-semibold bg-[#0b8d7c] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
+                              View Trips
+                            </button>
                           </Link>
                         </div>
                         {/* <span className="h-1 group-hover:h-2 group-hover:bg-primary-dark ease-in-out transition-all absolute bottom-0 left-1/2 -translate-x-1/2 bg-primary-main rounded-full w-1/2"></span> */}
@@ -143,4 +134,4 @@ const Crouselslide = () => {
   );
 };
 
-export default Crouselslide;
+export default UpcomingTripsCrousel;

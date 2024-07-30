@@ -59,7 +59,7 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className='text-[#01afd1]'>About us</NavigationMenuTrigger>
+          <NavigationMenuTrigger className='text-[#0b8d7c]'>About us</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] bg-[#f2fdff]">
               <li className="row-span-3">
@@ -93,7 +93,7 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger  className='text-[#01afd1]' >Packages</NavigationMenuTrigger>
+          <NavigationMenuTrigger  className='text-[#0b8d7c]' >Packages</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-[#f2fdff]">
               {components.map((component) => (
@@ -110,7 +110,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={'text-sm font-medium text-[#01afd1]'}>
+            <NavigationMenuLink className={'text-sm font-medium text-[#0b8d7c]'}>
               Blogs
             </NavigationMenuLink>
           </Link>
