@@ -18,16 +18,16 @@ const AboutJourney = () => {
                     </h2>
 
                 </div>
-                <p className='text-xs lg:text-sm xl:text-base text-text-color'>Sanyam Sharma and Sourabh Rathore founded Desh Videsh in 2024. Sanyam, an influencer, and Sourabh, a former software developer, united by their love for travel and content creation, decided to share their experiences with others. Recognizing the value of genuine experiences abroad, they launched Desh Videsh Travels, aiming to offer more than just travel services. They envisioned it as a community where travelers could connect, share stories, and embark on adventures together. Join them on this journey beyond just being tourists; become part of a vibrant travel community.</p>
+                <p className='text-xs lg:text-sm xl:text-base text-text-color'>{`Sanyam Sharma and Sourabh Rathore founded Desh Videsh in 2024. Sanyam, an influencer, and Sourabh, a former software developer, united by their love for travel and content creation, decided to share their experiences with others. Recognizing the value of genuine experiences abroad, they launched Desh Videsh Travels, aiming to offer more than just travel services. They envisioned it as a community where travelers could connect, share stories, and embark on adventures together. Join them on this journey beyond just being tourists; become part of a vibrant travel community.`}</p>
                 <ul className='flex flex-col gap-6 list-disc'>
                     <li className='flex flex-col gap-2'><span className='text-lg lg:text-xl '>●   How we named our organization.</span>
-                    <span className='pl-7 text-xs lg:text-sm xl:text-base text-text-color '>Driven by this vision, we decided to start our own travel company. But finding the right name proved to be a challenge. Then, one day during a casual conversation, a phrase struck us: “Desh Videsh ghoom ghoom ke thak gaye” ('Tired of traveling all over the place'). It was in that moment that the idea for 'Desh Videsh Travels' was born – a name that concluded our passion for exploring both near and far.
+                    <span className='pl-7 text-xs lg:text-sm xl:text-base text-text-color '>{`Driven by this vision, we decided to start our own travel company. But finding the right name proved to be a challenge. Then, one day during a casual conversation, a phrase struck us: “Desh Videsh ghoom ghoom ke thak gaye” ('Tired of traveling all over the place'). It was in that moment that the idea for 'Desh Videsh Travels' was born – a name that concluded our passion for exploring both near and far.`}
                         </span>
                         </li>
                         </ul>
                 <ul className='flex flex-col gap-6 list-disc'>
                     <li className='flex flex-col gap-2'><span className='text-lg lg:text-xl '>●  Community Engagement</span>
-                    <span className='pl-7 text-xs lg:text-sm xl:text-base text-text-color '>For us, Desh Videsh Travels is not just about booking flights or arranging accommodations. It's about fostering connections, inspiring others to explore, and celebrating the beauty of travel in all its forms. We invite you to join us on this journey – because together, we're not just travellers; we're a community.
+                    <span className='pl-7 text-xs lg:text-sm xl:text-base text-text-color '>   {`For us, Desh Videsh Travels is not just about booking flights or arranging accommodations. It's about fostering connections, inspiring others to explore, and celebrating the beauty of travel in all its forms. We invite you to join us on this journey – because together, we're not just travellers; we're a community.`}
                         </span>
                         </li>
                         </ul>

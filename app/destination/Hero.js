@@ -72,8 +72,8 @@ const Hero = () => {
                 Bali Tour Packages
               </h2>
               <p className="text-sm sm:text-base px-2 md:px-4 capitalize py-5 mt-2 lg:py-1 bg-[#0b8d7c] rounded-3xl text-white font-medium text-center">
-                Discover Bali's Beauty with Desh Videsh: Your Gateway to Island
-                Bliss
+               {` Discover Bali's Beauty with Desh Videsh: Your Gateway to Island
+                Bliss`}
               </p>
             </div>
           </div>
@@ -133,7 +133,7 @@ const Hero = () => {
               }`}
             >
               <p>
-                Embark on an unforgettable journey to the exotic island paradise
+               {` Embark on an unforgettable journey to the exotic island paradise
                 of Bali with Desh Videsh's expertly crafted tour packages.
                 Nestled in the heart of Indonesia, Bali beckons with its
                 pristine beaches, lush landscapes, and vibrant culture. Explore
@@ -148,7 +148,7 @@ const Hero = () => {
                 vibrant city of Denpasar, where traditional Balinese
                 architecture blends seamlessly with modern amenities. Wander
                 through bustling markets, sample delicious street food, and
-                immerse yourself in the island's rich cultural heritage.
+                immerse yourself in the island's rich cultural heritage.`}
               </p>
             </div>
 
