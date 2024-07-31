@@ -123,7 +123,7 @@ const Contactform = () => {
               <FcAddressBook size={24}/>
              </div>
             <div className="w-2/4 flex flex-col justify-start items-start gap-1">
-              <h6 className="font-bold text-sm text-[#01afd1] capitalize">e-mail</h6>
+              <h6 className="font-bold text-sm text-[#0b8d7c] capitalize">e-mail</h6>
               <p className="text-xs">
                 Info@Vakaratund.com <br />
               </p>
@@ -136,7 +136,7 @@ const Contactform = () => {
             <FcHome size={24}/>
             </div>
             <div className="w-2/4 flex flex-col justify-start items-start gap-1">
-              <h6 className="font-bold text-sm text-[#01afd1] capitalize">address</h6>
+              <h6 className="font-bold text-sm text-[#0b8d7c] capitalize">address</h6>
               <p className="text-xs">{`Address : kakatiya hills, pragati nagar, Kukatpally-500090`}</p>
             </div>
           </CardBody>
@@ -241,7 +241,7 @@ const Contactform = () => {
               <div className="w-full flex justify-center items-center mt-4">
                 <Button
                   type="submit"
-                  className="w-60 rounded-full bg-[#01afd1] text-white text-center"
+                  className="w-60 rounded-full bg-[#0b8d7c] text-white text-center"
                 >
                   Submit
                 </Button>

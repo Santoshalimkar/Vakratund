@@ -19,15 +19,18 @@ export default function Nav() {
   return (
     <Navbar maxWidth="full" className="w-full shadow-md bg-white">
       <NavbarBrand>
-        <Image className="w-32 h-32 object-contain" src={Logo} alt='logo'/>
+        <Link href='/'>
+        <Image  className="w-32 h-32 object-contain" src={Logo} alt='logo'/>
+        </Link>
+    
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
        <NavigationMenuDemo/>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} className="ring-1 ring-[#01afd1] rounded-full bg-white text-[#01afd1]" href="#" variant="solid">
-           <FaPhone className="text-[#01afd1]"/> +91-8669186483
+          <Button as={Link} className="ring-1 ring-[#0b8d7c] rounded-full bg-white text-[#0b8d7c]" href="#" variant="solid">
+           <FaPhone className="text-[#0b8d7c]"/> +91-8669186483
           </Button>
         </NavbarItem>
       </NavbarContent>
