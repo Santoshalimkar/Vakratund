@@ -6,6 +6,7 @@ import Image from "next/image";
 import UpcomingTrips from "./destination/upcomingtrip/page";
 import Aboutus from "@/components/AboutUs/Aboutus";
 import ContactFormMain from "@/components/Contactuscomponents/ContactFormMain";
+import WeekendTripMain from "./destination/weekendtrip/page";
            
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
      <Videocomponent/>
      <Crouselslide/>
      {/* <Cardcrousel/> */}
+    <WeekendTripMain/>
      <UpcomingTrips/>
      <Aboutus/>
      <ContactFormMain/>

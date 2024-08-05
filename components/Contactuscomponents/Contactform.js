@@ -167,7 +167,7 @@ const Contactform = () => {
 
     <>
 
-<div className="flex flex-col gap-4 justify-start items-start px-3 py-3 ">
+<div className="flex flex-col gap-4 justify-start items-start px-3 py-1 ">
           <h6 className="capitalize md:text-3xl text-xl  font-medium text-start">
             {`Get in Touch`}
           </h6>

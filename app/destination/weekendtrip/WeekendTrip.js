@@ -1,3 +1,5 @@
+
+
 "use client";
 
 import React from "react";
@@ -18,7 +20,7 @@ import Bali from "../../../public/Cardimages/Bali.JPG";
 import Goa from "../../../public/Cardimages/Goa.JPG";
 import Kedarnath from "../../../public/Cardimages/Kedarnath.JPG";
 
-const UpcomingTripsCrousel = () => {
+const WeekendTrip = () => {
   const cardData = [
     {
       id: 1,
@@ -59,23 +61,22 @@ const UpcomingTripsCrousel = () => {
   ];
 
   return (
-    <div className="back py-14 flex justify-center items-center container px-14 mx-auto lg:px-24">
+    <div className="back2 py-16 flex justify-center items-center container px-14 mx-auto lg:px-24">
       <div className="relative flex flex-col justify-center items-center w-full">
         <div className="-bottom-36 w-full mx-auto">
           <div className="flex items-center md:justify-between xl:justify-between justify-center w-full mb-4">
-             <div>
+            <div>
             <h3 className="text-xl md:text-2xl lg:text-2xl font-bold  flex flex-row gap-1">
-            UpComing Community Trips
+              Weekend Trips
               <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
                 <i className="pi pi-sparkles" style={{ fontSize: "1rem" }}></i>
               </span>
             </h3>
-            <h1 className="text-text-color text-sm md:text-base lg:text-lg capitalize __className_1fc36d"> Discover the world with our curated list of upcoming trips.</h1>
+            <h1 className="text-text-color text-sm md:text-base lg:text-lg capitalize __className_1fc36d"> Explore the best of Weekend Trips with Desh Videsh Travels.</h1>
             </div>
             <div>
               <Link href="/" className="group whitespace-nowrap flex shadow-md bg-[#36a39e] hover:bg-[#0b8d7c] px-2 justify-center rounded-xl p-1 text-sm text-white flex-row items-center gap-1 hover:gap-2 cursor-pointer transition-all duration-300 ease-in-out">View All</Link>
             </div>
-
             
           </div>
           <Carousel className="w-full">
@@ -104,7 +105,7 @@ const UpcomingTripsCrousel = () => {
                           <p className="text-white whitespace-nowrap boxShadow shadow-2xl mb-4">
                             {card.description}
                           </p>
-                          <Link href="/destination/upcomingtrip">
+                          <Link href="/destination/weekendtrip">
                             <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#36a39e] text-white text-sm font-semibold bg-[#0b8d7c] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
                               View Trips
                             </button>
@@ -125,4 +126,4 @@ const UpcomingTripsCrousel = () => {
   );
 };
 
-export default UpcomingTripsCrousel;
+export default WeekendTrip;
