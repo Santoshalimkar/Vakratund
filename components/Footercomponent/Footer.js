@@ -15,6 +15,10 @@ import Logo from "../../public/Navabar/Logo2.png";
 import Conatctus from "../../public/Footer/Conatctus.png";
 import FooterHero from "../../public/Footer/FooterHero.JPG";
 
+
+import 'primeicons/primeicons.css';
+        
+
 const Footer = () => {
   //   const [email, setEmail] = useState("");
   //   const [subscribed, setSubscribed] = useState(false);
@@ -161,12 +165,32 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className="md:m-10 m-4 flex items-center justify-center border border-white rounded-lg  relative ">
-        <Image
+      <div className="md:m-10 m-4 flex items-center justify-center  relative ">
+        {/* <Image
           className="w-full object-fill h-80 rounded-lg "
           src={Conatctus}
           alt="Conatctus"
-        />
+        /> */}
+
+<div className="text-center p-4">
+  <h3 className="font-bold text-2xl md:text-4xl text-white">Vakaratund Tours</h3>
+  <p className="text-sm md:text-base text-white">At-Kanhe Jambhul, Tal-Maval Dist-Pune, Maharashtra 412106</p>
+  <div className="flex flex-col md:flex-row justify-between items-center text-white gap-2 md:gap-10 mt-5">
+    <p className="flex items-center">
+      <i className="pi pi-envelope mr-1"></i> 
+      Info@vakratund.com
+    </p>
+    <p className="flex items-center">
+      <i className="pi pi-phone mr-1"></i> 
+      +91 8669186483
+    </p>
+    <p className="flex items-center">
+      <i className="pi pi-globe mr-1"></i>  
+      <Link href="https://www.vakratundtours.com/">https://www.vakratundtours.com/</Link>
+    </p>
+  </div>
+</div>
+
       </div>
       {/* <div className="bg-[#0b8d7c] md:h-40 lg:h-40 h-56 md:pb-0 lg:pb-0 pb-4 w-full gap-8 flex flex-col md:flex-row lg:flex-row justify-between md:items-center lg:items-center items-start md:px-12 lg:px-12 px-4 ">
         <div className="flex justify-start items-start gap-2 md:w-1/2 lg:w-1/2 w-full flex-col">
@@ -193,15 +217,17 @@ const Footer = () => {
         </div>
       </div> */}
 
-<p className="text-center text-white mb-3 font-bold md:text-xs lg:text-xs text-[0.4rem] uppercase w-full">
-          {` 2024 Vakaratund tour & Adventure - All rights reserved.`}
-        </p>
-
-      <div className="w-11/12 mx-auto z-10 bg-white md:mb-0 lg:mb-0 mb-8">
+<div className="w-11/12 mx-auto z-10 bg-white md:mb-0 lg:mb-0 mb-8 ">
       
         <Divider orientation="horizontal" />
         
       </div>
+
+<p className="text-center mt-2 text-white mb-3 font-sans md:text-xs lg:text-xs text-[1rem] uppercase w-full">
+          {` 2024 Vakaratund tour & Adventure - All rights reserved.`}
+        </p>
+
+      
       
      
   

@@ -108,7 +108,7 @@ const TripDetails = () => {
             </div>
             <div className="space-y-4 mt-3 w-full">
               {items.map((item, index) => (
-                <div key={index} className="border rounded-lg">
+                <div key={index} className="border rounded-md  border-[#36a39e]">
                   <button
                     className="flex justify-between w-full px-4 py-4 text-left bg-gray-100 rounded-t-lg"
                     onClick={() => handleToggle(index)}

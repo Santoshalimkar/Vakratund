@@ -3,7 +3,7 @@ import UpcomingTripsCrousel from './UpcomingTripsCrousel'
 
 const UpcomingTrips = () => {
   return (
-    <div> 
+    <div className='flex justify-center mt-10'> 
 
         <UpcomingTripsCrousel/>
     </div>

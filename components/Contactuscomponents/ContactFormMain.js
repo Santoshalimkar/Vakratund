@@ -13,8 +13,8 @@ import { FcComments } from "react-icons/fc";
 
 const ContactFormMain = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full p-8  gap-8 mx-auto mb-8 ">
-      <div className="py-12 flex flex-col justify-center items-center gap-4">
+    <div className="flex flex-col justify-center items-center w-full p-8  gap-8 mx-auto  ">
+      <div className="py-10 flex flex-col justify-center items-center gap-4">
         <h2 className="font-bold text-4xl leading-8 capitalize">
           contact <span className="text-redtheme"> us!</span>
         </h2>
@@ -51,7 +51,7 @@ const ContactFormMain = () => {
         </Card>
       </div>
 
-      <div className="flex lg:flex-row flex-col w-full justify-between items-start gap-4 mx-auto py-12 shadow-xl rounded-lg px-12 ring-1 ring-gray-200">
+      <div className="flex lg:flex-row  flex-row w-full justify-between items-start gap-4 mx-auto py-12 shadow-xl rounded-lg px-12 ring-1 ring-gray-200">
         <Contactform />
         <ContactMap />
       </div>

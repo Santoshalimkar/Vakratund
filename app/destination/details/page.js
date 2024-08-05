@@ -9,7 +9,7 @@ import Contactform from '@/components/Contactuscomponents/Contactform'
 
 const DetailsPage = () => {
   return (
-    <div className='container  z-0 px-0'>
+    <div className='container  z-0 px-0 flex flex-col justify-center'>
       <div className=''>
       <HeaderSwiper/>
         <TripDetails/>

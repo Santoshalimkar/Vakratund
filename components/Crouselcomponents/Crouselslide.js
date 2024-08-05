@@ -66,31 +66,32 @@ const Crouselslide = () => {
   ];
 
   return (
-    <div className="back w-full h-screen flex justify-center items-center container mx-auto px-24">
-      <div className="relative flex flex-col justify-center items-center w-full">
+    <div className="back w-full h-screen flex justify-center items-center container p-10 ">
+      <div className=" flex flex-col justify-center items-center  h-[30rem] relative w-full">
         <video
           muted
           loop
-          height={200}
+          
           autoPlay
-          className="object-cover w-full mx-auto rounded-xl brightness-50"
+          className="object-cover w-full mx-auto rounded-xl brightness-50  h-full"
           src="https://d1c8wbldjj3tey.cloudfront.net/category-section/india_(1)+(540p).mp4"
         />
-        <div className="absolute top-6 left-10">
+        <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 justify-center items-center px-4 text-center">
           <h1 className="text-[44px] boxShadow font-bold text-white">
             Explore India
           </h1>
           <p className="boxShadow text-xl text-white">
             A Journey Through Time, Colour And Culture
           </p>
+          
         </div>
-        <div className="absolute -bottom-36 w-11/12 mx-auto">
+        <div className="absolute -bottom-36 w-11/12 mx-auto ">
           <Carousel className="w-full">
-            <CarouselContent className="-ml-1">
+            <CarouselContent className="">
               {cardData.map((card) => (
                 <CarouselItem
                   key={card.id}
-                  className="pl-1 md:basis-1/5 lg:basis-1/5"
+                  className=" flex justify-center gap-2  md:basis-1/3 lg:basis-1/5"
                 >
                   <div className="p-1">
                     <Card className="w-48 h-60 relative overflow-hidden group">
