@@ -10,6 +10,7 @@ import Instagramlogo from "../../public/Cardimages/Instagramlogo_icon.png";
 import Google_Logo from "../../public/Cardimages/Google_Logo.png";
 import UpcomingTripsCrousel from "./upcomingtrip/UpcomingTripsCrousel";
 import "primeicons/primeicons.css";
+import Contactform from "@/components/Contactuscomponents/Contactform";
 
 const trips = [
   {
@@ -56,12 +57,16 @@ const Hero = () => {
   return (
     <div className="relative">
       {/* Hero Part */}
+
+
       <div className="sticky top-16 sm:top-0 h-[85vh] sm:h-[75vh] flex items-center justify-center">
         <Image
           className="object-cover h-full absolute bg-transparent"
           src={HeroImage}
           alt="Hero"
         />
+
+
 
         <div className="bg-black/25 h-full w-full absolute top-0 left-0"></div>
 

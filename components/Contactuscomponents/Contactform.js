@@ -12,6 +12,7 @@ import { FcAddressBook } from "react-icons/fc";
 import { FcHome } from "react-icons/fc";
 import { FcCallback } from "react-icons/fc";
 import { FcComments } from "react-icons/fc";
+import ContactMap from "./ContactMap";
 
 const Contactform = () => {
   const [formData, setFormData] = useState({
@@ -95,58 +96,80 @@ const Contactform = () => {
   const location = `https://maps.google.com/maps?q=${locationname}&t=k&z=10&ie=UTF8&iwloc=&output=embed`;
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className="flex flex-col justify-center items-center w-full p-8  gap-8 mx-auto mb-8 "
-    >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        className="py-12 flex flex-col justify-center items-center gap-4"
-      >
-        <h2 className="font-bold text-4xl leading-8 capitalize">
-          contact <span className="text-redtheme"> us!</span>
-        </h2>
-        <p className="text-sm text-center font-medium leading-4 text-foreground-700 capitalize">
-          let’s get started! reach out to us, we will get the work done.
-        </p>
-      </motion.div>
+    // <motion.div
+    //   initial={{ opacity: 0 }}
+    //   whileInView={{ opacity: 1 }}
+    //   transition={{ duration: 0.5 }}
+    //   className="flex flex-col justify-center items-center w-full p-8  gap-8 mx-auto mb-8 "
+    // >
+      // <motion.div
+      //   initial={{ opacity: 0 }}
+      //   whileInView={{ opacity: 1 }}
+      //   transition={{ duration: 0.8 }}
+      //   className="py-12 flex flex-col justify-center items-center gap-4"
+      // >
+      //   <h2 className="font-bold text-4xl leading-8 capitalize">
+      //     contact <span className="text-redtheme"> us!</span>
+      //   </h2>
+      //   <p className="text-sm text-center font-medium leading-4 text-foreground-700 capitalize">
+      //     let’s get started! reach out to us, we will get the work done.
+      //   </p>
+      // </motion.div>
 
-      <div className="flex lg:flex-row flex-col md:w-11/12 w-full justify-center items-center gap-4 mx-auto">
+      // <div className="flex lg:flex-row flex-col md:w-11/12 w-full justify-center items-center gap-4 mx-auto">
        
-        <Card className="md:w-[30rem] w-11/12">
-          <CardBody className="flex justify-start items-center w-full flex-row gap-4 p-3">
-            <div className="flex justify-center items-center h-16 w-16 bg-greentheme rounded-full">
-              <FcAddressBook size={24}/>
-             </div>
-            <div className="w-2/4 flex flex-col justify-start items-start gap-1">
-              <h6 className="font-bold text-sm text-[#0b8d7c] capitalize">e-mail</h6>
-              <p className="text-xs">
-                Info@Vakaratund.com <br />
-              </p>
-            </div>
-          </CardBody>
-        </Card>
-        <Card className="md:w-[30rem] w-11/12">
-          <CardBody className="flex justify-start items-center w-full flex-row gap-4 p-3">
-            <div className="flex justify-center items-center h-16 w-16 bg-greentheme rounded-full">
-            <FcHome size={24}/>
-            </div>
-            <div className="w-2/4 flex flex-col justify-start items-start gap-1">
-              <h6 className="font-bold text-sm text-[#0b8d7c] capitalize">address</h6>
-              <p className="text-xs">{`Address : kakatiya hills, pragati nagar, Kukatpally-500090`}</p>
-            </div>
-          </CardBody>
-        </Card>
-      </div>
+      //   <Card className="md:w-[30rem] w-11/12">
+      //     <CardBody className="flex justify-start items-center w-full flex-row gap-4 p-3">
+      //       <div className="flex justify-center items-center h-16 w-16 bg-greentheme rounded-full">
+      //         <FcAddressBook size={24}/>
+      //        </div>
+      //       <div className="w-2/4 flex flex-col justify-start items-start gap-1">
+      //         <h6 className="font-bold text-sm text-[#0b8d7c] capitalize">e-mail</h6>
+      //         <p className="text-xs">
+      //           Info@Vakaratund.com <br />
+      //         </p>
+      //       </div>
+      //     </CardBody>
+      //   </Card>
+      //   <Card className="md:w-[30rem] w-11/12">
+      //     <CardBody className="flex justify-start items-center w-full flex-row gap-4 p-3">
+      //       <div className="flex justify-center items-center h-16 w-16 bg-greentheme rounded-full">
+      //       <FcHome size={24}/>
+      //       </div>
+      //       <div className="w-2/4 flex flex-col justify-start items-start gap-1">
+      //         <h6 className="font-bold text-sm text-[#0b8d7c] capitalize">address</h6>
+      //         <p className="text-xs">{`Address : kakatiya hills, pragati nagar, Kukatpally-500090`}</p>
+      //       </div>
+      //     </CardBody>
+      //   </Card>
+      // </div>
 
-      <div className="flex lg:flex-row flex-col w-full justify-between items-start gap-4 mx-auto py-12 shadow-xl rounded-lg px-12 ring-1 ring-gray-200">
-        <div className="flex flex-col gap-4 justify-start items-start lg:w-2/4">
+    //   <div className="flex lg:flex-row flex-col w-full justify-between items-start gap-4 mx-auto py-12 shadow-xl rounded-lg px-12 ring-1 ring-gray-200">
+       
+    //     {/* <div className="flex-col gap-4 justify-center items-center lg:w-2/4 hidden lg:flex w-full">
+    //       <iframe
+    //         src={location}
+    //         width="100%"
+    //         height="400"
+    //         frameBorder="0"
+    //         style={{ border: 0 }}
+    //         allowFullScreen=""
+    //         aria-hidden="false"
+    //         tabIndex="0"
+    //       ></iframe>
+    //     </div> */}
+        
+    //       {/* <ContactMap/> */}
+        
+    //   </div>
+    //   <Toaster />
+    // </motion.div>
+
+    <>
+
+<div className="flex flex-col gap-4 justify-start items-start px-3 py-3 ">
           <h6 className="capitalize md:text-3xl text-xl  font-medium text-start">
-            {`We're here to assist you. If you have any inquiries, feel free to ask!`}
+            {`Get in Touch`}
           </h6>
           <div className="flex flex-col w-full justify-start items-start gap-4">
             <form className="w-full" onSubmit={handleSubmit}>
@@ -249,21 +272,8 @@ const Contactform = () => {
             </form>
           </div>
         </div>
-        <div className="flex-col gap-4 justify-center items-center lg:w-2/4 hidden lg:flex w-full">
-          <iframe
-            src={location}
-            width="100%"
-            height="400"
-            frameBorder="0"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            aria-hidden="false"
-            tabIndex="0"
-          ></iframe>
-        </div>
-      </div>
-      <Toaster />
-    </motion.div>
+
+    </>
   );
 };
 

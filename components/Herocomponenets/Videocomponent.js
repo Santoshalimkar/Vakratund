@@ -1,6 +1,7 @@
 "use client"
 import React from "react";
 import { useTypewriter,Cursor  } from "react-simple-typewriter";
+import Contactform from "../Contactuscomponents/Contactform";
 
 const Videocomponent = () => {
     const [text] = useTypewriter({
@@ -9,6 +10,8 @@ const Videocomponent = () => {
       });
   return (
     <div className="h-[30rem] overflow-hidden relative w-full">
+
+      
       <video
         muted
         loop
@@ -21,8 +24,14 @@ const Videocomponent = () => {
           Vakratund Tour & Adventure
         </h1>
         <hi className='text-[#fee60b] text-xl font-medium h-12'>{text} <Cursor cursorColor='white' /></hi>
+        
+       
+
        
       </div>
+
+     
+
     </div>
   );
 };
