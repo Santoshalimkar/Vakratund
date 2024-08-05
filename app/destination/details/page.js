@@ -9,11 +9,16 @@ import Contactform from '@/components/Contactuscomponents/Contactform'
 
 const DetailsPage = () => {
   return (
-    <div>
-        <HeaderSwiper/>
+    <div className='container  z-0 px-0'>
+      <div className=''>
+      <HeaderSwiper/>
         <TripDetails/>
-        <Contactform/>
+        
         <UpcomingTripsCrousel/>
+      </div>
+      
+
+       
 
 
       
