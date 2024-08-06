@@ -59,7 +59,7 @@ const UpcomingTripsCrousel = () => {
   ];
 
   return (
-    <div className="back md:py-14 lg:py-14 py-4 flex justify-center items-center container mx-auto lg:px-24 md:px-24 px-2 ">
+    <div className="back md:py-14 lg:py-14 py-0 flex justify-center items-center container mx-auto lg:px-24 md:px-24 px-2 ">
       <div className="relative flex flex-col justify-center items-center w-full">
         <div className="-bottom-36 w-full mx-auto">
           <div className="flex items-center md:justify-between xl:justify-between justify-center w-full mb-4">

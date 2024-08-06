@@ -17,7 +17,7 @@ export default function Home() {
      <Crouselslide/>
      {/* <Cardcrousel/> */}
     <WeekendTripMain/>
-    <Divider className="w-11/12 mx-auto mt-4 "/>
+    <Divider className="w-11/12 mx-auto mt-12 "/>
      <UpcomingTrips/>
      <Aboutus/>
      <ContactFormMain/>
