@@ -40,48 +40,48 @@ const Footer = () => {
       <div className="w-full h-full bg-[#0b8d7c] py-3 sm:py-4 box-border relative text-start uppercase __className_1fc36d">
         <div className="grid container px-4 grid-cols-2 md:grid-cols-4 gap-2 items-center justify-center p-2 text-slate-200">
           <div className="flex flex-col gap-2 items-start justify-start p-2">
-            <h2 className="text-5xl sm:text-6xl font-bold text-white">99%</h2>
+            <h2 className="md:text-4xl lg:text-4xl sm:text-3xl text-xl font-bold text-white">99%</h2>
             <h3 className="text-base sm:text-lg font-bold text-white">
               Satisfaction
             </h3>
             <hr className="w-1/5 sm:w-1/3 border border-white"></hr>
-            <ul className="flex flex-col gap-1 items-start justify-start text-sm font-medium sm:font-semibold text-slate-100">
+            <ul className="flex flex-col gap-1 items-start justify-start md:text-sm lg:text-sm text-xs font-medium sm:font-semibold text-slate-100">
               <li>Deluxe Stays</li>
               <li>Travel Guides</li>
               <li>Customized Trips</li>
             </ul>
           </div>
           <div className="flex flex-col gap-2 items-start justify-start p-2">
-            <h2 className="text-5xl sm:text-6xl font-bold text-white">100%</h2>
+            <h2 className="md:text-4xl lg:text-4xl sm:text-3xl text-xl font-bold text-white">100%</h2>
             <h3 className="text-base sm:text-lg font-bold text-white">
               Best Services
             </h3>
             <hr className="w-1/5 sm:w-1/3 border border-white"></hr>
-            <ul className="flex flex-col gap-1 items-start justify-start text-sm font-medium sm:font-semibold text-slate-100">
+            <ul className="flex flex-col gap-1 items-start justify-start md:text-sm lg:text-sm text-xs font-medium sm:font-semibold text-slate-100">
               <li>Best Services</li>
               <li>Easy Booking</li>
               <li>Affordable</li>
             </ul>
           </div>
           <div className="flex flex-col gap-2 items-start justify-start p-2">
-            <h2 className="text-5xl sm:text-6xl font-bold text-white">10+</h2>
+            <h2 className="md:text-4xl lg:text-4xl sm:text-3xl text-xl font-bold text-white">10+</h2>
             <h3 className="text-base sm:text-lg font-bold text-white">
               Destinations
             </h3>
             <hr className="w-1/5 sm:w-1/3 border border-white"></hr>
-            <ul className="flex flex-col gap-1 items-start justify-start text-sm font-medium sm:font-semibold text-slate-100">
+            <ul className="flex flex-col gap-1 items-start justify-start md:text-sm lg:text-sm text-xs font-medium sm:font-semibold text-slate-100">
               <li>50+ Group Trips</li>
               <li>10+ International</li>
               <li>10+ Domestic</li>
             </ul>
           </div>
           <div className="flex flex-col gap-2 items-start justify-start p-2">
-            <h2 className="text-5xl sm:text-6xl font-bold text-white">24/7</h2>
+            <h2 className="md:text-4xl lg:text-4xl sm:text-3xl text-xl font-bold text-white">24/7</h2>
             <h3 className="text-base sm:text-lg font-bold text-white">
               Support
             </h3>
             <hr className="w-1/5 sm:w-1/3 border border-white"></hr>
-            <ul className="flex flex-col gap-1 items-start justify-start text-sm font-medium sm:font-semibold text-slate-100">
+            <ul className="flex flex-col gap-1 items-start justify-start md:text-sm lg:text-sm text-xs font-medium sm:font-semibold text-slate-100">
               <li>Easy Booking</li>
               <li>Customer Support</li>
               <li>Hasle Free</li>
@@ -90,14 +90,14 @@ const Footer = () => {
         </div>
       </div>
       <footer
-        className="py-12 z-30 relative flex"
+        className="md:py-12 lg:py-12 py-4 z-30 relative flex"
         style={{
           backgroundImage: `url(${FooterHero.src})`,
           backgroundSize: "cover",
           backgroundPosition: "top",
         }}
       >
-        <div className="max-w-[1400px] px-4 mx-auto">
+        <div className="max-w-[1400px]  px-4 mx-auto">
           <div className="overflow-hidden filter bg-gradient-to-b from-slate-100/50 via-white/50 to-slate-200/50 backdrop-blur-md sticky z-10 p-10 shadow-lg border border-zinc-300 rounded-3xl px-4 md:px-6 grid grid-cols-1 lg:px-8 xl:px-12 md:grid-cols-3 xl:grid-cols-4 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl md:text-2xl text-gray-700 font-[500] __className_1fc36d">
