@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import React from "react";
@@ -10,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import 'primeicons/primeicons.css';
+import "primeicons/primeicons.css";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import lehladakh from "../../../public/Cardimages/lehladak.jpg";
@@ -66,18 +64,23 @@ const WeekendTrip = () => {
         <div className="-bottom-36 w-full mx-auto">
           <div className="flex items-center md:justify-between xl:justify-between justify-center w-full mb-4">
             <div>
-            <h3 className="text-xl md:text-2xl lg:text-2xl font-bold  flex flex-row gap-1">
-              Weekend Trips
-              <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
-                <i className="pi pi-sparkles" style={{ fontSize: "1rem" }}></i>
-              </span>
-            </h3>
-            <h1 className="text-text-color text-sm md:text-base lg:text-lg capitalize __className_1fc36d"> Explore the best of Weekend Trips with Desh Videsh Travels.</h1>
+              <h3 className="text-xl md:text-2xl lg:text-2xl font-bold  flex flex-row gap-1">
+                Weekend Trips
+                <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
+                  <i
+                    className="pi pi-sparkles"
+                    style={{ fontSize: "1rem" }}
+                  ></i>
+                </span>
+              </h3>
+              <h1 className="text-text-color text-sm md:text-base lg:text-lg capitalize __className_1fc36d">
+                {" "}
+                Explore the best of Weekend Trips with Desh Videsh Travels.
+              </h1>
             </div>
-            <div>
+            {/* <div>
               <Link href="/" className="group whitespace-nowrap flex shadow-md bg-[#36a39e] hover:bg-[#0b8d7c] px-2 justify-center rounded-xl p-1 text-sm text-white flex-row items-center gap-1 hover:gap-2 cursor-pointer transition-all duration-300 ease-in-out">View All</Link>
-            </div>
-            
+            </div> */}
           </div>
           <Carousel className="w-full">
             <CarouselContent className="">
@@ -118,8 +121,16 @@ const WeekendTrip = () => {
               ))}
             </CarouselContent>
             <CarouselPrevious className="hidden md:flex lg:flex" />
-            <CarouselNext className="hidden md:flex lg:flex"/>
+            <CarouselNext className="hidden md:flex lg:flex" />
           </Carousel>
+        </div>
+        <div>
+          <Link
+            href="/"
+            className="group whitespace-nowrap mt-4 flex shadow-md bg-[#36a39e] hover:bg-[#0b8d7c] px-2 justify-center rounded-xl p-1 text-sm text-white flex-row items-center gap-1 hover:gap-2 cursor-pointer transition-all duration-300 ease-in-out"
+          >
+            View All
+          </Link>
         </div>
       </div>
     </div>

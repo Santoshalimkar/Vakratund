@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactMap = () => {
 
-    const locationname = "kakatiya hills, pragati nagar,Kukatpally-500090";
+    const locationname = "At-Kanhe Jambhul, Tal-Maval Dist-Pune, Maharashtra 412106";
   const location = `https://maps.google.com/maps?q=${locationname}&t=k&z=10&ie=UTF8&iwloc=&output=embed`;
 
   return (
