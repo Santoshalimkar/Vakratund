@@ -57,7 +57,7 @@ export default function Nav() {
         router.push("/");
         break;
       case "packages":
-        router.push("/Packages");
+        router.push("/destination");
         break;
       case "blog":
         router.push("/Blogs");
@@ -79,7 +79,7 @@ export default function Nav() {
       case "/Blogs":
         setactiveitem("blog");
         break;
-      case "/Packages":
+      case "/destination":
         setactiveitem("packages");
         break;
       case "/Contactus":
