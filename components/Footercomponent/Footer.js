@@ -147,7 +147,7 @@ const Footer = () => {
                 <span> Info@vakratund.com</span>
               </p>
               <p className="text-gray-500 dark:text-gray-400">
-                Phone :8669186483
+                Phone :9284205536
                 
               </p>
               <p className="text-gray-500 dark:text-gray-400">
@@ -182,7 +182,7 @@ const Footer = () => {
     </p>
     <p className="flex items-center">
       <i className="pi pi-phone mr-1"></i> 
-      +91 8669186483
+      +91-9284205536
     </p>
     <p className="flex items-center">
       <i className="pi pi-globe mr-1"></i>  

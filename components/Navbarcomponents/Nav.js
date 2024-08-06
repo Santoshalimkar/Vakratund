@@ -69,7 +69,7 @@ export default function Nav() {
             href="#"
             variant="solid"
           >
-            <FaPhone className="text-[#0b8d7c]" /> +91-8669186483
+            <FaPhone className="text-[#0b8d7c]" /> +91-9284205536
           </Button>
         </NavbarItem>
       </NavbarContent>
