@@ -14,7 +14,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
-import Logo from '../../public/Navabar/Logo2.png'
+import Logo from "../../public/Navabar/Logo2.png";
 
 const components = [
   {
@@ -59,7 +59,9 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className='text-[#0b8d7c]'>About us</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-[#0b8d7c]">
+            About us
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] bg-[#f2fdff]">
               <li className="row-span-3">
@@ -68,9 +70,9 @@ export function NavigationMenuDemo() {
                     className="flex bg-slate-100 h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                     <Image className="w-44" src={Logo} alt="logo" />
+                    <Image className="w-44" src={Logo} alt="logo" />
                     <div className="mb-2 mt-4 text-sm font-medium ">
-                     Vakratund - Tour and Adventure
+                      Vakratund - Tour and Adventure
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components that you can copy and
@@ -93,7 +95,9 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger  className='text-[#0b8d7c]' >Packages</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-[#0b8d7c]">
+            Packages
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-[#f2fdff]">
               {components.map((component) => (
@@ -109,8 +113,10 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={'text-sm font-medium text-[#0b8d7c]'}>
+          <Link href="/Blogs" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={"text-sm font-medium text-[#0b8d7c]"}
+            >
               Blogs
             </NavigationMenuLink>
           </Link>

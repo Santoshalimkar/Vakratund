@@ -33,7 +33,7 @@ const ContactFormMain = () => {
             <div className="w-2/4 flex flex-col justify-start items-start gap-1">
               <h6 className="font-bold text-sm text-[#0b8d7c] capitalize">e-mail</h6>
               <p className="text-xs">
-                Info@Vakaratund.com <br />
+              vakratundtour@gmail.com <br />
               </p>
             </div>
           </CardBody>
@@ -45,7 +45,7 @@ const ContactFormMain = () => {
             </div>
             <div className="w-2/4 flex flex-col justify-start items-start gap-1">
               <h6 className="font-bold text-sm text-[#0b8d7c] capitalize">address</h6>
-              <p className="text-xs">{`Address : kakatiya hills, pragati nagar, Kukatpally-500090`}</p>
+              <p className="text-xs">{`At-Kanhe Jambhul, Tal-Maval Dist-Pune, Maharashtra 412106`}</p>
             </div>
           </CardBody>
         </Card>
