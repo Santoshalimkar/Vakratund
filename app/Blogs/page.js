@@ -70,7 +70,7 @@ console.log(instagramData)
         transition={{ duration: 0.8 }}
         className="md:py-12 lg:py-12 py-4 flex flex-col justify-center items-center gap-4"
       >
-        <h2 className="font-bold text-4xl leading-8 capitalize">
+        <h2 className="font-bold md:text-4xl lg:text-4xl text-xl leading-8 capitalize">
           our<span className="text-redtheme"> Blogs!</span>
         </h2>
         <p className="text-sm font-medium leading-4 text-foreground-700 capitalize">
@@ -78,7 +78,7 @@ console.log(instagramData)
         </p>
       </motion.div>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 place-content-center justify-items-center py-8 h-auto px-4 mx-auto w-11/12">
+      <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 place-content-center justify-items-center md:py-8 lg:py-8 py-2 h-auto px-4 mx-auto w-11/12">
 
       {instagramData?.slice(0,10).map((post,key) => (
         <InstagramEmbed key={key} url={post?.permalink} width={370} />
