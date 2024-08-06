@@ -68,7 +68,7 @@ console.log(instagramData)
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="py-12 flex flex-col justify-center items-center gap-4"
+        className="md:py-12 lg:py-12 py-4 flex flex-col justify-center items-center gap-4"
       >
         <h2 className="font-bold text-4xl leading-8 capitalize">
           our<span className="text-redtheme"> Blogs!</span>
@@ -81,7 +81,7 @@ console.log(instagramData)
       <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 place-content-center justify-items-center py-8 h-auto px-4 mx-auto w-11/12">
 
       {instagramData?.slice(0,10).map((post,key) => (
-        <InstagramEmbed key={key} url={post?.permalink} width={380} />
+        <InstagramEmbed key={key} url={post?.permalink} width={370} />
         ))}
         
       </div>
