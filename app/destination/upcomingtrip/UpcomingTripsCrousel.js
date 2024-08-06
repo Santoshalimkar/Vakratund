@@ -59,7 +59,7 @@ const UpcomingTripsCrousel = () => {
   ];
 
   return (
-    <div className="back py-14 flex justify-center items-center container px-14 mx-auto lg:px-24">
+    <div className="back py-14 flex justify-center items-center container mx-auto lg:px-24 md:px-24 px-2 ">
       <div className="relative flex flex-col justify-center items-center w-full">
         <div className="-bottom-36 w-full mx-auto">
           <div className="flex items-center md:justify-between xl:justify-between justify-center w-full mb-4">
@@ -83,10 +83,10 @@ const UpcomingTripsCrousel = () => {
               {cardData.map((card) => (
                 <CarouselItem
                   key={card.id}
-                  className="flex justify-center gap-2  md:basis-1/3 lg:basis-1/5"
+                  className="flex justify-center gap-2 basis-1/2  md:basis-1/3 lg:basis-1/5"
                 >
                   <div className="p-1">
-                    <Card className="w-48 h-60 relative overflow-hidden group">
+                    <Card className="md:w-48 lg:w-48 w-[10.5rem] h-60 relative overflow-hidden group">
                       <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
                       <div
                         className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
@@ -101,7 +101,7 @@ const UpcomingTripsCrousel = () => {
                           <h3 className="text-xl md:text-2xl xl:text-2xl text-white textShadow font-bold text-center">
                             {card.title}
                           </h3>
-                          <p className="text-white whitespace-nowrap boxShadow shadow-2xl mb-4">
+                          <p className="text-white text-xs md:text-sm lg:text-sm whitespace-nowrap boxShadow shadow-2xl mb-4">
                             {card.description}
                           </p>
                           <Link href="/destination/upcomingtrip">
@@ -116,8 +116,8 @@ const UpcomingTripsCrousel = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden md:flex lg:flex" />
+            <CarouselNext className="hidden md:flex lg:flex"/>
           </Carousel>
         </div>
       </div>
