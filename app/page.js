@@ -15,9 +15,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col w-full ">
-    <div className="fixed bottom-12 right-8 z-50">
+    <div className="fixed bottom-8 right-8 z-50">
     <Link href={"https://wa.link/f5qsnc"}>
-      <Image className="md:w-24 md:h-24 lg:w-24 lg:h-24 h-14 w-14 object-contain" src={Whats} alt="whatsapp"/>
+      <Image className="md:w-24 md:h-24 lg:w-24 lg:h-24 h-20 w-20 object-contain" src={Whats} alt="whatsapp"/>
 
     </Link>
     </div>
