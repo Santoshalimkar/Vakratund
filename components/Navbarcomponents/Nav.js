@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import {
   Navbar,
@@ -24,12 +24,12 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetClose
+  SheetClose,
 } from "@/components/ui/sheet";
 import { IoMdMenu } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 export default function Nav() {
   const router = useRouter();
@@ -44,12 +44,7 @@ export default function Nav() {
   const Extendmenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const linkitem = [
-    "HOME",
-    "packages",
-    "blog",
-    "CONTACT US",
-  ];
+  const linkitem = ["HOME", "packages", "blog", "CONTACT US"];
 
   const handleredirect = (link) => {
     switch (link) {
@@ -97,22 +92,17 @@ export default function Nav() {
     }
   }, [pathname]);
 
-
-
-
   return (
     <Navbar maxWidth="full" className="w-full shadow-md bg-white">
       <NavbarBrand>
-        <Link href="/">
         <Image
-            className="md:w-32 md:h-32 lg:w-32 lg:h-32 hidden md:flex lg:flex -ml-8  object-contain"
-            src={Logo}
-            alt="logo"
-          />
-          </Link>
-           <Sheet>
+          className="md:w-32 md:h-32 lg:w-32 lg:h-32 hidden md:flex lg:flex -ml-8  object-contain"
+          src={Logo}
+          alt="logo"
+        />
+        <Sheet>
           <SheetTrigger>
-           <IoMdMenu size={24} className="md:hidden lg:hidden flex"/>
+            <IoMdMenu size={24} className="md:hidden lg:hidden flex" />
           </SheetTrigger>
           <SheetContent side="left">
             <SheetHeader>
@@ -160,7 +150,7 @@ export default function Nav() {
                         onClick={() => router.push("/Contactus")}
                         className=" h-8 bg-[#0b8d7c] text-white rounded-full  w-52 font-bold"
                       >
-                       +91-9284205536
+                        +91-9284205536
                       </button>
                     </SheetClose>
                   </div>
