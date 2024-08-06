@@ -80,8 +80,8 @@ console.log(instagramData)
 
       <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 gap-4 place-content-center justify-items-center py-8 h-auto  w-11/12">
 
-      {instagramData?.slice(0,10).map((post) => (
-        <InstagramEmbed url={post?.permalink} width={380} />
+      {instagramData?.slice(0,10).map((post,key) => (
+        <InstagramEmbed key={key} url={post?.permalink} width={380} />
         ))}
         
       </div>
