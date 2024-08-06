@@ -15,7 +15,7 @@ const ContactFormMain = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full md:p-8 lg:p-8 p-2 gap-8 mx-auto  ">
       <div className="py-10 flex flex-col justify-center items-center gap-4">
-        <h2 className="font-bold text-4xl leading-8 capitalize">
+        <h2 className="font-bold md:text-4xl lg:text-4xl text-xl leading-8 capitalize">
           contact <span className="text-redtheme"> us!</span>
         </h2>
         <p className="text-sm text-center font-medium leading-4 text-foreground-700 capitalize">
@@ -51,7 +51,7 @@ const ContactFormMain = () => {
         </Card>
       </div>
 
-      <div className="flex lg:flex-row md:flex-row flex-col  w-full justify-between items-start gap-4 mx-auto md:py-12 lg:py-12 py-4 shadow-xl rounded-lg px-2 ring-1 ring-gray-200">
+      <div className="flex lg:flex-row md:flex-row flex-col  w-full justify-between items-center gap-4 mx-auto md:py-12 lg:py-12 py-4 shadow-xl rounded-lg px-2 ring-1 ring-gray-200">
         <Contactform />
         <ContactMap />
       </div>

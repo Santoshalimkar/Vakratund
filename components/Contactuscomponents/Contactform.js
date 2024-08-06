@@ -25,9 +25,9 @@ const Contactform = () => {
   });
 
   const services = [
-    { key: "service1", label: "Service 1" },
-    { key: "service2", label: "Service 2" },
-    { key: "service3", label: "Service 3" },
+    { key: "Upcoming Trip", label: "Upcoming Trip" },
+    { key: "Domestic Trip", label: "Domestic Trip" },
+    { key: "Other", label: "Other" },
   ];
 
   const handleChange = (e) => {
@@ -105,11 +105,14 @@ const Contactform = () => {
         </h6>
         <div className="flex flex-col w-full justify-start items-start gap-4">
           <form className="w-full" onSubmit={handleSubmit}>
-            <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-4 place-content-center justify-between items-start">
+            <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-6 place-content-center justify-between items-start">
               <Input
                 type="text"
                 name="firstName"
                 variant="bordered"
+                labelPlacement="outside"
+                label="First Name"
+
                 radius="sm"
                 className="w-full rounded-none"
                 size="lg"
@@ -123,10 +126,13 @@ const Contactform = () => {
               <Input
                 type="text"
                 name="lastName"
+                label="Last Name"
                 variant="bordered"
                 radius="sm"
                 className="w-full rounded-none"
                 size="lg"
+                labelPlacement="outside"
+
                 placeholder="Last Name"
                 value={formData.lastName}
                 onChange={handleChange}
@@ -138,7 +144,10 @@ const Contactform = () => {
                 type="text"
                 name="mobileNumber"
                 variant="bordered"
+                label="Mobile Number"
                 radius="sm"
+                labelPlacement="outside"
+
                 className="w-full rounded-none"
                 size="lg"
                 placeholder="Mobile Number"
@@ -152,6 +161,8 @@ const Contactform = () => {
                 type="text"
                 name="email"
                 variant="bordered"
+                label="Email"
+                labelPlacement="outside"
                 radius="sm"
                 className="w-full rounded-none"
                 size="lg"
@@ -163,18 +174,19 @@ const Contactform = () => {
                 }
               />
             </div>
-            <div className="w-full mt-4">
+            <div className="w-full mt-12">
               <Select
                 name="serviceRequired"
-                label="Service Required"
+                label="inquiry"
                 variant="bordered"
-                size="md"
+                labelPlacement="outside"
+                placeholder="Select inquiry type"
+                size="lg"
                 radius="sm"
-                className="w-full mx-auto"
+                className="w-full mx-auto mt-4"
                 selectedKeys={new Set([formData.serviceRequired])}
                 onSelectionChange={handleServiceChange}
               >
-                <SelectItem key="">Select a service</SelectItem>
                 {services.map((service) => (
                   <SelectItem key={service.key}>{service.label}</SelectItem>
                 ))}
@@ -185,6 +197,8 @@ const Contactform = () => {
                 name="message"
                 variant="bordered"
                 placeholder="Your message (Optional)"
+                label="Message"
+                labelPlacement="outside"
                 className="w-full"
                 value={formData.message}
                 onChange={handleChange}
