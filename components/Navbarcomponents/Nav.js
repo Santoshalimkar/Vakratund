@@ -39,11 +39,14 @@ export default function Nav() {
   return (
     <Navbar maxWidth="full" className="w-full shadow-md bg-white">
       <NavbarBrand>
-          <Image
+        <Link href="/">
+        <Image
             className="md:w-32 md:h-32 lg:w-32 lg:h-32 hidden md:flex lg:flex -ml-8  object-contain"
             src={Logo}
             alt="logo"
           />
+        </Link>
+          
           <Sheet>
             <SheetTrigger>
             <IoMdMenu size={24} className="flex md:hidden lg:hidden"/>
