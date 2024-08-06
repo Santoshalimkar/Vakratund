@@ -144,7 +144,7 @@ const Footer = () => {
               </h3>
               <p className="text-gray-500 dark:text-gray-400">
                 Email :
-                <span> Info@vakratund.com</span>
+                <span>vakratundtour@gmail.com</span>
               </p>
               <p className="text-gray-500 dark:text-gray-400">
                 Phone :9284205536
@@ -178,7 +178,7 @@ const Footer = () => {
   <div className="flex flex-col md:flex-row justify-between items-center text-white gap-2 md:gap-10 mt-5">
     <p className="flex items-center">
       <i className="pi pi-envelope mr-1"></i> 
-      Info@vakratund.com
+      vakratundtour@gmail.com
     </p>
     <p className="flex items-center">
       <i className="pi pi-phone mr-1"></i> 
