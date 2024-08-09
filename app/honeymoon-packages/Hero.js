@@ -129,13 +129,13 @@ const Hero = () => {
               }`}
             >
               <p>
-  This is your sign to pack your bags and say yes to a beautiful 'forever' with our Honeymoon Packages for couples! Love is in the air, and it's time to celebrate your newfound love with your forever person. Just imagine this: a sunset view, your loved one by your side, and a toast to the many joyful years to come. Sounds like a dream, doesn't it? Well, it's not going to be just a dream because we're here to turn this dream into a reality!
+{`This is your sign to pack your bags and say yes to a beautiful 'forever' with our Honeymoon Packages for couples! Love is in the air, and it's time to celebrate your newfound love with your forever person. Just imagine this: a sunset view, your loved one by your side, and a toast to the many joyful years to come. Sounds like a dream, doesn't it? Well, it's not going to be just a dream because we're here to turn this dream into a reality!`}
 </p>
 <p>
-  Have the most romantic honeymoon tour with our best honeymoon packages in India and abroad, allowing you to treat your eyes to some stunning views, bask in the golden sunsets, wake up to the soothing sound of the waves, stay in the lap of luxury villas or suites that will elevate your honeymoon to a new height of sophistication. What these best honeymoon destinations will provide, is beyond your imagination because you are in for some crazy adventure with our honeymoon trips.
+ {` Have the most romantic honeymoon tour with our best honeymoon packages in India and abroad, allowing you to treat your eyes to some stunning views, bask in the golden sunsets, wake up to the soothing sound of the waves, stay in the lap of luxury villas or suites that will elevate your honeymoon to a new height of sophistication. What these best honeymoon destinations will provide, is beyond your imagination because you are in for some crazy adventure with our honeymoon trips.`}
 </p>
 <p>
-  You are special, and there is no reason why your honeymoon shouldn’t be. So get ready because our romantic honeymoon packages are going to take you to the most memorable holiday of your life that you are going to cherish for the years to come.
+  {`You are special, and there is no reason why your honeymoon shouldn’t be. So get ready because our romantic honeymoon packages are going to take you to the most memorable holiday of your life that you are going to cherish for the years to come.`}
 </p>
 
 
