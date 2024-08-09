@@ -75,7 +75,7 @@ const WeekendTrip = () => {
               </h3>
               <h1 className="text-text-color text-sm md:text-base lg:text-lg capitalize __className_1fc36d">
                 {" "}
-                Explore the best of Weekend Trips with Desh Videsh Travels.
+                Explore the best of Weekend Trips with Vakratund Tours Travels.
               </h1>
             </div>
             {/* <div>

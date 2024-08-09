@@ -11,12 +11,13 @@ import {
 import 'primeicons/primeicons.css';
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import lehladakh from "../../../public/Cardimages/lehladak.jpg";
-import Kashmir from "../../../public/Cardimages/Kashmir.jpg";
-import Meghalaya from "../../../public/Cardimages/Meghalaya.JPG";
-import Bali from "../../../public/Cardimages/Bali.JPG";
-import Goa from "../../../public/Cardimages/Goa.JPG";
-import Kedarnath from "../../../public/Cardimages/Kedarnath.JPG";
+import lehladakh from "../../public/Cardimages/lehladak.jpg";
+
+import Kashmir from "../../public/Cardimages/Kashmir.jpg";
+import Meghalaya from "../../public/Cardimages/Meghalaya.JPG";
+import Bali from "../../public/Cardimages/Bali.JPG";
+import Goa from "../../public/Cardimages/Goa.JPG";
+import Kedarnath from "../../public/Cardimages/Kedarnath.JPG";
 
 const UpcomingTripsCrousel = () => {
   const cardData = [
@@ -104,7 +105,7 @@ const UpcomingTripsCrousel = () => {
                           <p className="text-white text-xs md:text-sm lg:text-sm whitespace-nowrap boxShadow shadow-2xl mb-4">
                             {card.description}
                           </p>
-                          <Link href="/destination/upcomingtrip">
+                          <Link href="/upcomingtrip">
                             <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#36a39e] text-white text-sm font-semibold bg-[#0b8d7c] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
                               View Trips
                             </button>
