@@ -17,41 +17,84 @@ import Image from "next/image";
 import Logo from "../../public/Navabar/Logo2.png";
 
 const components = [
+
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+    title: "Trending Trips",
+    href: "/international",
+    subLinks: [
+      {
+        title: "Upcoming Trips",
+        href: "/upcomingtrip",
+      },
+      {
+        title: "Weekend Trips",
+        href: "/destination/weekendtrip",
+      },
+    ],
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
+    title: "International Trips",
+    href: "/international",
+    subLinks: [
+      {
+        title: "Dubai Trips",
+        href: "/destination/upcomingtrip",
+      },
+      {
+        title: "Maldives Trips",
+        href: "/destination/weekendtrip",
+      },
+    ],
   },
+
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    title: "India Packages",
+    href: "/destination",
+    subLinks: [
+      {
+        title: "Ladakh",
+        href: "/destination",
+      },
+      {
+        title: "Kashmir",
+        href: "/destination",
+      },
+      {
+        title: "Andaman",
+        href: "/destination",
+      },
+      {
+        title: "Kerla",
+        href: "/destination",
+      },
+      {
+        title: "Sikkim",
+        href: "/destination",
+      },
+      {
+        title: "Rajasthan",
+        href: "/destination",
+      },
+      
+    ],
   },
+  
+  
+  
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "Trending Romantic Journeys",
+    href: "/international",
+    subLinks: [
+      {
+        title: "Honeymoon Packages",
+        href: "/honeymoon-packages",
+      },
+      
+    ],
   },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
+  
+  
+  
 ];
 
 export function NavigationMenuDemo() {
@@ -94,9 +137,9 @@ export function NavigationMenuDemo() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <NavigationMenuTrigger className="text-[#0b8d7c]">
-            Packages
+          Categories
           </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-[#f2fdff]">
@@ -111,7 +154,29 @@ export function NavigationMenuDemo() {
               ))}
             </ul>
           </NavigationMenuContent>
+        </NavigationMenuItem> */}
+
+<NavigationMenuItem>
+          <NavigationMenuTrigger className="text-[#0b8d7c]">
+            Categories
+          </NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] bg-[#f2fdff]">
+              {components.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                  subLinks={component.subLinks} // Pass subLinks here
+                >
+                  {component.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
+
+
         <NavigationMenuItem>
           <Link href="/Blogs" legacyBehavior passHref>
             <NavigationMenuLink
@@ -121,31 +186,57 @@ export function NavigationMenuDemo() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+        
+        <NavigationMenuItem >
+          <Link href="/payment" legacyBehavior passHref>
+            <NavigationMenuLink
+              className={"text-sm font-medium text-[#0b8d7c] ml-5"}
+            >
+              Payments
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
       </NavigationMenuList>
+
+      
     </NavigationMenu>
   );
 }
 
 const ListItem = React.forwardRef(
-  ({ className, title, children, ...props }, ref) => {
+  ({ className, title, children, subLinks ,...props }, ref) => {
     return (
       <li>
-        <NavigationMenuLink asChild>
-          <a
-            ref={ref}
-            className={cn(
-              "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-              className
-            )}
-            {...props}
-          >
-            <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-              {children}
-            </p>
-          </a>
-        </NavigationMenuLink>
-      </li>
+      <NavigationMenuLink asChild>
+        <a
+          ref={ref}
+          className={cn(
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            className
+          )}
+          {...props}
+        >
+          <div className="text-sm font-medium leading-none">{title}</div>
+          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            {children}
+          </p>
+          {subLinks && (
+            <ul className="ml-4 mt-2 space-y-2">
+              {subLinks.map((subLink) => (
+                <li key={subLink.href}>
+                  <Link href={subLink.href} legacyBehavior passHref>
+                    <a className="font-medium text-sm text-[#0b8d7c] hover:underline">
+                      {subLink.title}
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </a>
+      </NavigationMenuLink>
+    </li>
     );
   }
 );

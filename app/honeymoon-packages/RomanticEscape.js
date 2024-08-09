@@ -18,17 +18,17 @@ import Bali from "../../public/Cardimages/Bali.JPG";
 import Goa from "../../public/Cardimages/Goa.JPG";
 import Kedarnath from "../../public/Cardimages/Kedarnath.JPG";
 
-const Crouselslide = () => {
+const RomanticEscape = () => {
   const cardData = [
     {
       id: 1,
-      title: "Leh Ladakh",
+      title: "Bali",
       description: "Starting Price Rs.21,999 ",
       imageUrl: lehladakh,
     },
     {
       id: 2,
-      title: "Kashmir",
+      title: "Singapore",
       description: "Starting Price Rs.15,999 ",
       imageUrl: Kashmir,
     },
@@ -40,7 +40,7 @@ const Crouselslide = () => {
     },
     {
       id: 4,
-      title: "Bali",
+      title: "Thailand",
       description: "Starting Price Rs.15,999",
       imageUrl: Bali,
     },
@@ -52,7 +52,7 @@ const Crouselslide = () => {
     },
     {
       id: 6,
-      title: "Kedarnath",
+      title: "Andaman",
       description: "Starting Price Rs.15,999",
       imageUrl: Kedarnath,
     },
@@ -65,13 +65,13 @@ const Crouselslide = () => {
   ];
 
   return (
-    <div className="back w-full  flex flex-col justify-center items-center container md:p-10 lg:p-10 p-2 ">
+    <div className="back2 w-full  flex flex-col justify-center items-center container md:p-10 lg:p-10 p-2 mb-28 ">
       <div className="flex flex-col  justify-start items-start pb-2 md:pb-4 lg:pb-4 text-start w-full py-2">
         <h1 className="md:text-3xl lg:text-4xl text-xl boxShadow font-bold text-black">
-          Explore India
+        Romantic Escapes
         </h1>
         <p className="boxShadow text-sm text-black">
-          A Journey Through Time, Colour And Culture
+        Where Forever Begins...Together!
         </p>
       </div>
 
@@ -82,14 +82,14 @@ const Crouselslide = () => {
           height={400}
           autoPlay
           className="object-cover w-full mx-auto rounded-xl brightness-50  "
-          src="https://d1c8wbldjj3tey.cloudfront.net/category-section/india_(1)+(540p).mp4"
+          src="https://d1c8wbldjj3tey.cloudfront.net/category-section/honeymoon_(1)+(540p).mp4"
         />
         <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 justify-center items-center px-4 text-center">
           <h1 className="text-[44px] boxShadow font-bold text-white">
-            Explore India
+          Romantic Escapes
           </h1>
           <p className="boxShadow text-xl text-white">
-            A Journey Through Time, Colour And Culture
+          Where Forever Begins...Together!
           </p>
         </div>
         <div className="absolute -bottom-36 w-11/12 mx-auto ">
@@ -121,7 +121,7 @@ const Crouselslide = () => {
                             {card.description}
                           </p>
 
-                          <Link href="/destination">
+                          <Link href="/honeymoon-packages">
                             <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#0b8d7c] text-white text-sm font-semibold bg-[#36a39e] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
                               View Trips
                             </button>
@@ -198,4 +198,4 @@ const Crouselslide = () => {
   );
 };
 
-export default Crouselslide;
+export default RomanticEscape;

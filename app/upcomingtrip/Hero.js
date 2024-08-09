@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import HeroImage from "../../public/Cardimages/BaliHeroImage.JPG";
+import HeroImage from "../../public/Cardimages/UpcommingTripHero.JPG";
 import Link from "next/link";
 import Bali from "../../public/Cardimages/Bali.JPG";
 import BaliBikeRide from "../../public/Cardimages/BaliBikeRide.JPG";
@@ -20,7 +20,7 @@ const trips = [
     discountedPrice: 42000,
     from: "Pune",
     duration: "6N/7D",
-    type: "Group Trip",
+    type: "Honeymoon package",
     imageUrl: Bali,
   },
   // Add more trip objects as needed
@@ -31,22 +31,13 @@ const trips = [
     discountedPrice: 50000,
     from: "Mumbai",
     duration: "7N/8D",
-    type: "Family Trip",
+    type: "Honeymoon package",
     imageUrl: HeroImage,
   },
-  {
-    id: 3,
-    location: "Spiti Valley",
-    price: 50000,
-    discountedPrice: 10000,
-    from: "Goa",
-    duration: "7N/8D",
-    type: "Solo Trip",
-    imageUrl: BaliBikeRide,
-  },
+  
 ];
 
-const Hero = () => {
+const UpcommingtripsHero = () => {
   const [showFullText, setShowFullText] = useState(false);
 
   // Handler to toggle text display
@@ -61,9 +52,10 @@ const Hero = () => {
 
       <div className="sticky top-16 sm:top-0 h-[85vh] sm:h-[75vh] flex items-center justify-center">
         <Image
-          className="object-cover h-full absolute bg-transparent"
+          className="object-fit h-full w-full absolute bg-transparent"
           src={HeroImage}
           alt="Hero"
+          
         />
 
 
@@ -72,89 +64,44 @@ const Hero = () => {
 
         <div className="h-full w-full max-w-7xl mx-auto relative px-6 md:px-8 lg:px-10 xl:px-0">
           <div className="grid grid-cols-1 md:grid-cols-1 relative h-full w-full px-6 xl:px-0">
-            <div className="h-full w-full flex flex-col gap-2 justify-center items-center">
-              <h2 className="text-3xl lg:text-4xl xl:text-6xl font-bold text-center text-white">
-                Bali Tour Packages
+            <div className="h-full  w-full flex flex-col gap-2 justify-center items-center">
+              <h2 className="text-2xl lg:text-3xl xl:text-5xl font-bold text-center text-white">
+              Upcomming Tour Packages
               </h2>
-              <p className="text-sm sm:text-base px-2 md:px-4 capitalize py-5 mt-2 lg:py-1 bg-[#0b8d7c] rounded-3xl text-white font-medium text-center">
-               {` Discover Bali's Beauty with Vakratund Tours: Your Gateway to Island
-                Bliss`}
+              <p className="text-sm sm:text-base px-2 md:px-4 capitalize py-1 mt-0 lg:py-1 bg-black/30 rounded-3xl text-white font-medium text-center">
+               {`Plan your next adventure with us, and explore the world with Vakratund Travels.`}
               </p>
             </div>
           </div>
         </div>
-        <div className="absolute top-2 left-0 h-full text-white w-full flex flex-col justify-end pb-32 items-center">
-          <div className=" opacity-1 transform-none will-change-auto">
-            <div className="grid grid-cols-2">
-              <div className="flex gap-2 ">
-                <h1 className="lg:h-14 lg:w-14 md:h-12 md:w-12 h-10 w-10 shrink-0">
-                  <Image src={Instagramlogo}/>
-                </h1>
-                <div className="flex flex-col justify-center">
-                  <span className="text-xl lg:text-2xl font-bold leading-none">
-                    <span className="inline-block tabular-nums undefined">
-                      90000+
-                    </span>
-                  </span>
-                  <span className="text-sm lg:text-lg leading-none">
-                    Followers
-                  </span>
-                </div>
-              </div>
-              <div className="flex gap-4">
-              <h1 className="lg:h-14 lg:w-14 md:h-12 md:w-12 h-10 w-10 shrink-0 ">
-                  <Image src={Google_Logo}/>
-                </h1>
-                <div className="flex flex-col justify-center mr-2">
-                  <span className="text-xl lg:text-2xl font-bold leading-none">
-                    <span className="inline-block tabular-nums undefined">
-                      1000+
-                    </span>
-                  </span>
-                  <span className="text-sm lg:text-lg leading-none">
-                    Review
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
+
+    
+
 
       <div className="pt-10 pb-20 md:pt-14 bg-white relative flex flex-col">
         <div className="h-full w-full max-w-7xl mx-auto relative md:px-8 lg:px-10 flex flex-col gap-20 px-6 xl:px-0">
           <div className="relative bg-white rounded-2xl shadow-[0px_4px_30px_0px_rgba(0,0,0,0.15)] p-8 flex flex-col gap-6">
             <h2 className="flex flex-row gap-1 text-2xl md:text-3xl lg:text-3xl font-bold">
               {" "}
-              About Bali Tour Packages{" "}
+              About Upcomming Packages
               <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
                 <i className="pi pi-sparkles" style={{ fontSize: "1rem" }}></i>
               </span>
             </h2>
 
-            <div
-              className={`text-sm md:text-base lg:text-lg font-medium text-text-color space-y-2 ${
+            <div 
+            
+              className={`text-sm md:text-base lg:text-ellipsis leading-7 font-medium text-text-color space-y-2 ${
                 showFullText ? "" : "line-clamp-3"
               }`}
             >
               <p>
-               {` Embark on an unforgettable journey to the exotic island paradise
-                of Bali with Vakratund Tours's expertly crafted tour packages.
-                Nestled in the heart of Indonesia, Bali beckons with its
-                pristine beaches, lush landscapes, and vibrant culture. Explore
-                the vibrant city of Denpasar, where traditional Balinese
-                architecture blends seamlessly with modern amenities. Wander
-                through bustling markets, sample delicious street food, and
-                immerse yourself in the island's rich cultural heritage. Embark
-                on an unforgettable journey to the exotic island paradise of
-                Bali with Vakratund Tours's expertly crafted tour packages. Nestled
-                in the heart of Indonesia, Bali beckons with its pristine
-                beaches, lush landscapes, and vibrant culture. Explore the
-                vibrant city of Denpasar, where traditional Balinese
-                architecture blends seamlessly with modern amenities. Wander
-                through bustling markets, sample delicious street food, and
-                immerse yourself in the island's rich cultural heritage.`}
-              </p>
+              Vakratund Travels is a travel agency that offers a wide range of travel packages for both domestic and international destinations. We have a team of experienced professionals who are dedicated to providing you with the best travel experience possible. Our upcoming destinations are carefully curated to ensure that you have a memorable and enjoyable trip. Whether you are looking for a relaxing beach vacation, an adventurous trekking expedition, or a cultural tour, we have something for everyone. So why wait? Book your next trip with Desh Videsh Travels today and start exploring the world!
+</p>
+
+
             </div>
 
             <div className="w-full flex justify-center">
@@ -291,4 +238,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default UpcommingtripsHero;

@@ -103,16 +103,39 @@ export default function Nav() {
   return (
     <Navbar maxWidth="full" className="w-full shadow-md bg-white">
       <NavbarBrand>
-          <Image
-            className="md:w-32 md:h-32 lg:w-32 lg:h-32 hidden md:flex lg:flex -ml-8  object-contain"
+        <Link href="/" className="lg:w-32">
+        <Image
+            className="md:w-32 md:h-32 lg:w-32 lg:h-32 h-24 w-24 md:flex lg:flex -ml-8  object-contain"
             src={Logo}
             alt="logo"
           />
-           <Sheet>
+
+        </Link>
+         
+          
+      </NavbarBrand>
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavigationMenuDemo />
+      </NavbarContent>
+      <NavbarContent justify="end" className="gap-2 flex items-center w-full">
+        <NavbarItem>
+          <Button
+            as={Link}
+            className="ring-1 ring-[#0b8d7c] rounded-full bg-white text-[#0b8d7c] -mr-4"
+            href="#"
+            variant="solid"
+          >
+            <FaPhone className="text-[#0b8d7c]" /> +91-9284205536
+          </Button>
+        
+        </NavbarItem>
+
+<NavbarItem>
+<Sheet>
           <SheetTrigger>
            <IoMdMenu size={24} className="md:hidden lg:hidden flex"/>
           </SheetTrigger>
-          <SheetContent side="left">
+          <SheetContent side="right">
             <SheetHeader>
               <SheetTitle>
                 <div className="flex justify-between items-center w-full">
@@ -167,21 +190,9 @@ export default function Nav() {
             </SheetHeader>
           </SheetContent>
         </Sheet>
-      </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavigationMenuDemo />
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem>
-          <Button
-            as={Link}
-            className="ring-1 ring-[#0b8d7c] rounded-full bg-white text-[#0b8d7c] -mr-4"
-            href="#"
-            variant="solid"
-          >
-            <FaPhone className="text-[#0b8d7c]" /> +91-9284205536
-          </Button>
-        </NavbarItem>
+</NavbarItem>
+       
+
       </NavbarContent>
     </Navbar>
   );

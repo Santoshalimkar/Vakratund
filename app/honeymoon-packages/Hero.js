@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import HeroImage from "../../public/Cardimages/BaliHeroImage.JPG";
+import HeroImage from "../../public/Cardimages/honeymoonpackages.JPG";
 import Link from "next/link";
 import Bali from "../../public/Cardimages/Bali.JPG";
 import BaliBikeRide from "../../public/Cardimages/BaliBikeRide.JPG";
@@ -20,7 +20,7 @@ const trips = [
     discountedPrice: 42000,
     from: "Pune",
     duration: "6N/7D",
-    type: "Group Trip",
+    type: "Honeymoon package",
     imageUrl: Bali,
   },
   // Add more trip objects as needed
@@ -31,19 +31,10 @@ const trips = [
     discountedPrice: 50000,
     from: "Mumbai",
     duration: "7N/8D",
-    type: "Family Trip",
+    type: "Honeymoon package",
     imageUrl: HeroImage,
   },
-  {
-    id: 3,
-    location: "Spiti Valley",
-    price: 50000,
-    discountedPrice: 10000,
-    from: "Goa",
-    duration: "7N/8D",
-    type: "Solo Trip",
-    imageUrl: BaliBikeRide,
-  },
+  
 ];
 
 const Hero = () => {
@@ -72,18 +63,17 @@ const Hero = () => {
 
         <div className="h-full w-full max-w-7xl mx-auto relative px-6 md:px-8 lg:px-10 xl:px-0">
           <div className="grid grid-cols-1 md:grid-cols-1 relative h-full w-full px-6 xl:px-0">
-            <div className="h-full w-full flex flex-col gap-2 justify-center items-center">
-              <h2 className="text-3xl lg:text-4xl xl:text-6xl font-bold text-center text-white">
-                Bali Tour Packages
+            <div className="h-full -mt-28 w-full flex flex-col gap-2 justify-center items-center">
+              <h2 className="text-3xl lg:text-4xl xl:text-6xl font-serif text-center text-white">
+              Honeymoon Tour Packages
               </h2>
-              <p className="text-sm sm:text-base px-2 md:px-4 capitalize py-5 mt-2 lg:py-1 bg-[#0b8d7c] rounded-3xl text-white font-medium text-center">
-               {` Discover Bali's Beauty with Vakratund Tours: Your Gateway to Island
-                Bliss`}
+              <p className="text-sm sm:text-base px-2 md:px-4 capitalize py-1 mt-0 lg:py-1 bg-black/30 rounded-3xl text-white font-medium text-center">
+               {`Where Forever Begins...Together!`}
               </p>
             </div>
           </div>
         </div>
-        <div className="absolute top-2 left-0 h-full text-white w-full flex flex-col justify-end pb-32 items-center">
+        {/* <div className="absolute top-2 left-0 h-full text-white w-full flex flex-col justify-end pb-32 items-center">
           <div className=" opacity-1 transform-none will-change-auto">
             <div className="grid grid-cols-2">
               <div className="flex gap-2 ">
@@ -118,7 +108,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="pt-10 pb-20 md:pt-14 bg-white relative flex flex-col">
@@ -126,35 +116,29 @@ const Hero = () => {
           <div className="relative bg-white rounded-2xl shadow-[0px_4px_30px_0px_rgba(0,0,0,0.15)] p-8 flex flex-col gap-6">
             <h2 className="flex flex-row gap-1 text-2xl md:text-3xl lg:text-3xl font-bold">
               {" "}
-              About Bali Tour Packages{" "}
+              About Honeymoon Packages
               <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
                 <i className="pi pi-sparkles" style={{ fontSize: "1rem" }}></i>
               </span>
             </h2>
 
-            <div
-              className={`text-sm md:text-base lg:text-lg font-medium text-text-color space-y-2 ${
+            <div 
+            
+              className={`text-sm md:text-base lg:text-ellipsis leading-7 font-medium text-text-color space-y-2 ${
                 showFullText ? "" : "line-clamp-3"
               }`}
             >
               <p>
-               {` Embark on an unforgettable journey to the exotic island paradise
-                of Bali with Vakratund Tours's expertly crafted tour packages.
-                Nestled in the heart of Indonesia, Bali beckons with its
-                pristine beaches, lush landscapes, and vibrant culture. Explore
-                the vibrant city of Denpasar, where traditional Balinese
-                architecture blends seamlessly with modern amenities. Wander
-                through bustling markets, sample delicious street food, and
-                immerse yourself in the island's rich cultural heritage. Embark
-                on an unforgettable journey to the exotic island paradise of
-                Bali with Vakratund Tours's expertly crafted tour packages. Nestled
-                in the heart of Indonesia, Bali beckons with its pristine
-                beaches, lush landscapes, and vibrant culture. Explore the
-                vibrant city of Denpasar, where traditional Balinese
-                architecture blends seamlessly with modern amenities. Wander
-                through bustling markets, sample delicious street food, and
-                immerse yourself in the island's rich cultural heritage.`}
-              </p>
+  This is your sign to pack your bags and say yes to a beautiful 'forever' with our Honeymoon Packages for couples! Love is in the air, and it's time to celebrate your newfound love with your forever person. Just imagine this: a sunset view, your loved one by your side, and a toast to the many joyful years to come. Sounds like a dream, doesn't it? Well, it's not going to be just a dream because we're here to turn this dream into a reality!
+</p>
+<p>
+  Have the most romantic honeymoon tour with our best honeymoon packages in India and abroad, allowing you to treat your eyes to some stunning views, bask in the golden sunsets, wake up to the soothing sound of the waves, stay in the lap of luxury villas or suites that will elevate your honeymoon to a new height of sophistication. What these best honeymoon destinations will provide, is beyond your imagination because you are in for some crazy adventure with our honeymoon trips.
+</p>
+<p>
+  You are special, and there is no reason why your honeymoon shouldn’t be. So get ready because our romantic honeymoon packages are going to take you to the most memorable holiday of your life that you are going to cherish for the years to come.
+</p>
+
+
             </div>
 
             <div className="w-full flex justify-center">
