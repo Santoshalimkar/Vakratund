@@ -173,7 +173,7 @@ const RomanticEscape = () => {
                           {card.description}
                         </p>
 
-                        <Link href="/destination">
+                        <Link href="/honeymoon-packages">
                           <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#0b8d7c] text-white text-sm font-semibold bg-[#36a39e] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
                             View Trips
                           </button>

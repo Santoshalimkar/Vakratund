@@ -4,6 +4,7 @@ import { Providers } from "./Provider";
 import Nav from "@/components/Navbarcomponents/Nav";
 import Footer from "@/components/Footercomponent/Footer";
 import Logo from '../public/Navabar/Logo2.png'
+import SpeedDials from "./SpeedDials";
 
 const inter = Poppins({ subsets: ["latin"] ,weight: ['100','300','400','500','700','900']});
 
@@ -27,6 +28,11 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
          <Nav/>
+         <div className="fixed bottom-8 right-8 z-50">
+
+      <SpeedDials/>
+    
+    </div>
         {children}
         <Footer/>
         </Providers>
