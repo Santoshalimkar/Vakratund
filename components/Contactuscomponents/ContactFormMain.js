@@ -10,6 +10,7 @@ import { FcAddressBook } from "react-icons/fc";
 import { FcHome } from "react-icons/fc";
 import { FcCallback } from "react-icons/fc";
 import { FcComments } from "react-icons/fc";
+import Getintouch from "./Getintouch";
 
 const ContactFormMain = () => {
   return (
@@ -51,9 +52,10 @@ const ContactFormMain = () => {
         </Card>
       </div>
 
-      <div className="flex lg:flex-row md:flex-row flex-col bg-white  w-full justify-between items-center gap-4 mx-auto md:py-12 lg:py-12 py-4 shadow-xl rounded-lg px-2 ring-1 ring-gray-200">
+      <div className="flex lg:flex-row-reverse md:flex-row-reverse flex-col-reverse px-6 bg-white  w-full justify-between items-start gap-4 mx-auto md:py-12 lg:py-12 py-4 shadow-xl rounded-lg  ring-1 ring-gray-200">
         <Contactform />
-        <ContactMap />
+        <Getintouch/>
+       
       </div>
     </div>
   );

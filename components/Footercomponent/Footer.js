@@ -14,7 +14,9 @@ import Link from "next/link";
 import Logo from "../../public/Navabar/Logo2.png";
 import Conatctus from "../../public/Footer/Conatctus.png";
 import FooterHero from "../../public/Footer/FooterHero.JPG";
-
+import { FaInstagram } from "react-icons/fa";
+import { SlSocialFacebook } from "react-icons/sl";
+import { FaWhatsapp } from "react-icons/fa";
 import "primeicons/primeicons.css";
 
 const Footer = () => {
@@ -34,8 +36,8 @@ const Footer = () => {
   //   };
 
   return (
-    <div className="w-full flex flex-col bg-[#0b8d7c]">
-      <div className="w-full h-full bg-[#0b8d7c] py-3 sm:py-4 box-border relative text-start uppercase __className_1fc36d">
+    <div className="w-full flex flex-col bg-[#36a39e]">
+      <div className="w-full h-full bg-[#36a39e] py-3 sm:py-4 box-border relative text-start uppercase __className_1fc36d">
         <div className="grid container px-4 grid-cols-2 md:grid-cols-4 gap-2 items-center justify-center p-2 text-slate-200">
           <div className="flex flex-col gap-2 items-start justify-start p-2">
             <h2 className="md:text-4xl lg:text-4xl sm:text-3xl text-xl font-bold text-white">
@@ -104,12 +106,12 @@ const Footer = () => {
         }}
       >
         <div className="max-w-[1400px]  px-4 mx-auto">
-          <div className="overflow-hidden filter bg-gradient-to-b from-slate-100/50 via-white/50 to-slate-200/50 backdrop-blur-md sticky z-10 p-10 shadow-lg border border-zinc-300 rounded-3xl px-4 md:px-6 grid grid-cols-1 lg:px-8 xl:px-12 md:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="overflow-hidden filter bg-gradient-to-b from-slate-100/50 via-white/50 to-slate-200/50 backdrop-blur-md sticky z-10 p-10 shadow-lg border border-zinc-300 rounded-3xl px-4 md:px-6 grid grid-cols-1 lg:px-8 xl:px-12 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8">
             <div className="space-y-4">
               <h3 className="text-xl md:text-2xl text-gray-700 font-[500] __className_1fc36d">
                 Our Vision
               </h3>
-              <p className="text-gray-500 dark:text-gray-400">
+              <p className="text-gray-500 dark:text-gray-400 text-xs leading-6 -tracking-tight">
                 Discover the world with Vakratund Tours Travels – Where
                 Adventure meets Inspiration. Join us as We Explore Captivating
                 Destinations, Connect with Influencers, and Create Memories that
@@ -126,49 +128,49 @@ const Footer = () => {
               </h3>
               <div className="grid grid-cols-2 gap-2 md:grid-cols-1">
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main text-sm max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   Home
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   Review
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   Travel Blogs
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   About Us
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   Contact Us
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   Privacy Policy
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/payment"
                 >
-                 Payment
+                  Payment
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   Terms and Condition
@@ -181,26 +183,26 @@ const Footer = () => {
               </h3>
               <div className="grid grid-cols-2 gap-2 md:grid-cols-1">
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   International Trips
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   Domestic Trips
                 </Link>
                 <Link
-                  className="hover:text-primary-main max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
                   Upcoming Trips
                 </Link>
               </div>
             </div>
-            <div className="space-y-4 md:pl-8 md:border-l-2 border-white/30">
+            <div className="space-y-4 text-sm md:pl-8 md:border-l-2 border-white/30">
               <div>
                 <h3 className="text-xl md:text-2xl text-gray-700 font-[500] __className_1fc36d">
                   Contact Us
@@ -217,6 +219,28 @@ const Footer = () => {
                 <p className="text-gray-500 dark:text-gray-400">
                   Office :<span> Pune ,Maharastara 410401</span>
                 </p>
+                <div className="flex justify-center items-center w-full rounded-lg h-24  mt-20">
+                  <div className="flex justify-around gap-2 items-center">
+                    <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
+                      <FaInstagram
+                        size={24}
+                        className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
+                      />
+                    </div>
+                    <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
+                      <SlSocialFacebook
+                        size={24}
+                        className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
+                      />
+                    </div>
+                    <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
+                      <FaWhatsapp
+                        size={24}
+                        className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -234,7 +258,7 @@ const Footer = () => {
           <h3 className="font-bold text-2xl md:text-4xl text-white">
             Vakaratund Tours
           </h3>
-          <p className="text-sm md:text-base text-white">
+          <p className="text-xs md:text-base text-white">
             At-Kanhe Jambhul, Tal-Maval Dist-Pune, Maharashtra 412106
           </p>
           <div className="flex flex-col md:flex-row justify-between items-center text-white gap-2 md:gap-10 mt-5">
@@ -284,7 +308,7 @@ const Footer = () => {
         <Divider orientation="horizontal" />
       </div>
 
-      <p className="text-center mt-2 text-white mb-3 font-sans md:text-xs lg:text-xs text-[1rem] uppercase w-full">
+      <p className="text-center mt-2 text-white mb-3 font-sans md:text-xs lg:text-xs text-tiny px-1 uppercase w-full">
         {` 2024 Vakaratund tour & Adventure - All rights reserved.`}
       </p>
 

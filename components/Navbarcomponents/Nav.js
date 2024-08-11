@@ -14,7 +14,8 @@ import {
   DropdownMenu,
 } from "@nextui-org/react";
 import Image from "next/image";
-import Logo from "../../public/Navabar/Logo2.png";
+import Logo from "../../public/Navabar/VAKRATUND.png";
+import Logo2 from "../../public/Navabar/Logo2.png";
 import { NavigationMenuDemo } from "./Navmenu";
 import { FaPhone } from "react-icons/fa6";
 import {
@@ -44,7 +45,7 @@ export default function Nav() {
   const Extendmenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const linkitem = ["HOME", "packages", "blog", "CONTACT US"];
+  const linkitem = ["HOME", "packages", "blog","Payments", "CONTACT US"];
 
   const handleredirect = (link) => {
     switch (link) {
@@ -56,6 +57,9 @@ export default function Nav() {
         break;
       case "blog":
         router.push("/Blogs");
+        break;
+      case "Payments":
+        router.push("/payment");
         break;
       case "CONTACT US":
         router.push("/Contactus");
@@ -73,6 +77,9 @@ export default function Nav() {
         break;
       case "/Blogs":
         setactiveitem("blog");
+        break;
+      case "/payment":
+        setactiveitem("Payments");
         break;
       case "/destination":
         setactiveitem("packages");
@@ -93,7 +100,7 @@ export default function Nav() {
   }, [pathname]);
 
   return (
-    <Navbar maxWidth="full" className="w-full shadow-md bg-white ">
+    <Navbar maxWidth="full" className="w-full shadow-md bg-[#36a39e] ">
       <NavbarBrand>
         <Link href="/" className="lg:w-32">
           <Image
@@ -119,16 +126,16 @@ export default function Nav() {
         </NavbarItem>
 
         <NavbarItem>
-          <Sheet>
+          <Sheet >
             <SheetTrigger>
-              <IoMdMenu size={24} className="md:hidden lg:hidden flex" />
+              <IoMdMenu size={24} className="md:hidden lg:hidden flex text-white" />
             </SheetTrigger>
-            <SheetContent side="right">
+            <SheetContent side="right" className="">
               <SheetHeader>
                 <SheetTitle>
                   <div className="flex justify-between items-center w-full">
                     <div className="bg-slate-100 rounded-md">
-                      <Image className="" src={Logo} alt="logo" />
+                      <Image className="" src={Logo2} alt="logo" />
                     </div>
                     {/* <div className="w-8 h-8 bg-black rounded-full flex justify-center items-center">
                     <SheetClose>

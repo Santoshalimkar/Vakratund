@@ -102,7 +102,7 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-[#0b8d7c]">
+          <NavigationMenuTrigger className="bg-[#36a39e] rounded-full text-white hover:bg-[#36a39e] hover:bg-transparent">
             About us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -157,7 +157,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem> */}
 
 <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-[#0b8d7c]">
+          <NavigationMenuTrigger className="bg-[#36a39e] rounded-full text-white">
             Categories
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -180,7 +180,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem>
           <Link href="/Blogs" legacyBehavior passHref>
             <NavigationMenuLink
-              className={"text-sm font-medium text-[#0b8d7c]"}
+              className={"text-sm font-medium text-white "}
             >
               Blogs
             </NavigationMenuLink>
@@ -190,7 +190,7 @@ export function NavigationMenuDemo() {
         <NavigationMenuItem >
           <Link href="/payment" legacyBehavior passHref>
             <NavigationMenuLink
-              className={"text-sm font-medium text-[#0b8d7c] ml-5"}
+              className={"text-sm font-medium text-white ml-5"}
             >
               Payments
             </NavigationMenuLink>

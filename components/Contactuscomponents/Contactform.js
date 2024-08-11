@@ -99,11 +99,8 @@ const Contactform = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-4 justify-start items-start px-3 py-1 w-full  ">
-        <h6 className="capitalize md:text-3xl text-xl  font-medium text-start">
-          {`Get in Touch`}
-        </h6>
-        <div className="flex flex-col w-full justify-start items-start gap-4">
+      <div className="flex flex-col gap-4 justify-start items-start px-3 py-1 w-full ring-1 ring-gray-200 p-4 rounded-md ">
+        <div className="flex flex-col w-full justify-start items-start p-2 py-4 gap-4">
           <form className="w-full" onSubmit={handleSubmit}>
             <div className="w-full grid lg:grid-cols-2 grid-cols-1 gap-6 place-content-center justify-between items-start">
               <Input
