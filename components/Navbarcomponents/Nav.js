@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import {
   Navbar,
@@ -24,12 +24,12 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-  SheetClose
+  SheetClose,
 } from "@/components/ui/sheet";
 import { IoMdMenu } from "react-icons/io";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 export default function Nav() {
   const router = useRouter();
@@ -44,12 +44,7 @@ export default function Nav() {
   const Extendmenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const linkitem = [
-    "HOME",
-    "packages",
-    "blog",
-    "CONTACT US",
-  ];
+  const linkitem = ["HOME", "packages", "blog", "CONTACT US"];
 
   const handleredirect = (link) => {
     switch (link) {
@@ -97,27 +92,21 @@ export default function Nav() {
     }
   }, [pathname]);
 
-
-
-
   return (
-    <Navbar maxWidth="full" className="w-full shadow-md bg-white">
+    <Navbar maxWidth="full" className="w-full shadow-md bg-white ">
       <NavbarBrand>
         <Link href="/" className="lg:w-32">
-        <Image
-            className="md:w-32 md:h-32 lg:w-32 lg:h-32 h-24 w-24 md:flex lg:flex -ml-8  object-contain"
+          <Image
+            className="md:w-32 md:h-32 lg:w-32 lg:h-32 h-28 w-28 md:flex lg:flex -ml-8  object-contain"
             src={Logo}
             alt="logo"
           />
-
         </Link>
-         
-          
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavigationMenuDemo />
       </NavbarContent>
-      <NavbarContent justify="end" className="gap-2 flex items-center w-full">
+      <NavbarContent justify="end" className="gap-8 flex items-center w-full">
         <NavbarItem>
           <Button
             as={Link}
@@ -127,72 +116,69 @@ export default function Nav() {
           >
             <FaPhone className="text-[#0b8d7c]" /> +91-9284205536
           </Button>
-        
         </NavbarItem>
 
-<NavbarItem>
-<Sheet>
-          <SheetTrigger>
-           <IoMdMenu size={24} className="md:hidden lg:hidden flex"/>
-          </SheetTrigger>
-          <SheetContent side="right">
-            <SheetHeader>
-              <SheetTitle>
-                <div className="flex justify-between items-center w-full">
-                  <div className="bg-slate-100 rounded-md">
-                    <Image className="" src={Logo} alt="logo" />
-                  </div>
-                  {/* <div className="w-8 h-8 bg-black rounded-full flex justify-center items-center">
+        <NavbarItem>
+          <Sheet>
+            <SheetTrigger>
+              <IoMdMenu size={24} className="md:hidden lg:hidden flex" />
+            </SheetTrigger>
+            <SheetContent side="right">
+              <SheetHeader>
+                <SheetTitle>
+                  <div className="flex justify-between items-center w-full">
+                    <div className="bg-slate-100 rounded-md">
+                      <Image className="" src={Logo} alt="logo" />
+                    </div>
+                    {/* <div className="w-8 h-8 bg-black rounded-full flex justify-center items-center">
                     <SheetClose>
                       <span className="text-lg font-bold text-white p-2  text-center">
                         X
                       </span>
                     </SheetClose>
                   </div> */}
-                </div>
-              </SheetTitle>
-              <SheetDescription>
-                <div className="flex flex-col justify-between sm:gap-24 gap-16  items-start mt-8 overflow-scroll">
-                  <div className="flex justify-center items-start gap-4 flex-col w-full">
-                    {linkitem.map((value, index) => (
-                      <div
-                        key={index}
-                        className="w-full flex justify-start items-start flex-col gap-4"
-                      >
-                        <SheetClose>
-                          <span
-                            onClick={() => handleredirect(value)}
-                            className={
-                              activeitem === value
-                                ? "text-sm font-semibold uppercase text-[#0b8d7c]"
-                                : "text-sm font-semibold uppercase text-black"
-                            }
-                          >
-                            {value}
-                          </span>
-                        </SheetClose>
-                        <Divider />
-                      </div>
-                    ))}
                   </div>
-                  <div className="flex justify-cente items-center text-center w-full">
-                    <SheetClose>
-                      <button
-                        onClick={() => router.push("/Contactus")}
-                        className=" h-8 bg-[#0b8d7c] text-white rounded-full  w-52 font-bold"
-                      >
-                       +91-9284205536
-                      </button>
-                    </SheetClose>
+                </SheetTitle>
+                <SheetDescription>
+                  <div className="flex flex-col justify-between sm:gap-24 gap-16  items-start mt-8 overflow-scroll">
+                    <div className="flex justify-center items-start gap-4 flex-col w-full">
+                      {linkitem.map((value, index) => (
+                        <div
+                          key={index}
+                          className="w-full flex justify-start items-start flex-col gap-4"
+                        >
+                          <SheetClose>
+                            <span
+                              onClick={() => handleredirect(value)}
+                              className={
+                                activeitem === value
+                                  ? "text-sm font-semibold uppercase text-[#0b8d7c]"
+                                  : "text-sm font-semibold uppercase text-black"
+                              }
+                            >
+                              {value}
+                            </span>
+                          </SheetClose>
+                          <Divider />
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex justify-cente items-center text-center w-full">
+                      <SheetClose>
+                        <button
+                          onClick={() => router.push("/Contactus")}
+                          className=" h-8 bg-[#0b8d7c] text-white rounded-full  w-52 font-bold"
+                        >
+                          +91-9284205536
+                        </button>
+                      </SheetClose>
+                    </div>
                   </div>
-                </div>
-              </SheetDescription>
-            </SheetHeader>
-          </SheetContent>
-        </Sheet>
-</NavbarItem>
-       
-
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
+        </NavbarItem>
       </NavbarContent>
     </Navbar>
   );

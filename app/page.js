@@ -13,6 +13,7 @@ import Link from "next/link";
 import RomanticEscape from "./honeymoon-packages/RomanticEscape";
 
 import UpcomingTripsCrousel from "./upcomingtrip/UpcomingTripsCrousel";
+import Reviewcrousel from "@/components/Crouselcomponents/Reviewcrousel";
            
 
 export default function Home() {
@@ -35,6 +36,8 @@ export default function Home() {
      <Divider className="w-11/12 mx-auto mt-12 "/>
      
      <Aboutus/>
+     <Divider className="w-11/12 mx-auto mt-12 "/>
+     <Reviewcrousel/>
      <ContactFormMain/>
 
     </main>

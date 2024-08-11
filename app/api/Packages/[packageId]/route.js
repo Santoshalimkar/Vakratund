@@ -2,19 +2,26 @@
 import dbConnect from '@/lib/Dbconnection/Dbconnect';
 import Package from '../../../../lib/model/Tourschema';
 import { NextResponse } from 'next/server';
+import mongoose from 'mongoose';
 
-export async function GET(req) {
+export async function GET(req,  { params }) {
   await dbConnect();
 
-  const { packageId } = req.params;
+  const { packageId } = params;
+  console.log(packageId)
+
+  if (!mongoose.Types.ObjectId.isValid(packageId)) {
+    return NextResponse.json({ success: false, message: 'Invalid Package ID' }, { status: 400 });
+  }
 
   try {
-    const packageData = await Package.findOne({ packageId });
+    const packageData = await Package.findById(packageId);
     if (!packageData) {
       return NextResponse.json({ success: false, message: 'Package not found' }, { status: 404 });
     }
     return NextResponse.json({ success: true, data: packageData });
   } catch (error) {
-    return NextResponse.json({ success: false }, { status: 400 });
+    console.error('Error fetching package:', error); // Log the error for debugging
+    return NextResponse.json({ success: false, message: error.message }, { status: 400 });
   }
 }
