@@ -31,6 +31,8 @@ export default function Home() {
     <WeekendTripMain/>
     <Divider className="w-11/12 mx-auto mt-12 "/>
      <UpcomingTripsCrousel/>
+     <Divider className="w-11/12 mx-auto mt-12 "/>
+
      <RomanticEscape />
 
      <Divider className="w-11/12 mx-auto mt-12 "/>
@@ -38,7 +40,11 @@ export default function Home() {
      <Aboutus/>
      <Divider className="w-11/12 mx-auto mt-12 "/>
      <Reviewcrousel/>
+     <Divider className="w-11/12 mx-auto mt-12 "/>
+
      <Swipper/>
+     <Divider className="w-11/12 mx-auto mt-12 "/>
+
      <ContactFormMain/>
 
     </main>

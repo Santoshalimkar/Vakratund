@@ -9,7 +9,7 @@ const AboutJourney = () => {
 
 <div style={{opacity:1, transform:'none'}}>
 
-    <div className='md:pb-10 lg:pb-10 pb-2 lg:pt-6'>
+    <div className='md:pb-10 lg:pb-10 pb-2 lg:pt-6 '>
         <div className='h-full w-full max-w-7xl mx-auto relative px-6 md:px-8 lg:px-10 xl:px-0 grid md:grid-cols-2 gap-6 lg:gap-12 xl:gap-20'>
             <div className='flex flex-col gap-4'>
                 <div className='flex flex-col xl:gap-2'>
