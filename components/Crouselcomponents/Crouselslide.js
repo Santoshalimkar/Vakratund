@@ -81,14 +81,14 @@ const Crouselslide = () => {
                         <Card className="w-48 h-60 relative overflow-hidden group">
                           <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
                           <div
-                            // className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
-                            // style={{
-                            //   backgroundImage: `url(${card.thumbnailImage})`,
-                            //   backgroundSize: "cover",
-                            //   backgroundPosition: "center",
-                            // }}       
+                            className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
+                            style={{
+                              backgroundImage: `url(${card.thumbnailImage})`,
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                            }}  />     
                             
-                          ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div>
+                          {/* ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div> */}
                           <CardContent className="relative flex flex-col items-center justify-center p-4 mt-[220px]">
                             <div className="h-fit w-full p-2 flex flex-col items-center transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
                               <h3 className="text-xl md:text-2xl xl:text-2xl textShadow font-bold text-center">
@@ -134,14 +134,14 @@ const Crouselslide = () => {
                     <Card className="w-[10.5rem] h-60 relative overflow-hidden group">
                       <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
                       <div
-                      //   className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
-                      //   style={{
-                      //     backgroundImage: `url(${card.thumbnailImage})`,
-                      //     backgroundSize: "cover",
-                      //     backgroundPosition: "center",
-                      //   }}
-                      // />
-                      ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div>
+                        className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
+                        style={{
+                          backgroundImage: `url(${card.thumbnailImage})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }}
+                      />
+                      {/* ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div> */}
 
                       <CardContent className="relative flex flex-col items-center justify-center p-4 mt-[220px]">
                         <div className="h-fit w-full p-2 flex flex-col items-center transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
