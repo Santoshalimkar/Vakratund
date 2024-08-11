@@ -88,7 +88,7 @@ const Crouselslide = () => {
                             //   backgroundPosition: "center",
                             // }}       
                             
-                          ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card.thumbnailImage}/></div>
+                          ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div>
                           <CardContent className="relative flex flex-col items-center justify-center p-4 mt-[220px]">
                             <div className="h-fit w-full p-2 flex flex-col items-center transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
                               <h3 className="text-xl md:text-2xl xl:text-2xl textShadow font-bold text-center">
@@ -141,7 +141,7 @@ const Crouselslide = () => {
                       //     backgroundPosition: "center",
                       //   }}
                       // />
-                      ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card.thumbnailImage}/></div>
+                      ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div>
 
                       <CardContent className="relative flex flex-col items-center justify-center p-4 mt-[220px]">
                         <div className="h-fit w-full p-2 flex flex-col items-center transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
