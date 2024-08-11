@@ -10,5 +10,5 @@ const nextConfig = { images: {
   },};
 
 
-export default nextConfig;
 
+  export default nextConfig;
