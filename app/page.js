@@ -19,12 +19,11 @@ import Reviewcrousel from "@/components/Crouselcomponents/Reviewcrousel";
 export default function Home() {
   return (
     <main className="flex flex-col w-full ">
-    <div className="fixed bottom-8 right-8 z-50">
-    <Link target="_blank" href={"https://wa.link/f5qsnc"}>
-      <Image className="md:w-24 md:h-24 lg:w-24 lg:h-24 h-20 w-20 object-contain" src={Whats} alt="whatsapp"/>
+    {/* <div className="fixed bottom-8 right-8 z-50">
 
-    </Link>
-    </div>
+      <SpeedDial/>
+    
+    </div> */}
      <Videocomponent/>
      <Crouselslide/>
      {/* <Cardcrousel/> */}
