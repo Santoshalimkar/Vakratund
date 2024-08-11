@@ -38,8 +38,8 @@ const Crouselslide = () => {
   }, []);
 
   return (
-    <div className="back w-full flex flex-col justify-center items-center container md:p-10 lg:p-10 p-2">
-      <div className="flex flex-col justify-start items-start pb-2 md:pb-4 lg:pb-4 text-start w-full py-2">
+    <div className="back w-full flex flex-col justify-center items-center container md:p-10 lg:p-8 p-2">
+      <div className="flex flex-col justify-start items-start lg:hidden md:hidden  text-start w-full ">
         <h1 className="md:text-3xl lg:text-4xl text-xl boxShadow font-bold text-black">
           Explore India
         </h1>
@@ -48,7 +48,7 @@ const Crouselslide = () => {
         </p>
       </div>
 
-      <div className="md:flex lg:flex flex-col justify-center items-center h-[30rem] relative w-full hidden">
+      <div className="md:flex lg:flex flex-col justify-center items-center h-[30rem] relative w-11/12 hidden">
         <video
           muted
           loop
@@ -57,15 +57,15 @@ const Crouselslide = () => {
           className="object-cover w-full mx-auto rounded-xl brightness-50"
           src="https://d1c8wbldjj3tey.cloudfront.net/category-section/india_(1)+(540p).mp4"
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 justify-center items-center px-4 text-center">
-          <h1 className="text-[44px] boxShadow font-bold text-white">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2 justify-center items-center px-4 text-center">
+          <h1 className="text-[34px] boxShadow font-bold text-white">
             Explore India
           </h1>
           <p className="boxShadow text-xl text-white">
             A Journey Through Time, Colour And Culture
           </p>
         </div>
-        <div className="absolute -bottom-36 w-11/12 mx-auto">
+        <div className="absolute -bottom-28 w-11/12 mx-auto">
           {isLoading ? (
             <p className="text-black text-2xl -mt-40">Loading...</p> // Loading indicator
           ) : (
@@ -78,7 +78,7 @@ const Crouselslide = () => {
                       className="flex justify-center gap-2 md:basis-1/3 lg:basis-1/5"
                     >
                       <div className="p-1">
-                        <Card className="w-48 h-60 relative overflow-hidden group">
+                        <Card className="w-44 h-60 relative overflow-hidden group">
                           <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
                           <div
                             className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
@@ -91,10 +91,10 @@ const Crouselslide = () => {
                           {/* ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div> */}
                           <CardContent className="relative flex flex-col items-center justify-center p-4 mt-[220px]">
                             <div className="h-fit w-full p-2 flex flex-col items-center transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
-                              <h3 className="text-xl md:text-2xl xl:text-2xl textShadow font-bold text-center">
+                              <h3 className="text-sm md:text-2xl xl:text-2xl textShadow font-bold text-center">
                                 {card.packageName}
                               </h3>
-                              <p className="text-white whitespace-nowrap boxShadow shadow-2xl mb-4">
+                              <p className="text-white whitespace-nowrap text-xs boxShadow shadow-2xl mb-4">
                                 Starting Price: Rs.{card.startingPrice}
                               </p>
                               <Link href={`/destination/${card._id}`}>

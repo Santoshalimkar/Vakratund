@@ -25,7 +25,7 @@ const Page = () => {
     const [isClient, setIsClient] = useState(false);
 
     const fetchData = async () => {
-        const instagramToken = `IGQWRPMWlFV3lwd0d1WjVxcFlRSFhlZAVFDaGFRSmRoRW5IWXVGa3ZAKMUJFVElBM0xDZAUZAvZAUloUzdkZAE1lWDZAQTTFXX01sNVZAJVDJaQzFDMzEybGNqNmdOblZAybmpZAZAXEwazJYNl9KbGlUZAWdtRGRxcU4wV3VaUjAZD`;
+        const instagramToken = `IGQWRObnA2VVQtekh1dG9NS2k2bk1LTWhIYkJFS1I3cE9EZA3RHRWQtTnRoUTcySGZAsMldoaXFsazJrN251XzljMGJJSlJ6T1VpdWVoSmlwakNtUEJOdFc2dFJyS0dNVEhnSi1GQlMzaVl5LWVwWGhRQlN6WGRTb3MZD`;
         const facebookToken = `EABYU2oKqNHUBOwtDOk5QAKD7EEUFep0ZASezWTku6FEkQEhuCJfCcKHB7wZBJwqDFcWqZCUsM8c19SniSHrb9U6vXfZBhPRldaOqQl9gpu1FWlUPUQbn2hzAGcVEIuBG2DPitUpwakSfeyvLeZA7g8GP6ZAOnihHnADUH2nHg7azfOLuZCbJgPZBF2fPOp81030c`;
     
         try {
