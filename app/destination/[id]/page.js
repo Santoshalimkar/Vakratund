@@ -176,11 +176,11 @@ const Hero = ({ params }) => {
             </h2>
 
             <div
-              className={`text-sm md:text-base lg:text-lg font-medium text-text-color space-y-2 ${
+              className={`text-sm md:text-base lg:text-lg leading-7 tracking-wide font-medium text-text-color space-y-2 ${
                 showFullText ? "" : "line-clamp-3"
               }`}
             >
-              <p>{destination ? destination.description2 : "Loading..."}</p>
+              <p className="leading-7 tracking-wide font-normal ">{destination ? destination.description2 : "Loading..."}</p>
             </div>
 
             <div className="w-full flex justify-center">
@@ -321,7 +321,7 @@ const Hero = ({ params }) => {
                     <div className="flex flex-row w-full h-full gap-2 pb-4 -mt-10">
                       <div className="flex flex-row items-center gap-2 mx-auto text-white font-semibold text-sm col-span-2 text-center w-full min-w-fit rounded-md shrink-0 duration-300 ease-in-out transition-all justify-between">
                         <Link
-                        href={`/destination/details/${trip._id}`}
+                        href={`/destination/${destination._id}/tripdetails/${trip._id}`}
                           // href="/destination/details"
                           className="flex flex-row items-center font-sans gap-1 text-white font-semibold text-sm col-span-2 max-w-fit text-center w-full min-w-fit bg-[#0b8d7c] ml-3 px-4 py-2 rounded-md shrink-0 duration-300 ease-in-out transition-all hover:bg-primary-dark"
                         >
@@ -336,7 +336,7 @@ const Hero = ({ params }) => {
                         </Link>
                         <div className="flex flex-row items-center w-full justify-end">
                           <Link
-                            href="/destination/details"
+                            href=""
                             className="flex items-center  font-sans gap-1 w-max h-fit mr-3 text-white hover:text-white bg-[#0b8d7c] px-4 py-2 rounded-md shrink-0 duration-300 ease-in-out transition-all hover:bg-[#0b8d7c]"
                           >
                             Enquiry{" "}

@@ -20,11 +20,7 @@ export default function SpeedDials() {
           label: "Mobile",
           icon: "pi pi-phone",
           command: () => {
-            toast.current.show({
-              severity: "info",
-              summary: "Add",
-              detail: "Data Added",
-            });
+            window.open("tel:919284205536");
           },
           className:
             "rounded-full transition-all duration-[0.2s] ease-out group-hover:-translate-x-1 group-hover:-translate-y-40 flex  bg-blue-500 hover:opacity-90 text-white p-3",
@@ -44,11 +40,7 @@ export default function SpeedDials() {
           label: "Mail",
           icon: "pi pi-envelope",
           command: () => {
-            toast.current.show({
-              severity: "error",
-              summary: "Delete",
-              detail: "Data Deleted",
-            });
+            window.open("mailto:vakratundtour@gmail.com", "_blank");
           },
           className:
             "rounded-full transition-all duration-[0.2s] ease-out group-hover:-translate-x-1 group-hover:-translate-y-40 flex  bg-red-500 hover:opacity-90 text-white p-3",

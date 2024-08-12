@@ -27,7 +27,7 @@ const Getintouch = () => {
           <p>+91-9284205536</p>
         </div>
       </div>
-      <div className="flex justify-center items-center w-full rounded-lg lg:h-24 md:h-24 h-14 bg-[#36a39e] lg:mt-20 md:mt-20 mt-4">
+      <div className="md:flex hidden lg:flex justify-center items-center w-full rounded-lg lg:h-24 md:h-24 h-14 bg-[#36a39e] lg:mt-20 md:mt-20 mt-4">
         <div className="flex justify-around gap-2 items-center">
           <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
             <FaInstagram

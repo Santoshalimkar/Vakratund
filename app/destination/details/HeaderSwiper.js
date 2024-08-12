@@ -13,7 +13,9 @@ import HeroImage from "../../../public/Cardimages/BaliHeroImage.JPG";
 import HeroImage_2 from "../../../public/Cardimages/BaliHeroImage_2.JPG";
 import Meghalaya from "../../../public/Cardimages/Meghalaya.JPG";
 
-export default function HeaderSwiper() {
+export default function HeaderSwiper({data}) {
+
+  console.log("tripdata",data)
   const initialProducts = [
     {
       id: "1000",
@@ -73,7 +75,7 @@ export default function HeaderSwiper() {
     },
   ];
 
-  const [products, setProducts] = useState(initialProducts);
+  const [products, setProducts] = useState(data?.galleryImages);
   const responsiveOptions = [
     {
       breakpoint: "1400px",
@@ -98,13 +100,13 @@ export default function HeaderSwiper() {
   ];
 
 
-  const productTemplate = (product) => {
+  const productTemplate = (products) => {
     return (
       <div className=" m-2 mt-5 text-center py-5 px-3">
         <div className="mb-3 relative w-full h-60">
           <Image
-            src={product.image}
-            alt={product.name}
+            src={products}
+            alt={products}
             layout="fill"
             objectFit="cover"
             className="w-6 shadow-2 carousel-image redius "

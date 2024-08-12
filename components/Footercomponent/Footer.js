@@ -183,10 +183,13 @@ const Footer = () => {
               </h3>
               <div className="grid grid-cols-2 gap-2 md:grid-cols-1">
                 <Link
-                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main flex gap-1 items-center  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/"
                 >
-                  International Trips
+                  International Trips{" "}
+                  <span className="inline-flex lg:text-[0.6rem] md:text-[0.6rem] text-[0.4rem] text-nowrap  rounded-full justify-center text-center px-1 md:px-2 items-center bg-[#0b8d7c] font-medium text-white">
+                    Comming soon
+                  </span>
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
@@ -220,25 +223,33 @@ const Footer = () => {
                   Office :<span> Pune ,Maharastara 410401</span>
                 </p>
                 <div className="flex justify-center items-center w-full rounded-lg h-24  mt-20">
-                  <div className="flex justify-around gap-2 items-center">
-                    <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
-                      <FaInstagram
-                        size={24}
-                        className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
-                      />
-                    </div>
+                <div className="flex justify-around gap-2 items-center">
+                    <Link
+                      href={
+                        "https://www.instagram.com/vakratund_tours/?utm_source=ig_embed&ig_rid=22824f35-53c7-4967-8fe8-83f163b00532"
+                      }
+                    >
+                      <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
+                        <FaInstagram
+                          size={24}
+                          className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
+                        />
+                      </div>
+                    </Link>
                     <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
                       <SlSocialFacebook
                         size={24}
                         className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
                       />
                     </div>
-                    <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
-                      <FaWhatsapp
-                        size={24}
-                        className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
-                      />
-                    </div>
+                    <Link href={"https://wa.link/f5qsnc"}>
+                      <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
+                        <FaWhatsapp
+                          size={24}
+                          className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
+                        />
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>

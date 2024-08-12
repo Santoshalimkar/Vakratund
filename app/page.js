@@ -43,7 +43,7 @@ export default function Home() {
      <Divider className="w-11/12 mx-auto mt-12 "/>
 
      <Swipper/>
-     <Divider className="w-11/12 mx-auto mt-12 "/>
+     <Divider className="w-11/12 mx-auto mt-12 hidden md:block lg:block "/>
 
      <ContactFormMain/>
 
