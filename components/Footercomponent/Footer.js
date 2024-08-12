@@ -135,31 +135,31 @@ const Footer = () => {
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
-                  href="/"
+                  href="/review"
                 >
                   Review
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
-                  href="/"
+                  href="/Blogs"
                 >
                   Travel Blogs
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
-                  href="/"
+                  href="/aboutus"
                 >
                   About Us
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
-                  href="/"
+                  href="/Contactus"
                 >
                   Contact Us
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
-                  href="/"
+                  href="/privacypolicy"
                 >
                   Privacy Policy
                 </Link>
@@ -171,7 +171,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
-                  href="/"
+                  href="/termsandconditions"
                 >
                   Terms and Condition
                 </Link>
@@ -196,9 +196,15 @@ const Footer = () => {
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
-                  href="/"
+                  href="/upcomingtrip"
                 >
                   Upcoming Trips
+                </Link>
+                <Link
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  href="/destination/weekendtrip"
+                >
+                  Weekend Trips
                 </Link>
               </div>
             </div>

@@ -20,34 +20,38 @@ const Reviewcrousel = () => {
 
   const reviews = [
     {
-      name: "Kuchipudi Venkat",
-      title: "CEO",
-      pic: logo,
-      text: "As the CEO of multiple restaurant brands, working with BRANDSAGA has been a transformative experience for our marketing strategy. Their team of professionals has a profound understanding of the influencer landscape, which has been crucial in executing campaigns that resonate deeply with our target audiences.",
+      name: "Sandeep Kadam",
+      title: "Maval",
+      pic: "https://res.cloudinary.com/ddysmgao7/image/upload/v1723461021/vjekmz3ctjbrqzbhx90r.jpg",
+      text: "Vakratund Tours and Adventure exceeded all my expectations! From the moment we booked our trip, the team was incredibly professional and attentive to every detail. The destinations were stunning, and the guides were knowledgeable and passionate. It truly felt like a personalized experience. Highly recommend to anyone looking for an adventure of a lifetime!",
     },
     {
-      name: "Harleys CEO Suresh Naik",
-      title: "CEO",
-      pic: logo,
-      text: `Partnering with BRANDSAGA has elevated our marketing initiatives to new heights. Their expertise in influencer collaboration and strategic marketing has not only enhanced our brand's visibility but has also significantly contributed to our overall business growth. I highly recommend BRANDSAGA to any business looking to forge meaningful connections with their audience through influencer marketing`,
+      name: "Santosh Alimkar",
+      title: "Touriest",
+      pic: 'https://res.cloudinary.com/ddysmgao7/image/upload/v1723461333/uyvhgafwvkywjje0mry1.jpg',
+      text: `Our trip with Vakratund Tours and Adventure was absolutely amazing! They managed to strike the perfect balance between thrilling adventures and comfortable accommodations. Every day was a new discovery, and the itinerary was perfectly planned. I can’t wait to book my next trip with them!`,
     },
     {
-      name: "F cafe and Bar",
-      title: "Cafe",
-      pic: logo,
-      text: `The content created in collaboration with their handpicked influencers has not only been authentic and engaging but has also translated into tangible outcomes. We've seen a significant increase in our social media engagement rates and a noticeable boost in foot traffic across our locations. Their ability to track campaign performance with comprehensive metrics has allowed us to see the ROI clearly and adjust our strategies dynamically.`,
+      name: "Rohit Ashok Rajivade",
+      title: "Pune",
+      pic: 'https://res.cloudinary.com/ddysmgao7/image/upload/v1723461894/oq5likuqyprk6uqisora.jpg',
+      text: `Vakratund Tours and Adventure made our dream vacation a reality. The entire journey was seamless, and the attention to detail was impeccable. We visited breathtaking places and had experiences we’ll never forget. The team’s passion for travel really shines through in everything they do. Can’t recommend them enough!
+
+`,
     },
     {
-      name: "String Metaverse",
-      title: "Brand",
+      name: "Rohan Kakre",
+      title: "Mumbai",
       pic: logo,
-      text: `Their selection of influencers was impeccable. BRANDSAGA has access to a diverse network of influencers, and they matched us with individuals who not only had significant reach but also aligned perfectly with our brand values. This alignment ensured that the promotions felt genuine and resonated strongly with potential customers, driving both engagement and conversion.`,
+      text: `From the first interaction to the last day of our trip, Vakratund Tours and Adventure provided exceptional service. The destinations were handpicked and absolutely breathtaking. The guides were friendly, knowledgeable, and went above and beyond to ensure we had an amazing time. I would recommend them to anyone looking for an unforgettable travel experience.`,
     },
     {
-      name: "Brandorigin",
-      title: "Brand",
+      name: "Rushi Kadam",
+      title: "Lonavala",
       pic: logo,
-      text: `The campaign performance was tracked meticulously, and the transparency with which data was shared helped us understand the impact of each element of the campaign. This data-driven approach was invaluable as it allowed us to iterate quickly and optimize our strategies in real time`,
+      text: `What sets Vakratund Tours and Adventure apart is their commitment to creating a personalized travel experience. They listened to our preferences and curated an itinerary that matched our interests perfectly. The trip was well-organized, stress-free, and filled with unique experiences. It felt like traveling with friends rather than just a tour company.
+
+`,
     },
   ];
 
@@ -98,9 +102,12 @@ const Reviewcrousel = () => {
                     <CardContent className="flex flex-col gap-4  items-center justify-center p-5">
                       <div className="flex justify-start items-center gap-2 mr-auto">
                         <Image
-                          className="w-16 h-16 rounded-full"
+                          className="w-12 h-12 rounded-full"
                           size="lg"
+                          object
                           src={value.pic}
+                          height={60}
+                          width={60}
                         />
                         <div>
                           <h6 className="text-sm font-bold">{value.name}</h6>

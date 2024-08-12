@@ -18,10 +18,14 @@ const AboutJourney = () => {
                     </h2>
 
                 </div>
-                <p className='text-xs lg:text-sm xl:text-base text-text-color leading-7 -tracking-tighter text-justify'>{`Sanyam Sharma and Sourabh Rathore founded Vakratund Tours in 2024. Sanyam, an influencer, and Sourabh, a former software developer, united by their love for travel and content creation, decided to share their experiences with others. Recognizing the value of genuine experiences abroad, they launched Vakratund Tours Travels, aiming to offer more than just travel services. They envisioned it as a community where travelers could connect, share stories, and embark on adventures together. Join them on this journey beyond just being tourists; become part of a vibrant travel community.`}</p>
+                <p className='text-xs lg:text-sm xl:text-base text-text-color leading-7 -tracking-tighter text-justify'>{`
+
+In 2024, Vishal Ambekar founded Vakratund Tours and Adventure, driven by his deep passion for exploration and adventure. As an avid traveler and outdoor enthusiast, Vishal wanted to create more than just a travel service—he envisioned a community where fellow adventurers could come together to experience the thrill of discovery. Vakratund Tours and Adventure was born out of this vision, offering not only meticulously crafted travel experiences but also a platform for travelers to share their stories, connect with like-minded individuals, and embark on unforgettable journeys together. Join Vishal on this exciting adventure, and become part of a vibrant community that celebrates the spirit of exploration and adventure.`}</p>
                 <ul className='flex flex-col gap-6 list-disc'>
                     <li className='flex flex-col gap-2'><span className='text-lg lg:text-xl '>●   How we named our organization.</span>
-                    <span className='md:pl-7 lg:pl-7 text-xs lg:text-sm xl:text-base text-text-color leading-7 -tracking-tighter text-justify'>{`Driven by this vision, we decided to start our own travel company. But finding the right name proved to be a challenge. Then, one day during a casual conversation, a phrase struck us: “Vakratund Tours ghoom ghoom ke thak gaye” ('Tired of traveling all over the place'). It was in that moment that the idea for 'Vakratund Tours Travels' was born – a name that concluded our passion for exploring both near and far.`}
+                    <span className='md:pl-7 lg:pl-7 text-xs lg:text-sm xl:text-base text-text-color leading-7 -tracking-tighter text-justify'>{`
+
+Finding the perfect name for our travel company was a challenge. After sifting through numerous ideas, inspiration finally struck during a casual conversation. Someone mentioned, “Vakratund Tours – Ghoom ghoom ke maze le liye” ('Enjoyed traveling all around'). This phrase captured the joy and excitement we associate with exploration. That’s when 'Vakratund Tours and Adventure' came to life—a name that embodies our passion for creating memorable and joyful travel experiences for every adventurer.`}
                         </span>
                         </li>
                         </ul>
