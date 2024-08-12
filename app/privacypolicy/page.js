@@ -147,10 +147,10 @@ const Hero = () => {
 
     <h3 className=" md:text-xl lg:text-2xl font-semibold text-black">
 
-    Security Measures:
+    {`Security Measures:`}
     </h3>
-<p className="">We implement industry-standard security measures to protect your information from unauthorized access, disclosure, alteration, or destruction.</p>
-<p className="-mt-4">However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+<p className="">{`We implement industry-standard security measures to protect your information from unauthorized access, disclosure, alteration, or destruction.`}</p>
+<p className="-mt-4">{`However, no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.`}</p>
 
 </div>
                 
@@ -158,9 +158,9 @@ const Hero = () => {
 
     <h3 className=" md:text-xl lg:text-2xl font-semibold text-black">
 
-    Children's Privacy:
+  {`Children's Privacy:`}
     </h3>
-<p className="">Our services are not directed at individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us immediately.</p>
+  <p className="">{`Our services are not directed at individuals under the age of 18. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us immediately.`}</p>
 
 </div>
                 
