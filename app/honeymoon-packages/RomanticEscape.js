@@ -66,14 +66,14 @@ const RomanticEscape = () => {
 
   return (
     <div className="back2 w-full  flex flex-col justify-center items-center container md:p-10 lg:p-10 p-2 mb-28 ">
-      <div className="flex flex-col  justify-start items-start pb-2 md:pb-4 lg:pb-4 text-start w-full py-2">
+      {/* <div className="flex flex-col  justify-start items-start pb-2 md:pb-4 lg:pb-4 text-start w-full py-2">
         <h1 className="md:text-3xl lg:text-4xl text-xl boxShadow font-bold text-black">
         Romantic Escapes
         </h1>
         <p className="boxShadow text-sm text-black">
         Where Forever Begins...Together!
         </p>
-      </div>
+      </div> */}
 
       <div className=" md:flex lg:flex flex-col justify-center items-center  h-[30rem] relative w-full hidden ">
         <video
@@ -81,7 +81,7 @@ const RomanticEscape = () => {
           loop
           height={400}
           autoPlay
-          className="object-cover w-full mx-auto rounded-xl brightness-50  "
+          className="object-cover w-11/12 mx-auto rounded-xl brightness-50  "
           src="https://d1c8wbldjj3tey.cloudfront.net/category-section/honeymoon_(1)+(540p).mp4"
         />
         <div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-4 justify-center items-center px-4 text-center">
@@ -92,16 +92,16 @@ const RomanticEscape = () => {
           Where Forever Begins...Together!
           </p>
         </div>
-        <div className="absolute -bottom-36 w-11/12 mx-auto ">
-          <Carousel className="w-full">
-            <CarouselContent className="">
+        <div className="absolute -bottom-28 w-11/12 mx-auto ">
+          <Carousel className="w-11/12 mx-auto">
+            <CarouselContent className="w-full">
               {cardData.map((card) => (
                 <CarouselItem
                   key={card.id}
                   className=" flex justify-center gap-2  md:basis-1/3 lg:basis-1/5"
                 >
                   <div className="p-1">
-                    <Card className="w-48 h-60 relative overflow-hidden group">
+                    <Card className="w-44 h-60 relative overflow-hidden group">
                       <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
 
                       <div
@@ -117,7 +117,7 @@ const RomanticEscape = () => {
                           <h3 className="text-xl md:text-2xl xl:text-2xl  text-white textShadow font-bold text-center">
                             {card.title}
                           </h3>
-                          <p className="text-white whitespace-nowrap boxShadow shadow-2xl mb-4">
+                          <p className="text-white text-xs whitespace-nowrap boxShadow shadow-2xl mb-4">
                             {card.description}
                           </p>
 

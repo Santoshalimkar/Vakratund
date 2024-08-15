@@ -8,45 +8,43 @@ import Aboutus from "@/components/AboutUs/Aboutus";
 import ContactFormMain from "@/components/Contactuscomponents/ContactFormMain";
 import WeekendTripMain from "./destination/weekendtrip/page";
 import { Divider } from "@nextui-org/react";
-import Whats from "../public/Navabar/whats.png"
+import Whats from "../public/Navabar/whats.png";
 import Link from "next/link";
 import RomanticEscape from "./honeymoon-packages/RomanticEscape";
 
 import UpcomingTripsCrousel from "./upcomingtrip/UpcomingTripsCrousel";
 import Reviewcrousel from "@/components/Crouselcomponents/Reviewcrousel";
 import Swipper from "@/components/Crouselcomponents/Swipper";
-           
 
 export default function Home() {
   return (
     <main className="flex flex-col w-full ">
-    {/* <div className="fixed bottom-8 right-8 z-50">
+      {/* <div className="fixed bottom-8 right-8 z-50">
 
       <SpeedDial/>
     
     </div> */}
-     <Videocomponent/>
-     <Crouselslide/>
-     {/* <Cardcrousel/> */}
-    <WeekendTripMain/>
-    <Divider className="w-11/12 mx-auto mt-12 "/>
-     <UpcomingTripsCrousel/>
-     <Divider className="w-11/12 mx-auto mt-12 "/>
+      <Videocomponent />
+      <Crouselslide />
+      {/* <Cardcrousel/> */}
+      <WeekendTripMain />
+      <Divider className="w-11/12 mx-auto mt-12 " />
+      <UpcomingTripsCrousel />
+      <Divider className="w-11/12 mx-auto mt-12 " />
 
-     <RomanticEscape />
+      <RomanticEscape/>
 
-     <Divider className="w-11/12 mx-auto mt-12 "/>
-     
-     <Aboutus/>
-     <Divider className="w-11/12 mx-auto mt-12 "/>
-     <Reviewcrousel/>
-     <Divider className="w-11/12 mx-auto mt-12 "/>
+      <Divider className="w-11/12 mx-auto mt-12 " />
 
-     <Swipper/>
-     <Divider className="w-11/12 mx-auto mt-12 hidden md:block lg:block "/>
+      <Aboutus />
+      <Divider className="w-11/12 mx-auto mt-12 " />
+      <Reviewcrousel />
+      <Divider className="w-11/12 mx-auto mt-12 " />
 
-     <ContactFormMain/>
+      <Swipper />
+      <Divider className="w-11/12 mx-auto mt-12 hidden md:block lg:block " />
 
+      <ContactFormMain />
     </main>
   );
 }

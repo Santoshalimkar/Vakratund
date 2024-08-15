@@ -97,7 +97,7 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-[#36a39e] rounded-full text-white hover:bg-[#36a39e] hover:bg-transparent">
+          <NavigationMenuTrigger className="bg-[#0b8d7c]  rounded-full text-white hover:bg-[#36a39e] hover:bg-transparent">
             About us
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -147,12 +147,15 @@ export function NavigationMenuDemo() {
                       </div>
                     </Link>
                     </Link>
+                    <Link href={"https://www.facebook.com/people/Vishal-Ambekar/pfbid0iY9XXVpf3EYxpKWLdEuUNEAomhFvDbpAfDq9hgsZovHuEUK7kLBdtyd6u2DisGnal/?name=xhp_nt__fb__action__open_user"}>
                     <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
                       <SlSocialFacebook
                         size={24}
                         className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
                       />
                     </div>
+
+                    </Link>
                     <Link href={"https://wa.link/f5qsnc"}>
                       <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
                         <FaWhatsapp
@@ -187,7 +190,7 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem> */}
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-[#36a39e] rounded-full text-white">
+          <NavigationMenuTrigger className="bg-[#0b8d7c]  rounded-full text-white">
             Categories
           </NavigationMenuTrigger>
           <NavigationMenuContent>
