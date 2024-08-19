@@ -57,11 +57,9 @@ export default function Nav() {
     switch (link) {
       case "HOME":
         router.push("/");
-        Extendmenu()
         break;
       case "packages":
         router.push("/destination");
-        Extendmenu()
         break;
       case "blog":
         router.push("/Blogs");
@@ -143,7 +141,7 @@ export default function Nav() {
                 className="md:hidden lg:hidden flex text-white"
               />
             </SheetTrigger>
-            <SheetContent side="right" className="bg-[#36a39e]">
+            <SheetContent side="right" className=" bg-[#0b8d7c]">
               <SheetHeader>
                 <SheetTitle>
                   <div className="flex justify-between items-center w-full ">
@@ -187,7 +185,7 @@ export default function Nav() {
                       <SheetClose>
                         <button
                           onClick={() => router.push("/Contactus")}
-                          className=" h-8 bg-[#0b8d7c] text-white rounded-full  w-52 font-bold"
+                          className=" h-8 bg-[#36a39e] text-white rounded-full  w-52 font-bold"
                         >
                           +91-9284205536
                         </button>
