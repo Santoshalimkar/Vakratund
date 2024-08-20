@@ -98,7 +98,7 @@ const Reviewcrousel = () => {
                 className="md:basis-1/3 lg:basis-1/3 sm:basis-1/2   h-auto"
               >
                 <div>
-                  <Card className="rounded-3xl border back2  border-foreground-300 flex justify-center items-start">
+                  <Card className="rounded-3xl border   border-foreground-300 flex justify-center items-start">
                     <CardContent className="flex flex-col gap-4  items-center justify-center p-5">
                       <div className="flex justify-start items-center gap-2 mr-auto">
                         <Image
