@@ -14,7 +14,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 export default function Swipper() {
   return (
-    <div className='relative back py-12 hidden md:block lg:block'>
+    <div className='relative back py-12  md:block lg:block'>
     <div className='flex justify-center items-center flex-col gap-4 py-4'>
     <p className='text-3xl font-semibold'>JOURNEY IN FRAMES</p>
     <p>Pictures Perfect Moments</p>
