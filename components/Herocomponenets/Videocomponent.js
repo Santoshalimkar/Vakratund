@@ -2,6 +2,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
+
 const Videocomponent = () => {
   const [text] = useTypewriter({
     words: [
@@ -30,7 +31,11 @@ const Videocomponent = () => {
         <h2 className="text-[#fee60b] text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium h-12">
           {text} <Cursor cursorColor="white" />
         </h2>
+
+      
+
       </div>
+
     </div>
   );
 };
