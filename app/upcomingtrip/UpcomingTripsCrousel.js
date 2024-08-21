@@ -107,12 +107,12 @@ const UpcomingTripsCarousel = () => {
           )}
         </div>
         <div>
-          <Link
+          {/* <Link
             href="/"
             className="group mt-4 whitespace-nowrap flex shadow-md bg-[#36a39e] hover:bg-[#0b8d7c] px-2 justify-center rounded-xl p-1 text-sm text-white flex-row items-center gap-1 hover:gap-2 cursor-pointer transition-all duration-300 ease-in-out"
           >
             View All
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

@@ -59,6 +59,10 @@ const DetailsPage = ({ params }) => {
                   <p className="flex items-center gap-1 sm:gap-1.5 text-xs text-white bg-gradient-to-r from-green-500 to-teal-500 rounded-md px-1">
                    {tripdata?.fromLocation}<span className="pl-1 py-0.5"></span>
                   </p>
+                  <p className="flex items-center gap-1 sm:gap-1.5 text-xs text-white bg-gradient-to-r from-green-500 to-teal-500 rounded-md px-1">
+                   {tripdata?.tripDate}<span className="pl-1 py-0.5"></span>
+                  </p>
+                 
                 </div>
                 <div className="flex flex-row gap-2 items-center justify-start w-full mt-2">
                   <div className="flex flex-col gap-2 py-4 items-start justify-start w-full">
@@ -198,6 +202,60 @@ const DetailsPage = ({ params }) => {
                     </div>
                   </div>
                 </div>
+
+                <div className="relative flex flex-col gap-6 md:gap-8 my-6 w-full">
+                  <h2 className="text-xl md:text-2xl lg:text-3xl font-[500] flex flex-row gap-2">
+                    Inclusions{" "}
+                    <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
+                      <i
+                        className="pi pi-sparkles"
+                        style={{ fontSize: "1rem" }}
+                      ></i>
+                    </span>
+                  </h2>
+                  <p className="text-text-color text-sm md:text-base capitalize -mt-6">
+                    {`What's included with this trip.`}
+                  </p>
+                  <div className="relative flex flex-col lg:flex-row justify-start items-start gap-3 md:gap-5">
+                  <div className="prose prose-sm prose-zinc dark:prose-invert max-w-none !bg-transparent">
+                  <ul className="list-disc pl-5">
+                  {tripdata?.inclusions.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+                  </div>
+                  </div>
+                </div>
+
+                <div className="relative flex flex-col gap-6 md:gap-8 my-6 w-full">
+                  <h2 className="text-xl md:text-2xl lg:text-3xl font-[500] flex flex-row gap-2">
+                    Exclusions{" "}
+                    <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
+                      <i
+                        className="pi pi-sparkles"
+                        style={{ fontSize: "1rem" }}
+                      ></i>
+                    </span>
+                  </h2>
+                  <p className="text-text-color text-sm md:text-base capitalize -mt-6">
+                    {`What's not included with this trip.`}
+                  </p>
+                  {/* <div className="relative flex flex-col lg:flex-row justify-start items-start gap-3 md:gap-5">
+                    <div className="flex flex-col">
+                      prose prose-sm prose-zinc dark:prose-invert max-w-none !bg-transparent
+                    </div>
+
+
+                  </div> */}
+                  <div className="prose prose-sm prose-zinc dark:prose-invert max-w-none !bg-transparent">
+                  <ul className="list-disc pl-5">
+                  {tripdata?.exclusions.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+                  </div>
+                </div>
+
               </div>
             </div>
             <div className="w-96 hidden bg-white my-2 lg:my-0 lg:flex lg:basis-[35%] lg:sticky lg:top-32 flex-col h-full items-start justify-start shadow-[2px_2px_2px_2px_rgba(11,141,124,0.10)] border border-[#36a39e] hover:border-[#0b8d7c] rounded-lg overflow-hidden">
