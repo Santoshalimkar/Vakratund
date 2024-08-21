@@ -27,7 +27,7 @@ const Reviewcrousel = () => {
     },
     {
       name: "Santosh Alimkar",
-      title: "Touriest",
+      title: "Khopoli",
       pic: 'https://res.cloudinary.com/ddysmgao7/image/upload/v1723461333/uyvhgafwvkywjje0mry1.jpg',
       text: `Our trip with Vakratund Tours and Adventure was absolutely amazing! They managed to strike the perfect balance between thrilling adventures and comfortable accommodations. Every day was a new discovery, and the itinerary was perfectly planned. I can’t wait to book my next trip with them!`,
     },
@@ -110,7 +110,7 @@ const Reviewcrousel = () => {
                           width={60}
                         />
                         <div>
-                          <h6 className="text-sm font-bold">{value.name}</h6>
+                          <h6 className="text-sm font-bold text-[#0b8d7c]">{value.name}</h6>
                           <p className="text-xs text-foreground-500 font-bold">
                             {value.title}
                           </p>

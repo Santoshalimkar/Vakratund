@@ -14,7 +14,7 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 export default function Swipper() {
   return (
-    <div className='relative back py-12 hidden md:block lg:block'>
+    <div className='relative back py-12  md:block lg:block'>
     <div className='flex justify-center items-center flex-col gap-4 py-4'>
     <p className='text-3xl font-semibold'>JOURNEY IN FRAMES</p>
     <p>Pictures Perfect Moments</p>
@@ -22,7 +22,7 @@ export default function Swipper() {
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        centeredSlides={true}
+        centeredSlides={''}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 50,
@@ -36,29 +36,41 @@ export default function Swipper() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1723359456/VakratundTours/g0mcg1q69o9lhd4nvvco.jpg" />
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246251/VakratundTours/Gallery%20Images/imodl3kqremyu2ewrotr.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1723359865/VakratundTours/qf2wnny3axkqawyxpep4.jpg" />
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246480/VakratundTours/Gallery%20Images/bwdr63hfwkxnotidnpud.jpg" />
         </SwiperSlide>
+        
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1723358520/VakratundTours/cpb8yy1fqkuyu51j8xx2.jpg" />
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246505/VakratundTours/Gallery%20Images/il3nba9t9yehwtozifwb.jpg" />
         </SwiperSlide>
+        
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1723359166/VakratundTours/dd4runep3rougfwbuofu.jpg" />
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246534/VakratundTours/Gallery%20Images/uty56fxpl844uoyl9tyb.jpg" />
         </SwiperSlide>
+
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1723359386/VakratundTours/jxabbejdbukgxjsn0xhh.jpg" />
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246561/VakratundTours/Gallery%20Images/krmuphoxiaoqxj6aq8bh.jpg" />
         </SwiperSlide>
+        
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1723359603/VakratundTours/me4twl0hx99wjpqfszvl.jpg" />
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246748/VakratundTours/Gallery%20Images/utxhwot6hqutz1vupcx2.jpg" />
         </SwiperSlide>
+        
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1723359803/VakratundTours/astmbrwculbi7l2ydxun.jpg" />
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246800/VakratundTours/Gallery%20Images/qdmgf5pyoscxkma2521e.jpg" />
         </SwiperSlide>
+        
         <SwiperSlide>
-          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1723359803/VakratundTours/astmbrwculbi7l2ydxun.jpg" />
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246776/VakratundTours/Gallery%20Images/idy7sy9utbyl7qr2fcze.jpg" />
         </SwiperSlide>
+        
+        <SwiperSlide>
+          <img src="https://res.cloudinary.com/ddysmgao7/image/upload/v1724246748/VakratundTours/Gallery%20Images/utxhwot6hqutz1vupcx2.jpg" />
+        </SwiperSlide>
+        
+       
        
       </Swiper>
     </div>

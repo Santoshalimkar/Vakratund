@@ -23,7 +23,7 @@ export default function SpeedDials() {
             window.open("tel:919284205536");
           },
           className:
-            "rounded-full transition-all duration-[0.2s] ease-out group-hover:-translate-x-1 group-hover:-translate-y-40 flex  bg-blue-500 hover:opacity-90 text-white p-3",
+            "rounded-full transition-all duration-[0.2s] ease-out group-hover:-translate-x-1 group-hover:-translate-y-10 flex  bg-blue-500 hover:opacity-90 text-white p-3 text-2xl",
           style: { backgroundColor: "#1D4ED8", color: "#fff" },
         },
         {
@@ -33,7 +33,7 @@ export default function SpeedDials() {
             window.open("https://wa.link/f5qsnc", "_blank");
           },
           className:
-            "rounded-full transition-all duration-[0.2s] ease-out group-hover:-translate-x-1 group-hover:-translate-y-40 flex  bg-green-500 hover:opacity-90 text-white p-3",
+            "rounded-full transition-all duration-[0.2s] ease-out group-hover:-translate-x-1 group-hover:-translate-y-40 flex  bg-green-500 hover:opacity-90 text-white p-3 text-2xl",
           style: { backgroundColor: "#10B981", color: "#fff" },
         },
         {
@@ -43,7 +43,7 @@ export default function SpeedDials() {
             window.open("mailto:vakratundtour@gmail.com", "_blank");
           },
           className:
-            "rounded-full transition-all duration-[0.2s] ease-out group-hover:-translate-x-1 group-hover:-translate-y-40 flex  bg-red-500 hover:opacity-90 text-white p-3",
+            "rounded-full transition-all duration-[0.2s] ease-out group-hover:-translate-x-1 group-hover:-translate-y-40 flex  bg-red-500 hover:opacity-90 text-white p-3 text-2xl",
           style: { backgroundColor: "#EF4444", color: "#fff" },
         },
       ]
@@ -65,7 +65,7 @@ export default function SpeedDials() {
         <SpeedDial
           className="bg-[#36a39e] h-12 w-12 text-white cursor-pointer shadow-xl flex items-center justify-center rounded-full hover:bg-[#0b8d7c] fixed bottom-6 right-6"
           model={items}
-          radius={120}
+          radius={90}
           type="quarter-circle"
           direction="up-left"
           showIcon="pi pi-phone"

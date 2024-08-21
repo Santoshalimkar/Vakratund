@@ -4,6 +4,7 @@ import { FiPhone } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { SlSocialFacebook } from "react-icons/sl";
 import { FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
 
 const Getintouch = () => {
   return (
@@ -29,24 +30,32 @@ const Getintouch = () => {
       </div>
       <div className="md:flex hidden lg:flex justify-center items-center w-full rounded-lg lg:h-24 md:h-24 h-14 bg-[#36a39e] lg:mt-20 md:mt-20 mt-4">
         <div className="flex justify-around gap-2 items-center">
-          <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
-            <FaInstagram
-              size={24}
-              className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
-            />
-          </div>
-          <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
-            <SlSocialFacebook
-              size={24}
-              className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
-            />
-          </div>
-          <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
-            <FaWhatsapp
-              size={24}
-              className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
-            />
-          </div>
+        <Link
+                      href={
+                        "https://www.instagram.com/vakratund_tours/?utm_source=ig_embed&ig_rid=22824f35-53c7-4967-8fe8-83f163b00532"
+                      }
+                    >
+                      <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
+                        <FaInstagram
+                          size={24}
+                          className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
+                        />
+                      </div>
+                    </Link>
+                    <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
+                      <SlSocialFacebook
+                        size={24}
+                        className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
+                      />
+                    </div>
+                    <Link href={"https://wa.link/f5qsnc"}>
+                      <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
+                        <FaWhatsapp
+                          size={24}
+                          className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
+                        />
+                      </div>
+                    </Link>
 
         </div>
       </div>
