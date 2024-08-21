@@ -254,6 +254,47 @@ const DetailsPage = ({ params }) => {
                 </ul>
                   </div>
                 </div>
+
+                <div className="relative flex flex-col gap-6 md:gap-8 my-6 w-full">
+                  <h2 className="text-xl md:text-2xl lg:text-3xl font-[500] flex flex-row gap-2">
+                    Costing Options
+                    <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
+                      <i
+                        className="pi pi-sparkles"
+                        style={{ fontSize: "1rem" }}
+                      ></i>
+                    </span>
+                  </h2>
+                  <p className="text-text-color text-sm md:text-base capitalize -mt-6">
+                    {`What are the Costing and Sharing Options are Available for this trip.`}
+                  </p>
+                 <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-gray-200 border-collapse">
+                      <thead className="bg-gray-100">
+                        <tr>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Sharing Type
+                          </th>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Costing
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="bg-white divide-y divide-gray-200">
+                        {tripdata?.sharingOptions.map((item, index) => (
+                          <tr key={item}>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                              {item.type}
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                              {item.cost}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
                 
               </div>
             </div>
