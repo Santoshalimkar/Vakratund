@@ -62,15 +62,15 @@ const UpcomingTripsCarousel = () => {
              <ProgressSpinner />
          </div>
           ) : (
-            <Carousel className=" w-full justify-content-center ">
+            <Carousel className=" w-full  ">
             <CarouselContent >
               {cardData.map((card) => (
                 <CarouselItem
                   key={card.id}
-                  className="flex  gap-2 basis-1/2 md:basis-1/3 lg:basis-1/5 justify-content-center" // Add justify-center and items-center
+                  className="flex justify-center gap-2 basis-1/2  md:basis-1/3 lg:basis-1/5" // Add justify-center and items-center
                 >
                   <div className="p-1">
-                    <Card className="md:w-48 lg:w-48 w-60 h-60 relative overflow-hidden group mx-auto">
+                    <Card className="md:w-48 lg:w-48 w-[10.5rem] h-60 relative overflow-hidden group">
                       <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
                       <div
                         className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"

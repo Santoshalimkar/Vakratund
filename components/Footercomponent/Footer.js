@@ -175,6 +175,18 @@ const Footer = () => {
                 >
                   Terms and Condition
                 </Link>
+                <Link
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  href="/disclaimer"
+                >
+                  Disclaimer
+                </Link>
+                <Link
+                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  href="/cancellationpolicy"
+                >
+                  CANCELLATION POLICY
+                </Link>
               </div>
             </div>
             <div className="space-y-4 md:pl-8 md:border-l-2 border-white/30">
@@ -229,7 +241,7 @@ const Footer = () => {
                   Office :<span> Pune ,Maharastara 410401</span>
                 </p>
                 <div className="flex justify-center items-center w-full rounded-lg h-24  mt-20">
-                <div className="flex justify-around gap-2 items-center">
+                  <div className="flex justify-around gap-2 items-center">
                     <Link
                       href={
                         "https://www.instagram.com/vakratund_tours/?utm_source=ig_embed&ig_rid=22824f35-53c7-4967-8fe8-83f163b00532"

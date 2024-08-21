@@ -12,16 +12,10 @@ const DetailsPage = ({ params }) => {
   const [tripdata, setTripdtata] = useState();
   const [activeTab, setActiveTab] = useState("August");
 
-  const dates = {
-    August: [
-      { dateRange: "Aug 22, 2024 to Aug 26, 2024", status: "open" },
-      { dateRange: "Aug 29, 2024 to Sep 2, 2024", status: "open" },
-    ],
-    September: [
-      { dateRange: "Sep 5, 2024 to Sep 9, 2024", status: "open" },
-      { dateRange: "Sep 12, 2024 to Sep 16, 2024", status: "open" },
-    ],
-  };
+  const sharingOptions = [
+    { type: "Double Sharing", cost: "INR 19,999/-" },
+    { type: "Triple Sharing", cost: "INR 17,999/-" },
+  ];
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -263,13 +257,13 @@ const DetailsPage = ({ params }) => {
                     {`What's included with this trip.`}
                   </p>
                   <div className="relative flex flex-col lg:flex-row justify-start items-start gap-3 md:gap-5">
-                  <div className="prose prose-sm prose-zinc dark:prose-invert max-w-none !bg-transparent">
-                  <ul className="list-disc pl-5">
-                  {tripdata?.inclusions.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-                  </div>
+                    <div className="prose prose-sm prose-zinc dark:prose-invert max-w-none !bg-transparent">
+                      <ul className="list-disc pl-5">
+                        {tripdata?.inclusions.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
 
@@ -294,11 +288,52 @@ const DetailsPage = ({ params }) => {
 
                   </div> */}
                   <div className="prose prose-sm prose-zinc dark:prose-invert max-w-none !bg-transparent">
-                  <ul className="list-disc pl-5">
-                  {tripdata?.exclusions.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
+                    <ul className="list-disc pl-5">
+                      {tripdata?.exclusions.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="relative flex flex-col gap-6 md:gap-8 my-6 w-full">
+                  <h2 className="text-xl md:text-2xl lg:text-3xl font-[500] flex flex-row gap-2">
+                    Costing Options
+                    <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
+                      <i
+                        className="pi pi-sparkles"
+                        style={{ fontSize: "1rem" }}
+                      ></i>
+                    </span>
+                  </h2>
+                  <p className="text-text-color text-sm md:text-base capitalize -mt-6">
+                    {`What are the Costing and Sharing Options are Available for this trip.`}
+                  </p>
+                 <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-gray-200 border-collapse">
+                      <thead className="bg-gray-100">
+                        <tr>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Sharing Type
+                          </th>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Costing
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="bg-white divide-y divide-gray-200">
+                        {tripdata?.sharingOptions.map((item, index) => (
+                          <tr key={item}>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                              {item.type}
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                              {item.cost}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
