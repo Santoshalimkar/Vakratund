@@ -5,12 +5,23 @@ import Contactform from "@/components/Contactuscomponents/Contactform";
 import UpcomingTripsCrousel from "@/app/upcomingtrip/UpcomingTripsCrousel";
 import HeaderSwiper from "@/app/destination/details/HeaderSwiper";
 import TripDetails from "@/app/destination/details/TripDetails";
-import Link from 'next/link'
+import Link from "next/link";
 
 const DetailsPage = ({ params }) => {
   const { id, tripId } = params;
   const [tripdata, setTripdtata] = useState();
+  const [activeTab, setActiveTab] = useState("August");
 
+  const dates = {
+    August: [
+      { dateRange: "Aug 22, 2024 to Aug 26, 2024", status: "open" },
+      { dateRange: "Aug 29, 2024 to Sep 2, 2024", status: "open" },
+    ],
+    September: [
+      { dateRange: "Sep 5, 2024 to Sep 9, 2024", status: "open" },
+      { dateRange: "Sep 12, 2024 to Sep 16, 2024", status: "open" },
+    ],
+  };
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -22,7 +33,9 @@ const DetailsPage = ({ params }) => {
     if (id && tripId) {
       const fetchDestination = async () => {
         try {
-          const response = await fetch(`/api/Packages/${id}/trips/${tripId}`);
+          const response = await fetch(
+            `/api/upcomingtrip/${id}/trips/${tripId}`
+          );
           if (!response.ok) {
             throw new Error("Failed to fetch data");
           }
@@ -47,22 +60,24 @@ const DetailsPage = ({ params }) => {
             <div className="lg:w-1/2">
               <div className="flex flex-col gap-0 items-start justify-start w-full">
                 <h2 className="mt-3 inline-flex flex-row gap-2 my-2 relative md:text-4xl lg:text-5xl text-3xl font-sans text-black">
-                 {tripdata?.tripTitle}
+                  {tripdata?.tripTitle}
                 </h2>
                 <div className="flex flex-row gap-2 items-center justify-start w-full">
                   <p className="flex items-center gap-1 sm:gap-1.5 text-xs text-white bg-gradient-to-r from-green-500 to-teal-500 rounded-md px-1">
-                   {tripdata?.days}<span className="pl-1 py-0.5"></span>
+                    {tripdata?.days}
+                    <span className="pl-1 py-0.5"></span>
                   </p>
                   <p className="flex items-center gap-1 sm:gap-1.5 text-xs text-white bg-gradient-to-r from-green-500 to-teal-500 rounded-md px-1">
                     Customized Trip<span className="pl-1 py-0.5"></span>
                   </p>
                   <p className="flex items-center gap-1 sm:gap-1.5 text-xs text-white bg-gradient-to-r from-green-500 to-teal-500 rounded-md px-1">
-                   {tripdata?.fromLocation}<span className="pl-1 py-0.5"></span>
+                    {tripdata?.fromLocation}
+                    <span className="pl-1 py-0.5"></span>
                   </p>
                   <p className="flex items-center gap-1 sm:gap-1.5 text-xs text-white bg-gradient-to-r from-green-500 to-teal-500 rounded-md px-1">
-                   {tripdata?.tripDate}<span className="pl-1 py-0.5"></span>
+                    {tripdata?.tripDate}
+                    <span className="pl-1 py-0.5"></span>
                   </p>
-                 
                 </div>
                 <div className="flex flex-row gap-2 items-center justify-start w-full mt-2">
                   <div className="flex flex-col gap-2 py-4 items-start justify-start w-full">
@@ -70,7 +85,7 @@ const DetailsPage = ({ params }) => {
                       {" "}
                       INR
                       <span className="text-4xl font-sans text-black">
-                      {tripdata?.price}/-{" "}
+                        {tripdata?.price}/-{" "}
                         <span className="text-base text-text-color">
                           per person
                         </span>
@@ -78,7 +93,10 @@ const DetailsPage = ({ params }) => {
                     </div>
                     <div className="flex flex-row gap-2 items-center justify-start w-full">
                       <p className="relative max-w-fit flex flex-row gap-2 items-center justify-start w-full text-lg font-bold text-gray-600">
-                        INR <span className="text-2xl font-bold">{tripdata?.discountprice}/-</span>
+                        INR{" "}
+                        <span className="text-2xl font-bold">
+                          {tripdata?.discountprice}/-
+                        </span>
                         <span className="absolute top-1/2 left-0 w-full h-0.5 bg-red-500"></span>
                       </p>
                       {/* <span className="inline-flex text-xs md:text-sm rounded-full justify-center text-center px-1 md:px-2 items-center bg-[#0b8d7c] font-medium text-white">
@@ -99,8 +117,8 @@ const DetailsPage = ({ params }) => {
                       WebkitLineClamp: 3,
                       backgroundColor: "transparent",
                     }}
-                  >
-                  </article>
+                  ></article>
+
                   {tripdata?.tripDescription}
                 </div>
                 <div className="flex flex-col gap-6 mb-4 mt-3 w-full">
@@ -203,6 +221,34 @@ const DetailsPage = ({ params }) => {
                   </div>
                 </div>
 
+                {/* <div className="flex border-b border-gray-300">
+        {Object.keys(dates).map((month) => (
+          <button
+            key={month}
+            onClick={() => setActiveTab(month)}
+            className={`px-4 py-2 text-sm font-medium ${
+              activeTab === month
+                ? 'text-white bg-teal-500'
+                : 'text-gray-700 bg-gray-200'
+            } focus:outline-none`}
+          >
+            {month}
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-4">
+        {dates[activeTab].map((item, index) => (
+          <div
+            key={index}
+            className="border border-teal-500 rounded-md p-2 my-2"
+          >
+            <div>{item.dateRange}</div>
+            <div className="text-sm text-gray-500">{item.status}</div>
+          </div>
+        ))}
+      </div> */}
+
                 <div className="relative flex flex-col gap-6 md:gap-8 my-6 w-full">
                   <h2 className="text-xl md:text-2xl lg:text-3xl font-[500] flex flex-row gap-2">
                     Inclusions{" "}
@@ -255,16 +301,13 @@ const DetailsPage = ({ params }) => {
                 </ul>
                   </div>
                 </div>
-
               </div>
             </div>
             <div className="w-96 hidden bg-white my-2 lg:my-0 lg:flex lg:basis-[35%] lg:sticky lg:top-32 flex-col h-full items-start justify-start shadow-[2px_2px_2px_2px_rgba(11,141,124,0.10)] border border-[#36a39e] hover:border-[#0b8d7c] rounded-lg overflow-hidden">
-              <Contactform/>
+              <Contactform />
             </div>
           </div>
         </div>
-
-        <UpcomingTripsCrousel />
       </div>
     </div>
   );

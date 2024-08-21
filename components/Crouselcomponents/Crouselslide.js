@@ -12,6 +12,7 @@ import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { CldImage } from 'next-cloudinary';
 import Image from "next/image";
+import { ProgressSpinner } from 'primereact/progressspinner';
 
 const Crouselslide = () => {
   const [cardData, setCardData] = useState([]);
@@ -67,7 +68,9 @@ const Crouselslide = () => {
         </div>
         <div className="absolute -bottom-28 w-11/12 mx-auto">
           {isLoading ? (
-            <p className="text-black text-2xl -mt-40">Loading...</p> // Loading indicator
+            <div className="card flex justify-content-center">
+            <ProgressSpinner />
+        </div>
           ) : (
             <Carousel className="w-full">
               <CarouselContent>
@@ -121,7 +124,9 @@ const Crouselslide = () => {
 
       <div className="mx-auto lg:hidden md:hidden flex w-full">
         {isLoading ? (
-          <p className="text-xl">Loading...</p> // Loading indicator for mobile view
+          <div className="card flex justify-content-center">
+          <ProgressSpinner />
+      </div>
         ) : (
           <Carousel className="w-full">
             <CarouselContent>

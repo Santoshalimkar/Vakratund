@@ -29,10 +29,11 @@ export default function Home() {
       {/* <Cardcrousel/> */}
       <WeekendTripMain />
       <Divider className="w-11/12 mx-auto mt-12 " />
-      <UpcomingTripsCrousel />
+      <RomanticEscape/>
+      
       <Divider className="w-11/12 mx-auto mt-12 " />
 
-      <RomanticEscape/>
+      <UpcomingTripsCrousel />
 
       <Divider className="w-11/12 mx-auto mt-12 " />
 

@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";
-
+import React, { useEffect, useState } from "react";
+import { ProgressSpinner } from 'primereact/progressspinner';
 import {
   Carousel,
   CarouselContent,
@@ -19,50 +19,75 @@ import Goa from "../../public/Cardimages/Goa.JPG";
 import Kedarnath from "../../public/Cardimages/Kedarnath.JPG";
 
 const RomanticEscape = () => {
-  const cardData = [
-    {
-      id: 1,
-      title: "Bali",
-      description: "Starting Price Rs.21,999 ",
-      imageUrl: lehladakh,
-    },
-    {
-      id: 2,
-      title: "Singapore",
-      description: "Starting Price Rs.15,999 ",
-      imageUrl: Kashmir,
-    },
-    {
-      id: 3,
-      title: "Meghalaya",
-      description: "Starting Price Rs.5,999",
-      imageUrl: Meghalaya,
-    },
-    {
-      id: 4,
-      title: "Thailand",
-      description: "Starting Price Rs.15,999",
-      imageUrl: Bali,
-    },
-    {
-      id: 5,
-      title: "Goa",
-      description: "Starting Price Rs.5,999.",
-      imageUrl: Goa,
-    },
-    {
-      id: 6,
-      title: "Andaman",
-      description: "Starting Price Rs.15,999",
-      imageUrl: Kedarnath,
-    },
-    {
-      id: 7,
-      title: "Card Title 1",
-      description: "This is the description for card 1.",
-      imageUrl: lehladakh,
-    },
-  ];
+
+  
+  // const cardData = [
+  //   {
+  //     id: 1,
+  //     title: "Bali",
+  //     description: "Starting Price Rs.21,999 ",
+  //     imageUrl: lehladakh,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Singapore",
+  //     description: "Starting Price Rs.15,999 ",
+  //     imageUrl: Kashmir,
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Meghalaya",
+  //     description: "Starting Price Rs.5,999",
+  //     imageUrl: Meghalaya,
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Thailand",
+  //     description: "Starting Price Rs.15,999",
+  //     imageUrl: Bali,
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Goa",
+  //     description: "Starting Price Rs.5,999.",
+  //     imageUrl: Goa,
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Andaman",
+  //     description: "Starting Price Rs.15,999",
+  //     imageUrl: Kedarnath,
+  //   },
+  //   {
+  //     id: 7,
+  //     title: "Card Title 1",
+  //     description: "This is the description for card 1.",
+  //     imageUrl: lehladakh,
+  //   },
+  // ];
+
+  const [cardData, setCardData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Loading state
+
+  useEffect(() => {
+    const fetchPackages = async () => {
+      try {
+        const response = await fetch("/api/honeymoon-packages");
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const data = await response.json();
+        console.log("Fetched cardData:", data.data); // Log the fetched data
+        setCardData(data.data || []);
+      } catch (error) {
+        console.error("Error fetching packages:", error);
+      } finally {
+        setIsLoading(false); // Set loading to false once data is fetched
+      }
+    };
+
+    fetchPackages();
+  }, []);
 
   return (
     <div className="back2 w-full  flex flex-col justify-center items-center container md:p-10 lg:p-10 p-2 mb-28 ">
@@ -92,107 +117,113 @@ const RomanticEscape = () => {
           Where Forever Begins...Together!
           </p>
         </div>
-        <div className="absolute -bottom-28 w-11/12 mx-auto ">
-          <Carousel className="w-11/12 mx-auto">
-            <CarouselContent className="w-full">
+       <div className="absolute -bottom-28 w-11/12 mx-auto">
+          {isLoading ? (
+            <div className="card flex justify-content-center">
+            <ProgressSpinner />
+        </div>
+          ) : (
+            <Carousel className="w-full">
+              <CarouselContent>
+                {Array.isArray(cardData) && cardData.length > 0 ? (
+                  cardData.map((card) => (
+                    <CarouselItem
+                      key={card._id}
+                      className="flex justify-center gap-2 md:basis-1/3 lg:basis-1/5"
+                    >
+                      <div className="p-1">
+                        <Card className="w-44 h-60 relative overflow-hidden group">
+                          <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
+                          <div
+                            className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
+                            style={{
+                              backgroundImage: `url(${card.thumbnailImage})`,
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                            }}  />     
+                            
+                          {/* ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div> */}
+                          <CardContent className="relative flex flex-col items-center justify-center p-4 mt-[220px]">
+                            <div className="h-fit w-full p-2 flex flex-col items-center transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
+                              <h3 className="text-sm md:text-2xl xl:text-2xl textShadow font-bold text-center">
+                                {card.packageName}
+                              </h3>
+                              <p className="text-white whitespace-nowrap text-xs boxShadow shadow-2xl mb-4">
+                                Starting Price: Rs.{card.startingPrice}
+                              </p>
+                              <Link href={`/honeymoon-packages/${card._id}`} >
+                                <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#0b8d7c] text-white text-sm font-semibold bg-[#36a39e] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
+                                  View Trips
+                                </button>
+                              </Link>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    </CarouselItem>
+                  ))
+                ) : (
+                  <p>No data available</p>
+                )}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          )}
+        </div>
+      </div>
+
+   
+      <div className="mx-auto lg:hidden md:hidden flex w-full">
+        {isLoading ? (
+          <div className="card flex justify-content-center">
+          <ProgressSpinner />
+      </div>
+        ) : (
+          <Carousel className="w-full">
+            <CarouselContent>
               {cardData.map((card) => (
                 <CarouselItem
-                  key={card.id}
-                  className=" flex justify-center gap-2  md:basis-1/3 lg:basis-1/5"
+                  key={card._id}
+                  className="flex justify-center gap-2 basis-1/2 md:basis-1/3 lg:basis-1/5"
                 >
                   <div className="p-1">
-                    <Card className="w-44 h-60 relative overflow-hidden group">
+                    <Card className="w-[10.5rem] h-60 relative overflow-hidden group">
                       <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
-
                       <div
                         className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
                         style={{
-                          backgroundImage: `url(${card.imageUrl.src})`,
+                          backgroundImage: `url(${card.thumbnailImage})`,
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                         }}
                       />
+                      {/* ><Image width={100} height={100} className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50 h-full w-full object-fill" src={card?.thumbnailImage} alt="cardimages"/></div> */}
+
                       <CardContent className="relative flex flex-col items-center justify-center p-4 mt-[220px]">
                         <div className="h-fit w-full p-2 flex flex-col items-center transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
-                          <h3 className="text-xl md:text-2xl xl:text-2xl  text-white textShadow font-bold text-center">
-                            {card.title}
+                          <h3 className="text-xl md:text-2xl xl:text-2xl textShadow font-bold text-center">
+                            {card.packageName}
                           </h3>
                           <p className="text-white text-xs whitespace-nowrap boxShadow shadow-2xl mb-4">
-                            {card.description}
+                            {card.startingPrice}
                           </p>
-
-                          <Link href="/honeymoon-packages">
+                          <Link href={`/honeymoon-packages/${card._id}`} >
                             <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#0b8d7c] text-white text-sm font-semibold bg-[#36a39e] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
                               View Trips
                             </button>
                           </Link>
                         </div>
-                        {/* <span className="h-1 group-hover:h-2 group-hover:bg-primary-dark ease-in-out transition-all absolute bottom-0 left-1/2 -translate-x-1/2 bg-primary-main rounded-full w-1/2"></span> */}
-
-                        {/* <button className=" h-fit w-full p-2 flex flex-col items-center gap-2 transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
-                          More
-                        </button> */}
                       </CardContent>
                     </Card>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden" />
+            <CarouselNext className="hidden" />
           </Carousel>
-        </div>
-      </div>
-
-      <div className="mx-auto lg:hidden md:hidden flex w-full">
-        <Carousel className="w-full">
-          <CarouselContent className="">
-            {cardData.map((card) => (
-              <CarouselItem
-                key={card.id}
-                className=" flex justify-center gap-2 basis-1/2  md:basis-1/3 lg:basis-1/5"
-              >
-                <div className="p-1 ">
-                  <Card className="w-[10.5rem] h-60 relative overflow-hidden group ">
-                    <div className="h-full w-full absolute top-0 left-0 bg-black/25 group-hover:bg-black/65 transition-all duration-300 ease-in-out"></div>
-
-                    <div
-                      className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-50"
-                      style={{
-                        backgroundImage: `url(${card.imageUrl.src})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    />
-                    <CardContent className="relative flex flex-col items-center justify-center p-4 mt-[220px]">
-                      <div className="h-fit w-full p-2 flex flex-col items-center transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
-                        <h3 className="text-xl md:text-2xl xl:text-2xl  text-white textShadow font-bold text-center">
-                          {card.title}
-                        </h3>
-                        <p className="text-white text-xs whitespace-nowrap boxShadow shadow-2xl mb-4">
-                          {card.description}
-                        </p>
-
-                        <Link href="/honeymoon-packages">
-                          <button className="h-fit w-fit px-4 py-1.5 hover:bg-[#0b8d7c] text-white text-sm font-semibold bg-[#36a39e] rounded-md relative top-[4px] group-hover:top-0 transition-all duration-200 ease-in-out">
-                            View Trips
-                          </button>
-                        </Link>
-                      </div>
-                      {/* <span className="h-1 group-hover:h-2 group-hover:bg-primary-dark ease-in-out transition-all absolute bottom-0 left-1/2 -translate-x-1/2 bg-primary-main rounded-full w-1/2"></span> */}
-
-                      {/* <button className=" h-fit w-full p-2 flex flex-col items-center gap-2 transition-all duration-300 ease-in-out absolute -bottom-10 left-1/2 -translate-x-1/2 group-hover:-translate-y-1/2 group-hover:bottom-0 pb-4 text-white">
-                          More
-                        </button> */}
-                    </CardContent>
-                  </Card>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="hidden" />
-          <CarouselNext className="hidden" />
-        </Carousel>
+        )}
       </div>
     </div>
   );

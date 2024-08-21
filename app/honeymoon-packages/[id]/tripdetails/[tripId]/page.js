@@ -22,7 +22,7 @@ const DetailsPage = ({ params }) => {
     if (id && tripId) {
       const fetchDestination = async () => {
         try {
-          const response = await fetch(`/api/Packages/${id}/trips/${tripId}`);
+          const response = await fetch(`/api/honeymoon-packages/${id}/trips/${tripId}`);
           if (!response.ok) {
             throw new Error("Failed to fetch data");
           }
@@ -62,7 +62,6 @@ const DetailsPage = ({ params }) => {
                   <p className="flex items-center gap-1 sm:gap-1.5 text-xs text-white bg-gradient-to-r from-green-500 to-teal-500 rounded-md px-1">
                    {tripdata?.tripDate}<span className="pl-1 py-0.5"></span>
                   </p>
-                 
                 </div>
                 <div className="flex flex-row gap-2 items-center justify-start w-full mt-2">
                   <div className="flex flex-col gap-2 py-4 items-start justify-start w-full">
@@ -255,7 +254,7 @@ const DetailsPage = ({ params }) => {
                 </ul>
                   </div>
                 </div>
-
+                
               </div>
             </div>
             <div className="w-96 hidden bg-white my-2 lg:my-0 lg:flex lg:basis-[35%] lg:sticky lg:top-32 flex-col h-full items-start justify-start shadow-[2px_2px_2px_2px_rgba(11,141,124,0.10)] border border-[#36a39e] hover:border-[#0b8d7c] rounded-lg overflow-hidden">
@@ -264,7 +263,7 @@ const DetailsPage = ({ params }) => {
           </div>
         </div>
 
-        <UpcomingTripsCrousel />
+        
       </div>
     </div>
   );
