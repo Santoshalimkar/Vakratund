@@ -44,7 +44,7 @@ const Crouselslide = () => {
   return (
     <div className="back w-full flex flex-col justify-center items-center container md:p-10 lg:p-8 p-2">
 
-<div className="absolute top-2 left-0 h-full text-white w-full flex flex-col justify-end  items-center py-4">
+{/* <div className="absolute top-2 left-0 h-full text-white w-full flex flex-col justify-end  items-center py-4">
           <div className=" opacity-1 transform-none will-change-auto">
             <div className="grid grid-cols-2 gap-12">
               <div className="flex gap-2 ">
@@ -79,7 +79,7 @@ const Crouselslide = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
       <div className="flex flex-col justify-start items-start lg:hidden md:hidden  text-start w-full ">
         <h1 className="md:text-3xl lg:text-4xl text-xl boxShadow font-bold text-black">

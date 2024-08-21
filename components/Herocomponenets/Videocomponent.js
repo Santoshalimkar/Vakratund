@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Socialmediafollow from "../Crouselcomponents/Socialmediafollow";
 
 
 const Videocomponent = () => {
@@ -35,6 +36,7 @@ const Videocomponent = () => {
       
 
       </div>
+      <Socialmediafollow/>
 
     </div>
   );

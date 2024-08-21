@@ -15,15 +15,11 @@ import RomanticEscape from "./honeymoon-packages/RomanticEscape";
 import UpcomingTripsCrousel from "./upcomingtrip/UpcomingTripsCrousel";
 import Reviewcrousel from "@/components/Crouselcomponents/Reviewcrousel";
 import Swipper from "@/components/Crouselcomponents/Swipper";
+import Socialmediafollow from "@/components/Crouselcomponents/Socialmediafollow";
 
 export default function Home() {
   return (
     <main className="flex flex-col w-full ">
-      {/* <div className="fixed bottom-8 right-8 z-50">
-
-      <SpeedDial/>
-    
-    </div> */}
       <Videocomponent />
       <Crouselslide />
       {/* <Cardcrousel/> */}
