@@ -22,7 +22,7 @@ export default function Swipper() {
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        centeredSlides={true}
+        centeredSlides={''}
         slidesPerView={3}
         coverflowEffect={{
           rotate: 50,
