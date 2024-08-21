@@ -182,10 +182,10 @@ const Footer = () => {
                   Disclaimer
                 </Link>
                 <Link
-                  className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
+                  className="hover:text-primary-main capitalize  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
                   href="/cancellationpolicy"
                 >
-                  CANCELLATION POLICY
+                 cancellation policy
                 </Link>
               </div>
             </div>
