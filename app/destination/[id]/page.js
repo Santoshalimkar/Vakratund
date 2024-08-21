@@ -136,7 +136,7 @@ const Hero = ({ params }) => {
                 <div className="flex flex-col justify-center">
                   <span className="text-xl lg:text-2xl font-bold leading-none">
                     <span className="inline-block tabular-nums undefined">
-                      90000+
+                      900+
                     </span>
                   </span>
                   <span className="text-sm lg:text-lg leading-none">
@@ -151,7 +151,7 @@ const Hero = ({ params }) => {
                 <div className="flex flex-col justify-center mr-2">
                   <span className="text-xl lg:text-2xl font-bold leading-none">
                     <span className="inline-block tabular-nums undefined">
-                      1000+
+                      100+
                     </span>
                   </span>
                   <span className="text-sm lg:text-lg leading-none">
