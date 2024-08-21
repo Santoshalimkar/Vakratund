@@ -23,7 +23,7 @@ export const metadata = {
     site_name: "Vakratund Tours",
     images: [
       {
-        url: '',
+        url: 'https://res.cloudinary.com/ddysmgao7/image/upload/v1724247104/VakratundTours/Gallery%20Images/cxxkmlpwdsm845fmrcbe.jpg',
         width: 800,
         height: 600,
         alt: "Vakratund Tours Logo",
