@@ -91,14 +91,14 @@ const RomanticEscape = () => {
 
   return (
     <div className="back2 w-full  flex flex-col justify-center items-center container md:p-10 lg:p-10 p-2 mb-28 ">
-      {/* <div className="flex flex-col  justify-start items-start pb-2 md:pb-4 lg:pb-4 text-start w-full py-2">
+      <div className="flex md:hidden lg:hidden flex-col  justify-start items-start pb-2  text-start w-full py-2">
         <h1 className="md:text-3xl lg:text-4xl text-xl boxShadow font-bold text-black">
         Romantic Escapes
         </h1>
         <p className="boxShadow text-sm text-black">
         Where Forever Begins...Together!
         </p>
-      </div> */}
+      </div>
 
       <div className=" md:flex lg:flex flex-col justify-center items-center  h-[30rem] relative w-full hidden ">
         <video

@@ -35,16 +35,16 @@ const components = [
     ],
   },
   {
-    title: "International Trips",
-    href: "/international",
+    title: "International Trips (comming soon)",
+    href: "/",
     subLinks: [
       {
         title: "Dubai Trips",
-        href: "/destination/upcomingtrip",
+        href: "/",
       },
       {
         title: "Maldives Trips",
-        href: "/destination/weekendtrip",
+        href: "",
       },
     ],
   },
