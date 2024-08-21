@@ -1,5 +1,5 @@
 import dbConnect from '@/lib/Dbconnection/Dbconnect';
-import Package from '@/lib/model/UpcommingTripsschema';
+import Package from '@/lib/model/honeymoonpackagesschema';
 import { NextResponse } from 'next/server';
 import mongoose from 'mongoose';
 

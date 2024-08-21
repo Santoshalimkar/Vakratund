@@ -1,6 +1,6 @@
 // app/api/UpcommingTripss/[UpcommingTripsId]/trips/route.js
 import dbConnect from '@/lib/Dbconnection/Dbconnect';
-import UpcommingTrips from '@/lib/model/Tourschema';
+import UpcommingTrips from '@/lib/model/honeymoonpackagesschema';
 import { NextResponse } from 'next/server';
 import mongoose from 'mongoose';
 

@@ -19,6 +19,8 @@ import Goa from "../../public/Cardimages/Goa.JPG";
 import Kedarnath from "../../public/Cardimages/Kedarnath.JPG";
 
 const RomanticEscape = () => {
+
+  
   // const cardData = [
   //   {
   //     id: 1,
