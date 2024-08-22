@@ -59,12 +59,12 @@ export default function RootLayout({ children }) {
       <meta name="twitter:title" content={metadata.twitter.title} />
       <meta name="twitter:description" content={metadata.twitter.description} />
       <meta name="twitter:image" content={metadata.twitter.image} />
-      {/* <link
+      <link
         rel="icon"
-        href={Logo}
+      href="/icon.png"
         type="image/png"
         sizes="16x16"
-      /> */}
+      />
     </head>
     <body className={inter.className}>
       <Providers>
