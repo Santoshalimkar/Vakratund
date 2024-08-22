@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <head>
+    <meta name="google-site-verification" content="EEH0KWkjv-Sy3zYqD-_adzl23MxjEaRKz14AkHoCgNA" />
       <meta name="description" content={metadata.description} />
       <meta name="keywords" content={metadata.keywords} />
       <meta name="author" content={metadata.author} />
