@@ -11,7 +11,7 @@ const inter = Poppins({ subsets: ["latin"] ,weight: ['100','300','400','500','70
 export const metadata = {
   title: "Vakratund Tours - Explore Manali, Ladakh, Kerala & More",
   description: "Vakratund Tours offers curated travel packages to breathtaking destinations like Manali, Ladakh, Kerala, and more. Book your next adventure with us today!",
-  keywords: "Vakratund Tours, Manali tours, Ladakh tours, Kerala tours, India travel packages, adventure tours, customized tour packages, travel agency, vacation planning",
+  keywords: "Vakratund Tours, Manali tours, Ladakh tours, Kerala tours, India travel packages, adventure tours, customized tour packages, travel agency, vacation planning,vakratund,Tours,trip planning",
   author: "Vakratund Tours",
   robots: "index, follow",
   openGraph: {
