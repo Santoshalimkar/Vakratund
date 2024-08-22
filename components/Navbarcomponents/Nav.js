@@ -59,7 +59,7 @@ export default function Nav() {
         router.push("/");
         break;
       case "packages":
-        router.push("/destination");
+        router.push("/");
         break;
       case "blog":
         router.push("/Blogs");
