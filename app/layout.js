@@ -11,7 +11,7 @@ const inter = Poppins({ subsets: ["latin"] ,weight: ['100','300','400','500','70
 export const metadata = {
   title: "Vakratund Tours - Explore Manali, Ladakh, Kerala & More",
   description: "Vakratund Tours offers curated travel packages to breathtaking destinations like Manali, Ladakh, Kerala, and more. Book your next adventure with us today!",
-  keywords: "Vakratund Tours, Manali tours, Ladakh tours, Kerala tours, India travel packages, adventure tours, customized tour packages, travel agency, vacation planning",
+  keywords: "Vakratund Tours, Manali tours, Ladakh tours, Kerala tours, India travel packages, adventure tours, customized tour packages, travel agency, vacation planning,vakratund,Tours,trip planning",
   author: "Vakratund Tours",
   robots: "index, follow",
   openGraph: {
@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <head>
+    <meta name="google-site-verification" content="EEH0KWkjv-Sy3zYqD-_adzl23MxjEaRKz14AkHoCgNA" />
       <meta name="description" content={metadata.description} />
       <meta name="keywords" content={metadata.keywords} />
       <meta name="author" content={metadata.author} />
@@ -59,12 +60,12 @@ export default function RootLayout({ children }) {
       <meta name="twitter:title" content={metadata.twitter.title} />
       <meta name="twitter:description" content={metadata.twitter.description} />
       <meta name="twitter:image" content={metadata.twitter.image} />
-      {/* <link
+      <link
         rel="icon"
-        href={Logo}
+      href="/icon.png"
         type="image/png"
         sizes="16x16"
-      /> */}
+      />
     </head>
     <body className={inter.className}>
       <Providers>
