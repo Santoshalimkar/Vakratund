@@ -51,15 +51,24 @@ export default function Nav() {
   const Extendmenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const linkitem = ["HOME", "blog", "Payments", "CONTACT US"];
+  const linkitem = ["HOME", "blog", "Payments","Packages","Upcoming trip","Weekend trip","honeymoon trip", "CONTACT US"];
 
   const handleredirect = (link) => {
     switch (link) {
       case "HOME":
         router.push("/");
         break;
-      case "packages":
-        router.push("/");
+      case "Packages":
+        router.push("/packages");
+        break;
+      case "Upcoming trip":
+        router.push("/destination/upcomingTrip");
+        break;
+      case "Weekend trip":
+        router.push("/destination/weekendtrip");
+        break;
+      case "honeymoon trip":
+        router.push("/destination/honeymoonTrip");
         break;
       case "blog":
         router.push("/Blogs");
@@ -145,16 +154,16 @@ export default function Nav() {
               <SheetHeader>
                 <SheetTitle>
                   <div className="flex justify-between items-center w-full ">
-                    <div className="bg-[#36a39e] rounded-md">
-                      <Image className="" src={Logo} alt="logo" />
+                    <div className="bg-[#36a39e] rounded-full">
+                      <Image className="w-14 h-14 rounded-full" src={Logo} alt="logo"  />
                     </div>
-                    {/* <div className="w-8 h-8 bg-black rounded-full flex justify-center items-center">
+                    <div className="w-8 h-8 bg-[#36a39e] rounded-full flex justify-center items-center">
                     <SheetClose>
                       <span className="text-lg font-bold text-white p-2  text-center">
                         X
                       </span>
                     </SheetClose>
-                  </div> */}
+                  </div>
                   </div>
                 </SheetTitle>
                 <SheetDescription>
@@ -206,7 +215,7 @@ export default function Nav() {
            </div>
       </NavbarContent>
 
-      <NavbarMenu className="bg-[#0b8d7c] flex flex-col gap-8 pt-4">
+      <NavbarMenu className="bg-[#0b8d7c] flex flex-col gap-4 pt-4">
         {linkitem.map((item, index) => (
           <NavbarMenuItem  key={`${item}-${index}`} className="bg-[#0b8d7c]  ">
             <span
