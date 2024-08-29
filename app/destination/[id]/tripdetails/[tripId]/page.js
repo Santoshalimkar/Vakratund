@@ -3,13 +3,43 @@ import React, { useEffect, useState } from "react";
 
 import Contactform from "@/components/Contactuscomponents/Contactform";
 import UpcomingTripsCrousel from "@/app/upcomingtrip/UpcomingTripsCrousel";
-import HeaderSwiper from "@/app/destination/details/HeaderSwiper";
-import TripDetails from "@/app/destination/details/TripDetails";
+// import HeaderSwiper from "@/app/destination/details/HeaderSwiper";
+// import TripDetails from "@/app/destination/details/TripDetails";
 import Link from 'next/link'
+import "primeicons/primeicons.css";
+import Image from "next/image";
+import { Carousel } from "primereact/carousel";
+
+
+const responsiveOptions = [
+  {
+    breakpoint: "1400px",
+    numVisible: 4,
+    numScroll: 1,
+  },
+  {
+    breakpoint: "1199px",
+    numVisible: 3,
+    numScroll: 1,
+  },
+  {
+    breakpoint: "767px",
+    numVisible: 2,
+    numScroll: 1,
+  },
+  {
+    breakpoint: "575px",
+    numVisible: 1,
+    numScroll: 1,
+  },
+];
+
+
 
 const DetailsPage = ({ params }) => {
   const { id, tripId } = params;
   const [tripdata, setTripdtata] = useState();
+  const [products, setProducts] = useState([]);
 
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -17,6 +47,13 @@ const DetailsPage = ({ params }) => {
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
+
+  useEffect(() => {
+    if (tripdata && Array.isArray(tripdata.galleryImages)) {
+      setProducts(tripdata.galleryImages);
+    }
+  }, [tripdata]);
 
   useEffect(() => {
     if (id && tripId) {
@@ -37,6 +74,26 @@ const DetailsPage = ({ params }) => {
       fetchDestination();
     }
   }, [id, tripId]);
+
+
+
+  const productTemplate = (product) => {
+    return (
+      <div className="m-2 mt-5 text-center py-5 px-3">
+        <div className="mb-3 relative w-full h-60">
+          <Image
+            src={product} // Assuming `product` is a string (URL)
+            alt="Image"
+            layout="fill"
+            objectFit="cover"
+            className="w-6 shadow-2 carousel-image radius"
+          />
+        </div>
+      </div>
+    );
+  };
+ 
+
 
   return (
     <div className="container  z-0 px-0 flex flex-col justify-center">
@@ -131,7 +188,9 @@ const DetailsPage = ({ params }) => {
                     </Link>
                     <Link
                       className="inline-flex flex-row gap-2 items-center justify-center w-full bg-[#0b8d7c] text-white rounded-md p-2 text-center text-lg font-medium border border-primary-dark inset-1 hover:bg-[#0b8d7c] transition-all shadow-md hover:transition-y-100 hover:pb-2 duration-300 hover:scale-[1.03] group relative overflow-hidden"
-                      href={""}
+                      href={tripdata?.pdfUrl || '#'}
+                      target="_blank"
+                      download="Itinerary.pdf" 
                     >
                       Itinerary{" "}
                       <span className="lucide -mt-3 lucide-sparkles h-4 w-4 shrink-0 animate-bounce">

@@ -51,7 +51,7 @@ export default function Nav() {
   const Extendmenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const linkitem = ["HOME", "packages", "blog", "Payments", "CONTACT US"];
+  const linkitem = ["HOME", "blog", "Payments", "CONTACT US"];
 
   const handleredirect = (link) => {
     switch (link) {
@@ -87,8 +87,8 @@ export default function Nav() {
       case "/payment":
         setactiveitem("Payments");
         break;
-      case "/destination":
-        setactiveitem("packages");
+      // case "/destination":
+      //   setactiveitem("packages");
         break;
       case "/Contactus":
         setactiveitem("CONTACT US");

@@ -211,7 +211,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   className="hover:text-primary-main  text-sm  max-w-max text-gray-700 transition-colors duration-200 ease-in-out"
-                  href="/upcomingtrip"
+                  href="/destination/upcomingTrip"
                 >
                   Upcoming Trips
                 </Link>
