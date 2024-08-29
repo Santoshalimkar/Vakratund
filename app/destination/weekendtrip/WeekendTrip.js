@@ -59,7 +59,7 @@ const WeekendTrip = () => {
   ];
 
   return (
-    <div className="back2 md:py-24 lg:py-24 flex justify-center items-center container w-full px-2 mx-auto lg:px-24 md:px-24">
+    <div className="back2 md:py-24 lg:py-24 py-4 flex justify-center items-center container w-full px-2 mx-auto lg:px-24 md:px-24">
       <div className="relative flex flex-col justify-center items-center w-full">
         <div className="-bottom-36 w-full mx-auto">
           <div className="flex items-center md:justify-between xl:justify-between justify-center w-full mb-4">
