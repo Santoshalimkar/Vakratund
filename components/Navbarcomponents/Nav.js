@@ -51,16 +51,16 @@ export default function Nav() {
   const Extendmenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const linkitem = ["HOME", "packages", "blog", "Payments", "CONTACT US"];
+  const linkitem = ["HOME", "blog", "Payments", "CONTACT US"];
 
   const handleredirect = (link) => {
     switch (link) {
       case "HOME":
         router.push("/");
         break;
-      case "packages":
-        router.push("/destination");
-        break;
+      // case "packages":
+      //   router.push("/");
+      //   break;
       case "blog":
         router.push("/Blogs");
         break;
@@ -87,8 +87,8 @@ export default function Nav() {
       case "/payment":
         setactiveitem("Payments");
         break;
-      case "/destination":
-        setactiveitem("packages");
+      // case "/destination":
+      //   setactiveitem("packages");
         break;
       case "/Contactus":
         setactiveitem("CONTACT US");

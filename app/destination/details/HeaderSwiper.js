@@ -1,81 +1,20 @@
-// components/HeaderSwiper.js
 "use client";
 
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 import { Carousel } from "primereact/carousel";
-
 import Image from "next/image";
 import "primeicons/primeicons.css";
 
-import Bali from "../../../public/Cardimages/Bali.JPG";
-import HeroImage from "../../../public/Cardimages/BaliHeroImage.JPG";
-import HeroImage_2 from "../../../public/Cardimages/BaliHeroImage_2.JPG";
-import Meghalaya from "../../../public/Cardimages/Meghalaya.JPG";
+export default function HeaderSwiper({ data }) {
+  const [products, setProducts] = useState([]);
 
-export default function HeaderSwiper({data}) {
+  useEffect(() => {
+    // Update products when data changes
+    if (data && Array.isArray(data.galleryImages)) {
+      setProducts(data.galleryImages);
+    }
+  }, [data]);
 
-  console.log("tripdata",data)
-  const initialProducts = [
-    {
-      id: "1000",
-      code: "f230fh0g3",
-      name: "Bamboo Watch",
-      description: "Product Description",
-      image: HeroImage,
-      price: 65,
-      category: "Accessories",
-      quantity: 24,
-      inventoryStatus: "INSTOCK",
-      rating: 5,
-    },
-    {
-      id: "1001",
-      
-      image: HeroImage_2,
-    
-    },
-    {
-      id: "1002",
- 
-      image: Bali,
-    
-     
-    },
-    {
-      id: "1003",
-   
-      image: Meghalaya,
-   
-    },
-    {
-      id: "1004",
-      image: Meghalaya,
-   
-    },
-    {
-      id: "1005",
-   
-      image: HeroImage_2,
-    },
-    {
-      id: "1006",
-      
-      image: Bali,
-    
-    },
-    {
-      id: "1007",
-      image: Meghalaya,
-   
-    },
-    {
-      id: "1008",
-      image: Meghalaya,
-    },
-  ];
-
-  const [products, setProducts] = useState(data?.galleryImages);
   const responsiveOptions = [
     {
       breakpoint: "1400px",
@@ -99,17 +38,16 @@ export default function HeaderSwiper({data}) {
     },
   ];
 
-
-  const productTemplate = (products) => {
+  const productTemplate = (product) => {
     return (
-      <div className=" m-2 mt-5 text-center py-5 px-3">
+      <div className="m-2 mt-5 text-center py-5 px-3">
         <div className="mb-3 relative w-full h-60">
           <Image
-            src={products}
-            alt={products}
+            src={product} // Assuming `product` is a string (URL)
+            alt="Image"
             layout="fill"
             objectFit="cover"
-            className="w-6 shadow-2 carousel-image redius "
+            className="w-6 shadow-2 carousel-image radius"
           />
         </div>
       </div>
@@ -117,20 +55,14 @@ export default function HeaderSwiper({data}) {
   };
 
   return (
-
-    <div
-      className="card "
-    >
-      <div className="">
-        <Carousel
-        className=" "
-          value={products}
-          numVisible={3}
-          numScroll={3}
-          responsiveOptions={responsiveOptions}
-          itemTemplate={productTemplate}
-        />
-      </div>
+    <div className="card">
+      <Carousel
+        value={products}
+        numVisible={3}
+        numScroll={3}
+        responsiveOptions={responsiveOptions}
+        itemTemplate={productTemplate}
+      />
     </div>
   );
 }
