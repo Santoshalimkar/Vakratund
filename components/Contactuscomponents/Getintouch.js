@@ -42,12 +42,15 @@ const Getintouch = () => {
                         />
                       </div>
                     </Link>
+                    <Link  href={"https://www.facebook.com/people/Vakratund-Tours-Adventures/61564626934045/?mibextid=ZbWKwL"}>
                     <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
                       <SlSocialFacebook
                         size={24}
                         className="text-white transition-all duration-700 group-hover:text-[#36a39e]"
                       />
                     </div>
+                    </Link>
+                    
                     <Link href={"https://wa.link/f5qsnc"}>
                       <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
                         <FaWhatsapp

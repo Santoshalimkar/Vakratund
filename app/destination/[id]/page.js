@@ -336,7 +336,7 @@ const Hero = ({ params }) => {
                         </Link>
                         <div className="flex flex-row items-center w-full justify-end">
                           <Link
-                            href=""
+                             href={"https://wa.link/f5qsnc"  }
                             className="flex items-center  font-sans gap-1 w-max h-fit mr-3 text-white hover:text-white bg-[#0b8d7c] px-4 py-2 rounded-md shrink-0 duration-300 ease-in-out transition-all hover:bg-[#0b8d7c]"
                           >
                             Enquiry{" "}
