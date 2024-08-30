@@ -137,7 +137,7 @@ export function NavigationMenuDemo() {
                         "https://www.instagram.com/vakratund_tours/?utm_source=ig_embed&ig_rid=22824f35-53c7-4967-8fe8-83f163b00532"
                       }
                     >
-                    <Link href={"https://www.facebook.com/people/Vishal-Ambekar/pfbid0itTY7nN8gErNHUuqjDnFKW6vUauVnUbJyTapHLSePmKV9FxPamJJJP1enMtMbFzDl/?name=xhp_nt__fb__action__open_user"}>
+                    <Link href={"/Blogs"}>
 
                       <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
                         <FaInstagram
@@ -147,7 +147,7 @@ export function NavigationMenuDemo() {
                       </div>
                     </Link>
                     </Link>
-                    <Link href={"https://www.facebook.com/people/Vishal-Ambekar/pfbid0iY9XXVpf3EYxpKWLdEuUNEAomhFvDbpAfDq9hgsZovHuEUK7kLBdtyd6u2DisGnal/?name=xhp_nt__fb__action__open_user"}>
+                    <Link href={"https://www.facebook.com/people/Vakratund-Tours-Adventures/61564626934045/?mibextid=ZbWKwL"}>
                     <div className="group transition-all duration-700 flex justify-center items-center rounded-md bg-[#4aaca8] w-12 h-12 hover:bg-white hover:text-[#36a39e]">
                       <SlSocialFacebook
                         size={24}
