@@ -16,6 +16,7 @@ import UpcomingTripsCrousel from "./upcomingtrip/UpcomingTripsCrousel";
 import Reviewcrousel from "@/components/Crouselcomponents/Reviewcrousel";
 import Swipper from "@/components/Crouselcomponents/Swipper";
 import Socialmediafollow from "@/components/Crouselcomponents/Socialmediafollow";
+import WeekendTripsCrousel from "./weekendtrip/WeekendTripsCrousel";
 
 export default function Home() {
   return (
@@ -23,7 +24,8 @@ export default function Home() {
       <Videocomponent />
       <Crouselslide />
       {/* <Cardcrousel/> */}
-      <WeekendTripMain />
+      {/* <WeekendTripMain /> */}
+      <WeekendTripsCrousel/>
       <Divider className="w-11/12 mx-auto mt-12 " />
       <RomanticEscape/>
       
