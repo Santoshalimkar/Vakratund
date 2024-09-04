@@ -316,7 +316,7 @@ const Hero = ({ params }) => {
                       <div className="flex flex-row items-center gap-2 mx-auto text-white font-semibold text-sm col-span-2 text-center w-full min-w-fit rounded-md shrink-0 duration-300 ease-in-out transition-all justify-between">
                         <Link
                         href={`/honeymoon-packages/${destination._id}/tripdetails/${trip._id}`}
-                          // href="/destination/details"
+                        
                           className="flex flex-row items-center font-sans gap-1 text-white font-semibold text-sm col-span-2 max-w-fit text-center w-full min-w-fit bg-[#0b8d7c] ml-3 px-4 py-2 rounded-md shrink-0 duration-300 ease-in-out transition-all hover:bg-primary-dark"
                         >
                           More Details{" "}

@@ -40,7 +40,7 @@ const trips = [
   },
 ];
 
-const UpcommingtripsHero = ( {params }) => {
+const WeekendtripsHero = ( {params }) => {
   const [showFullText, setShowFullText] = useState(false);
   const [destination, setdestination] = useState(null);
 
@@ -56,7 +56,7 @@ const UpcommingtripsHero = ( {params }) => {
     if (id) {
       const fetchDestination = async () => {
         try {
-          const response = await fetch(`/api/upcomingtrip/${id}`);
+          const response = await fetch(`/api/weekendtrip/${id}`);
           if (!response.ok) {
             throw new Error("Failed to fetch data");
           }
@@ -89,7 +89,7 @@ const UpcommingtripsHero = ( {params }) => {
           <div className="grid grid-cols-1 md:grid-cols-1 relative h-full w-full px-6 xl:px-0">
             <div className="h-full  w-full flex flex-col gap-2 justify-center items-center">
               <h2 className="text-2xl lg:text-3xl xl:text-5xl font-bold text-center text-white">
-                Upcomming Tour Packages{" "}
+                Weekend Tour Packages{" "}
               </h2>
               <p className="text-sm sm:text-base px-2 md:px-4 capitalize py-1 mt-0 lg:py-1 bg-black/30 rounded-3xl text-white font-medium text-center">
                 {`Plan your next adventure with us, and explore the world with Vakratund Travels.`}
@@ -192,7 +192,7 @@ const UpcommingtripsHero = ( {params }) => {
                         <div className="overflow-hidden">
                           <div className="flex -ml-4 z-0">
                             <div className="min-w-0 shrink-0 grow-0 basis-full pl-4 h-full relative w-full min-h-52 z-0">
-                              <Link  href={`/upcomingtrip/${destination._id}/tripdetails/${trip._id}`}>
+                              <Link href={`/weekendtrip/${destination._id}/tripdetails/${trip._id}`}>
                                 {/* <Image
                                 src={trip.images}
                                 className="object-cover object-center"
@@ -245,7 +245,7 @@ const UpcommingtripsHero = ( {params }) => {
                       </div>
                     </div>
                     <Link
-                       href={`/upcomingtrip/${destination._id}/tripdetails/${trip._id}`}
+                      href={`/weekendtrip/${destination._id}/tripdetails/${trip._id}`}
                       className="flex flex-col px-4 pt-4"
                     >
                       <div className="p-2 border border-primary-main shadow-sm flex items-baseline justify-center gap-2 bg-[#0b8d7c] rounded h-full w-full max-w-[95%] mx-auto text-white relative -top-9">
@@ -292,8 +292,8 @@ const UpcommingtripsHero = ( {params }) => {
                     <div className="flex flex-row w-full h-full gap-2 pb-4 -mt-10">
                       <div className="flex flex-row items-center gap-2 mx-auto text-white font-semibold text-sm col-span-2 text-center w-full min-w-fit rounded-md shrink-0 duration-300 ease-in-out transition-all justify-between">
                         <Link
-                        href={`/upcomingtrip/${destination._id}/tripdetails/${trip._id}`}
-                         
+                        href={`/weekendtrip/${destination._id}/tripdetails/${trip._id}`}
+                        
                           className="flex flex-row items-center font-sans gap-1 text-white font-semibold text-sm col-span-2 max-w-fit text-center w-full min-w-fit bg-[#0b8d7c] ml-3 px-4 py-2 rounded-md shrink-0 duration-300 ease-in-out transition-all hover:bg-primary-dark"
                         >
                           More Details{" "}
@@ -334,4 +334,4 @@ const UpcommingtripsHero = ( {params }) => {
   );
 };
 
-export default UpcommingtripsHero;
+export default WeekendtripsHero;

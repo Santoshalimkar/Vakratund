@@ -51,7 +51,7 @@ export default function Nav() {
   const Extendmenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const linkitem = ["HOME", "blog", "Payments","Packages- ",   "Domestic Trips","Upcoming trip","Weekend trip","Romantic Escapes", "CONTACT US"];
+  const linkitem = ["HOME", "blog", "Payments","Packages - ",   "Domestic Trips","Upcoming trip","Weekend trip","Romantic Escapes", "CONTACT US"];
 
   const handleredirect = (link) => {
     switch (link) {

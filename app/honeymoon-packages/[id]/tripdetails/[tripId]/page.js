@@ -2,10 +2,9 @@
 import React, { useEffect, useState } from "react";
 
 import Contactform from "@/components/Contactuscomponents/Contactform";
-import UpcomingTripsCrousel from "@/app/upcomingtrip/UpcomingTripsCrousel";
-// import HeaderSwiper from "@/app/destination/details/HeaderSwiper";
 
-import TripDetails from "@/app/destination/details/TripDetails";
+
+
 import Link from 'next/link'
 import "primeicons/primeicons.css";
 import Image from "next/image";

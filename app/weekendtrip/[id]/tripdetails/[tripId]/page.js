@@ -2,9 +2,6 @@
 import React, { useEffect, useState } from "react";
 
 import Contactform from "@/components/Contactuscomponents/Contactform";
-import UpcomingTripsCrousel from "@/app/upcomingtrip/UpcomingTripsCrousel";
-
-
 
 import Link from 'next/link'
 import "primeicons/primeicons.css";
@@ -59,7 +56,7 @@ const DetailsPage = ({ params  }) => {
     if (id && tripId) {
       const fetchDestination = async () => {
         try {
-          const response = await fetch(`/api/Packages/${id}/trips/${tripId}`);
+          const response = await fetch(`/api/weekendtrip/${id}/trips/${tripId}`);
           if (!response.ok) {
             throw new Error("Failed to fetch data");
           }

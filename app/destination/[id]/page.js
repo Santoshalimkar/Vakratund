@@ -221,7 +221,7 @@ const Hero = ({ params }) => {
                         <div className="overflow-hidden">
                           <div className="flex -ml-4 z-0">
                             <div className="min-w-0 shrink-0 grow-0 basis-full pl-4 h-full relative w-full min-h-52 z-0">
-                              <Link href="/destination/details">
+                              <Link href={`/destination/${destination._id}/tripdetails/${trip._id}`}>
                                 {/* <Image
                                 src={trip.images}
                                 className="object-cover object-center"
@@ -274,7 +274,7 @@ const Hero = ({ params }) => {
                       </div>
                     </div>
                     <Link
-                      href="/destination/details"
+                      href={`/destination/${destination._id}/tripdetails/${trip._id}`}
                       className="flex flex-col px-4 pt-4"
                     >
                       <div className="p-2 border border-primary-main shadow-sm flex items-baseline justify-center gap-2 bg-[#0b8d7c] rounded h-full w-full max-w-[95%] mx-auto text-white relative -top-9">
@@ -322,7 +322,7 @@ const Hero = ({ params }) => {
                       <div className="flex flex-row items-center gap-2 mx-auto text-white font-semibold text-sm col-span-2 text-center w-full min-w-fit rounded-md shrink-0 duration-300 ease-in-out transition-all justify-between">
                         <Link
                         href={`/destination/${destination._id}/tripdetails/${trip._id}`}
-                          // href="/destination/details"
+                         
                           className="flex flex-row items-center font-sans gap-1 text-white font-semibold text-sm col-span-2 max-w-fit text-center w-full min-w-fit bg-[#0b8d7c] ml-3 px-4 py-2 rounded-md shrink-0 duration-300 ease-in-out transition-all hover:bg-primary-dark"
                         >
                           More Details{" "}
