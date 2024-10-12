@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import {
   Carousel,
@@ -10,12 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import { CldImage } from 'next-cloudinary';
-import Image from "next/image";
 import { ProgressSpinner } from 'primereact/progressspinner';
-import Instagramlogo from "../../public/Cardimages/Instagramlogo_icon.png";
-import Google_Logo from "../../public/Cardimages/Google_Logo.png";
-
 
 const Crouselslide = () => {
   const [cardData, setCardData] = useState([]);
@@ -44,42 +38,6 @@ const Crouselslide = () => {
   return (
     <div className="back w-full flex flex-col justify-center items-center container md:p-10 lg:p-8 p-2">
 
-{/* <div className="absolute top-2 left-0 h-full text-white w-full flex flex-col justify-end  items-center py-4">
-          <div className=" opacity-1 transform-none will-change-auto">
-            <div className="grid grid-cols-2 gap-12">
-              <div className="flex gap-2 ">
-                <h1 className="lg:h-14 lg:w-14 md:h-12 md:w-12 h-10 w-10 shrink-0">
-                  <Image src={Instagramlogo}/>
-                </h1>
-                <div className="flex flex-col justify-center">
-                  <span className="text-xl lg:text-2xl font-bold leading-none">
-                    <span className="inline-block tabular-nums undefined text-black">
-                      900+
-                    </span>
-                  </span>
-                  <span className="text-sm lg:text-lg leading-none text-black ">
-                    Followers
-                  </span>
-                </div>
-              </div>
-              <div className="flex gap-4">
-              <h1 className="lg:h-14 lg:w-14 md:h-12 md:w-12 h-10 w-10 shrink-0 ">
-                  <Image src={Google_Logo}/>
-                </h1>
-                <div className="flex flex-col justify-center mr-2">
-                  <span className="text-xl lg:text-2xl font-bold leading-none">
-                    <span className="inline-block tabular-nums undefined text-black">
-                      100+
-                    </span>
-                  </span>
-                  <span className="text-sm lg:text-lg leading-none text-black">
-                    Review
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
 
       <div className="flex flex-col justify-start items-start lg:hidden md:hidden  text-start w-full ">
         <h1 className="md:text-3xl lg:text-4xl text-xl boxShadow font-bold text-black">

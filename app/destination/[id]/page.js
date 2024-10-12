@@ -97,7 +97,7 @@ const Hero = ({ params }) => {
           <Image
             layout="fill" // This makes the image fill the parent container
             objectFit="cover" // Ensures the image covers the container without stretching
-            className="object-cover h-full absolute bg-transparent"
+            className="object-cover h-full absolute  brightness-50 bg-transparent"
             src={destination.thumbnailImage}
             alt="Hero"
           />
@@ -105,7 +105,7 @@ const Hero = ({ params }) => {
           <Image
             layout="fill" // Fills the container with the default image as well
             objectFit="cover"
-            className="object-cover h-full absolute bg-transparent"
+            className="object-cover  brightness-50 h-full absolute bg-transparent"
             src={HeroImage} // Replace with your default image path
             alt="Loading..."
           />
@@ -116,7 +116,7 @@ const Hero = ({ params }) => {
         <div className="h-full w-full max-w-7xl mx-auto relative px-6 md:px-8 lg:px-10 xl:px-0">
           <div className="grid grid-cols-1 md:grid-cols-1 relative h-full w-full px-6 xl:px-0">
             <div className="h-full w-full flex flex-col gap-2 justify-center items-center">
-              <h2 className="text-3xl lg:text-4xl xl:text-6xl font-bold text-center text-white shadow-large">
+              <h2 className="text-3xl lg:text-4xl xl:text-6xl font-bold text-center text-white shadow-large capitalize">
                 {destination ? destination.packageName : "Loading..."}
               </h2>
 
@@ -167,7 +167,7 @@ const Hero = ({ params }) => {
       <div className="pt-10 pb-20 md:pt-14 bg-white relative flex flex-col">
         <div className="h-full w-full max-w-7xl mx-auto relative md:px-8 lg:px-10 flex flex-col gap-20 px-6 xl:px-0">
           <div className="relative bg-white rounded-2xl shadow-[0px_4px_30px_0px_rgba(0,0,0,0.15)] p-8 flex flex-col gap-6">
-            <h2 className="flex flex-row gap-1 text-2xl md:text-3xl lg:text-3xl font-bold">
+            <h2 className="flex flex-row gap-1 text-2xl md:text-3xl lg:text-3xl font-bold uppercase">
               {" "}
               About {destination ? destination.packageName : "."}
               <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">
