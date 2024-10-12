@@ -17,6 +17,7 @@ import Instagramlogo from "../../public/Cardimages/Instagramlogo_icon.png";
 import Google_Logo from "../../public/Cardimages/Google_Logo.png";
 
 
+
 const Crouselslide = () => {
   const [cardData, setCardData] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // Loading state

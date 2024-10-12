@@ -44,39 +44,20 @@ const components = [
       },
       {
         title: "Maldives Trips",
-        href: "",
+        href: "/",
       },
     ],
   },
 
   {
     title: "India Packages",
-    href: "/",
+    href: "/packages",
     subLinks: [
       {
-        title: "Ladakh",
-        href: "/destination/66b771c4c3b96d3174744776",
+        title: "Domestic Trips",
+        href: "/packages",
       },
-      {
-        title: "Kashmir",
-        href: "destination/66b9051965474f052852a72b",
-      },
-      {
-        title: "Goa",
-        href: "/destination/66b77b61c3b96d317474477f",
-      },
-      {
-        title: "Kerla",
-        href: "/destination/66b76cc1c3b96d317474475b",
-      },
-      {
-        title: "Himachal",
-        href: "/destination/66b76fc7c3b96d3174744764",
-      },
-      {
-        title: "Kedarnath",
-        href: "/destination/66b7710bc3b96d317474476d",
-      },
+      
     ],
   },
 

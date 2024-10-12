@@ -138,7 +138,7 @@ const UpcommingtripsHero = ( {params }) => {
       <div className="pt-10 pb-20 md:pt-14 bg-white relative flex flex-col">
         <div className="h-full w-full max-w-7xl mx-auto relative md:px-8 lg:px-10 flex flex-col gap-20 px-6 xl:px-0">
           <div className="relative bg-white rounded-2xl shadow-[0px_4px_30px_0px_rgba(0,0,0,0.15)] p-8 flex flex-col gap-6">
-            <h2 className="flex flex-row gap-1 text-2xl md:text-3xl lg:text-3xl font-bold">
+            <h2 className="flex flex-row gap-1 text-2xl md:text-3xl lg:text-3xl font-bold uppercase">
               {" "}
               About {destination ? destination.packageName : "."}
               <span className="lucide -mt-3 lucide-sparkles h-4 w-4 text-[#36a39e] shrink-0">

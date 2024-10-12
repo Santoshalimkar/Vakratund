@@ -235,7 +235,7 @@ const Footer = () => {
                   Phone :9284205536
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
-                  Website :<span> www.vakratund.com</span>
+                  Website :<span> www.vakratundtours.com</span>
                 </p>
                 <p className="text-gray-500 dark:text-gray-400">
                   Office :<span> Pune ,Maharastara 410401</span>
